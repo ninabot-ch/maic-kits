@@ -1,0 +1,4 @@
+{"company": {"name": "Lumen Atelier", "lang": "fr", "online_payment": false}, "products": [
+ {"id": 1, "name": "Lampe « Rive »", "description": "Chêne recouvré, abat-jour lin, E27.", "price_cents": 18900, "vat": 0, "stock": 6, "unit": "pièce"},
+ {"id": 2, "name": "Lampe « Molard »", "description": "Mélèze, petite, câble textile.", "price_cents": 8900, "vat": 0, "stock": 11, "unit": "pièce"},
+ {"id": 3, "name": "Lampe sur mesure", "description": "À partir de votre bois. Devis.", "price_cents": 24000, "vat": 0, "stock": null, "unit": "devis"}]}

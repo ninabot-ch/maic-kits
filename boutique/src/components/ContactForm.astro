@@ -5,12 +5,12 @@ const { title, text, lang = DEFAULT } = Astro.props; const T = UI[lang] || UI.fr
 <section id="contact">
   <h2>{title}</h2>
   <p class="note">{text}</p>
-  <form id="lead-form" method="post" action="/api/public/leads" data-ok={T.f_ok} data-err={T.f_err} data-sending={T.f_sending} data-lang={lang}>
+  <form id="lead-form" class="lead" method="post" action="/api/public/leads" data-ok={T.f_ok} data-err={T.f_err} data-sending={T.f_sending} data-lang={lang}>
     <label>{T.f_name}<input name="name" required autocomplete="name"></label>
     <label>{T.f_email}<input name="email" type="email" required autocomplete="email"></label>
     <label>{T.f_msg}<textarea name="message" required placeholder={T.f_ph}></textarea></label>
     <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-    <label style="display:flex;gap:8px;align-items:flex-start;font-size:.85rem"><input type="checkbox" name="consent" required style="width:auto;margin-top:4px">{T.f_consent}</label>
+    <label class="check"><input type="checkbox" name="consent" required>{T.f_consent}</label>
     <div><button class="btn" type="submit">{T.f_send}</button></div>
     <p class="note" id="lead-status" aria-live="polite"></p>
   </form>
