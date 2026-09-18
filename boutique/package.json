@@ -1,0 +1,17 @@
+{
+  "name": "maic-kit-boutique",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Kit MyAiCompany \u00ab Boutique \u00bb \u2014 catalogue, panier, commande (Stripe Connect), CGV",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.7.0",
+    "js-yaml": "^4.1.0"
+  }
+}

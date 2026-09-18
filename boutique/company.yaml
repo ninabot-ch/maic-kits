@@ -1,0 +1,28 @@
+# La compagnie — édité depuis le deck (Centrale), jamais à la main par le client.
+name: Lumen Atelier
+slug: lumen-atelier
+tagline:
+  fr: Des lampes uniques en bois recyclé, fabriquées à Lausanne.
+  en: One-of-a-kind lamps in reclaimed wood, made in Lausanne.
+lang: fr                 # langue par défaut (servie à la racine)
+langs: [fr, en]          # langues publiées ; l'autre est servie sous /en/ ou /fr/
+accent: "#C98B3A"          # couleur d'accent du site
+contact:
+  email: hello@lumen-atelier.myaicompany.ch
+  phone: ""
+  city: Lausanne
+legal:
+  responsible: Alex Morel        # personne responsable (mentions légales : pas d'entreprise inscrite = la personne)
+  address: Lausanne, Suisse
+  registered: false              # true = inscrite au RC (raison individuelle / Sàrl)
+  ide: ""
+social: {}
+shop:
+  currency: CHF
+  vat_registered: false        # true = TVA facturée (numéro IDE dans legal.ide)
+  pickup: true                 # retrait à l'atelier / en boutique
+  pickup_note: {fr: "Retrait à l'atelier, sur rendez-vous.", en: "Pickup at the workshop, by appointment."}
+  shipping_cents: 900          # livraison Poste suisse (0 = pas de livraison)
+  free_shipping_from_cents: 15000
+  delivery_days: 6
+  return_days: 14              # droit de retour offert (pas obligatoire en CH, attendu)

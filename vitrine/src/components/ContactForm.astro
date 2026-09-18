@@ -1,0 +1,30 @@
+---
+import { UI, DEFAULT } from '../site.js';
+const { title, text, lang = DEFAULT } = Astro.props; const T = UI[lang] || UI.fr;
+---
+<section id="contact">
+  <h2>{title}</h2>
+  <p class="note">{text}</p>
+  <form id="lead-form" method="post" action="/api/public/leads" data-ok={T.f_ok} data-err={T.f_err} data-sending={T.f_sending} data-lang={lang}>
+    <label>{T.f_name}<input name="name" required autocomplete="name"></label>
+    <label>{T.f_email}<input name="email" type="email" required autocomplete="email"></label>
+    <label>{T.f_msg}<textarea name="message" required placeholder={T.f_ph}></textarea></label>
+    <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+    <label style="display:flex;gap:8px;align-items:flex-start;font-size:.85rem"><input type="checkbox" name="consent" required style="width:auto;margin-top:4px">{T.f_consent}</label>
+    <div><button class="btn" type="submit">{T.f_send}</button></div>
+    <p class="note" id="lead-status" aria-live="polite"></p>
+  </form>
+  <script>
+    const f = document.getElementById('lead-form'), st = document.getElementById('lead-status');
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault(); st.textContent = f.dataset.sending;
+      const data = Object.fromEntries(new FormData(f).entries()); data.lang = f.dataset.lang;
+      try {
+        const r = await fetch(f.action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+        const d = await r.json().catch(() => ({}));
+        st.textContent = r.ok ? f.dataset.ok : (d.error || f.dataset.err);
+        if (r.ok) f.reset();
+      } catch { st.textContent = f.dataset.err; }
+    });
+  </script>
+</section>

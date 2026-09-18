@@ -1,0 +1,39 @@
+# Le contenu des pages, par langue — modifié par le client (formulaires du deck) ou par un agent (branche → aperçu → validation).
+fr:
+  hero:
+    title: La lumière a une seconde vie.
+    text: Chaque lampe Lumen est faite à la main à Lausanne, à partir de bois récupéré sur des chantiers. Aucune ne ressemble à une autre.
+    cta: Demander une lampe
+  services_title: Ce qu'on fait
+  services:
+    - title: Lampes de table
+      text: Pièces uniques, de 89 à 240 CHF, prêtes en 6 jours.
+    - title: Sur mesure
+      text: Une lampe à partir de votre bois, d'un souvenir, d'un lieu.
+    - title: Boutiques et dépôt-vente
+      text: Lots de 4, conditions pour les boutiques de déco et les cafés.
+  about:
+    title: L'atelier
+    text: Un établi, une scie, des chutes de chêne et de mélèze qui auraient fini en copeaux. Quarante lampes vendues sans une pub, uniquement par le bouche-à-oreille.
+  contact:
+    title: Parlons de votre lampe
+    text: Dites-nous ce que vous imaginez, on vous répond sous 48 heures.
+en:
+  hero:
+    title: Light gets a second life.
+    text: Every Lumen lamp is handmade in Lausanne from wood reclaimed on building sites. No two are alike.
+    cta: Ask for a lamp
+  services_title: What we do
+  services:
+    - title: Table lamps
+      text: One-of-a-kind pieces, CHF 89 to 240, ready in 6 days.
+    - title: Made to order
+      text: A lamp from your own wood, a memory, a place.
+    - title: Shops and consignment
+      text: Batches of 4, terms for decor shops and cafés.
+  about:
+    title: The workshop
+    text: A bench, a saw, oak and larch offcuts that would have ended up as shavings. Forty lamps sold without a single ad, by word of mouth only.
+  contact:
+    title: Let's talk about your lamp
+    text: Tell us what you have in mind, we answer within 48 hours.

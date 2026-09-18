@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import { company, content, LANGS, DEFAULT, UI } from '../../site.js';
+export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+---
+<Base lang={lang} path="/mentions-legales/" title={T.legal_title} noindex>
+  <section class="hero"><h1>{T.legal_title}</h1></section>
+  <section>
+    <h2>{T.legal_owner}</h2>
+    <p>{company.legal?.registered ? `${company.name}${company.legal?.ide ? ` (IDE ${company.legal.ide})` : ''}` : `${company.legal?.responsible || company.name}, ${T.legal_person}`}<br>{company.legal?.address}<br>{company.contact?.email}</p>
+    <h2>{T.legal_host}</h2><p>{T.legal_host_text}</p>
+    <h2>{T.legal_content}</h2><p>{T.legal_content_text}</p>
+  </section>
+</Base>

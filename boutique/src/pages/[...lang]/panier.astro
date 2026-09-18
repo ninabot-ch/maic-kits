@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import Basket from '../../components/Basket.astro';
+import { products, shop, chf } from '../../site.js';
+import { company, content, LANGS, DEFAULT, UI } from '../../site.js';
+export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+---
+<Base lang={lang} path="/panier/" title={T.basket} noindex>
+  <section class="hero"><h1>{T.basket}</h1></section>
+  <Basket lang={lang} />
+</Base>

@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import { company, content, LANGS, DEFAULT, UI } from '../../site.js';
+export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+---
+<Base lang={lang} path="/">
+  <section class="hero"><h1>{C.hero.title}</h1><p>{C.hero.text}</p><a class="btn" href={(lang === DEFAULT ? '' : '/' + lang) + '/contact/'}>{C.hero.cta}</a></section>
+  <section id="services"><h2>{C.services_title}</h2><div class="grid">{C.services.map(s => <div class="card"><h3>{s.title}</h3><p>{s.text}</p></div>)}</div></section>
+  <section id="about"><h2>{C.about.title}</h2><p>{C.about.text}</p></section>
+  <ContactForm lang={lang} title={C.contact.title} text={C.contact.text} />
+</Base>
