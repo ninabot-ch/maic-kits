@@ -1,6 +1,6 @@
 ---
 import { company, site, LANGS, DEFAULT, UI, prefix, tagline, shopEnabled } from '../site.js';
-const { title, description, noindex = false, lang = DEFAULT, path = '/' } = Astro.props;
+const { title, description, noindex = false, lang = DEFAULT, path = '/', image = null } = Astro.props;
 const accent = company.accent || '#1E8C8A'; const T = UI[lang] || UI.fr; const p = prefix(lang); const tg = tagline(lang);
 const alt = LANGS.map(l => ({ l, href: site + prefix(l) + path }));
 ---
@@ -15,7 +15,7 @@ const alt = LANGS.map(l => ({ l, href: site + prefix(l) + path }));
   <link rel="canonical" href={site + p + path}>
   {alt.map(a => <link rel="alternate" hreflang={a.l} href={a.href} />)}
   <link rel="alternate" hreflang="x-default" href={site + path}>
-  <meta property="og:title" content={title || company.name}><meta property="og:description" content={description || tg}><meta property="og:type" content="website"><meta property="og:url" content={site + p + path}><meta property="og:site_name" content={company.name}><meta property="og:locale" content={lang === 'fr' ? 'fr_CH' : 'en_GB'}>
+  <meta property="og:title" content={title || company.name}><meta property="og:description" content={description || tg}><meta property="og:type" content="website"><meta property="og:url" content={site + p + path}><meta property="og:site_name" content={company.name}>{image ? <meta property="og:image" content={site + image} /> : null}<meta property="og:locale" content={lang === 'fr' ? 'fr_CH' : 'en_GB'}>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@500;600;700&display=swap">
@@ -70,6 +70,7 @@ const alt = LANGS.map(l => ({ l, href: site + prefix(l) + path }));
     .product{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}.product:hover{transform:translateY(-2px);box-shadow:0 18px 40px -24px rgba(27,29,34,.35)}
     .ph{aspect-ratio:4/3;display:grid;place-items:center;text-decoration:none;position:relative;overflow:hidden;background:linear-gradient(140deg,color-mix(in srgb,var(--accent) 22%,#fff),color-mix(in srgb,var(--accent) 60%,#fff))}
     .ph::after{content:"";position:absolute;right:-18%;bottom:-30%;width:70%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.35)}
+    .ph.has-img::after{display:none}.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
     .ph span{position:relative;font-family:"Fraunces",Georgia,serif;font-size:3.2rem;font-weight:600;color:var(--accent);opacity:.9}
     .product .b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}.product h3{margin:0;font-size:1.1rem}.product h3 a{text-decoration:none}.product p{margin:0;color:var(--muted);font-size:.92rem;flex:1}
     .product .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:8px}
