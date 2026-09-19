@@ -9,7 +9,8 @@ let cat = { products: [], company: {} };
 try { cat = JSON.parse(fs.readFileSync(path.join(root, 'catalog.json'), 'utf8')); } catch (e) {}
 export const products = (cat.products || []).filter(p => p && p.name);
 export const onlinePayment = !!(cat.company && cat.company.online_payment);
-export const shop = company.shop || {};
+// réglages de livraison : ceux de la Mairie (catalog.json → company.shop) priment sur company.yaml
+export const shop = Object.assign({}, company.shop || {}, (cat.company && cat.company.shop) || {});
 // La boutique du kit vitrine vit sous /shop/ et n'apparaît que si la compagnie a au moins un produit actif (Mairie → Produits).
 export const shopEnabled = products.length > 0 && !(shop.disabled);
 export const chf = c => (c / 100).toLocaleString('fr-CH', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
