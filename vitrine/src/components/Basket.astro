@@ -1,0 +1,52 @@
+---
+// Panier + commande, côté client (localStorage) ; POST /api/public/checkout → Stripe Checkout (Connect) ou commande hors ligne.
+import { UI, DEFAULT, shop, onlinePayment, chf, prefix } from '../site.js';
+const { lang = DEFAULT } = Astro.props; const T = UI[lang] || UI.fr; const p = prefix(lang);
+---
+<section id="basket" data-lang={lang} data-ship={shop.shipping_cents ?? 0} data-free={shop.free_shipping_from_cents ?? 0} data-pickup={shop.pickup ? '1' : '0'} data-online={onlinePayment ? '1' : '0'} data-prefix={p}>
+  <div id="basket-empty" class="note" hidden>{T.empty_basket} <a href={p + '/shop/'}>{T.nav_shop} →</a></div>
+  <table class="cart" id="basket-table"><tbody id="basket-rows"></tbody></table>
+  <div class="totals" id="basket-totals" hidden>
+    <span>{T.subtotal}</span><span id="bt-sub"></span>
+    <span id="bt-shiplabel">{T.shipping}</span><span id="bt-ship"></span>
+    <span><b>{T.total}</b></span><b id="bt-total"></b>
+  </div>
+  <form id="checkout-form" hidden style="margin-top:24px">
+    <h2>{T.your_details}</h2>
+    <label>{UI[lang].f_name}<input name="name" required autocomplete="name"></label>
+    <label>{UI[lang].f_email}<input name="email" type="email" required autocomplete="email"></label>
+    {shop.pickup && (shop.shipping_cents ?? 0) > 0 ? <fieldset style="border:1px solid var(--line);border-radius:10px;padding:10px 14px"><legend class="note">{T.delivery}</legend>
+      <label style="display:flex;gap:8px;align-items:center"><input type="radio" name="shipping" value="pickup" checked style="width:auto">{T.pickup} — {shop.pickup_note?.[lang] || shop.pickup_note?.fr || ''}</label>
+      <label style="display:flex;gap:8px;align-items:center"><input type="radio" name="shipping" value="post" style="width:auto">{T.deliver} — {chf(shop.shipping_cents)} CHF{shop.free_shipping_from_cents ? ` (${T.free_from} ${chf(shop.free_shipping_from_cents)} CHF)` : ''}</label></fieldset> : null}
+    <label>{T.order_note}<textarea name="note" style="min-height:70px"></textarea></label>
+    <p class="note">{onlinePayment ? T.pay_online : T.pay_later} · <a href={p + '/cgv/'}>{T.legal_cgv}</a></p>
+    <div><button class="btn" type="submit">{T.checkout}</button></div>
+    <p class="note" id="checkout-status" aria-live="polite"></p>
+  </form>
+  <script>
+    const root = document.getElementById('basket'), L = root.dataset.lang, P = root.dataset.prefix || '';
+    const T = { fr: { qty: 'Qté', remove: 'Retirer', sending: 'Envoi…', err: "La commande n'a pas pu partir, réessayez dans un instant.", pickup: 'Retrait', ship: 'Livraison' }, en: { qty: 'Qty', remove: 'Remove', sending: 'Sending…', err: 'The order could not be sent, please try again in a moment.', pickup: 'Pickup', ship: 'Shipping' } }[L] || {};
+    const chf = c => (c / 100).toLocaleString('fr-CH', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const load = () => { try { return JSON.parse(localStorage.getItem('maic-basket') || '[]'); } catch (e) { return []; } };
+    const save = b => { localStorage.setItem('maic-basket', JSON.stringify(b)); const e = document.getElementById('basket-count'); if (e) e.textContent = b.reduce((a, i) => a + i.qty, 0); };
+    function render() {
+      const b = load(), rows = document.getElementById('basket-rows'), form = document.getElementById('checkout-form'), totals = document.getElementById('basket-totals');
+      document.getElementById('basket-empty').hidden = b.length > 0; form.hidden = !b.length; totals.hidden = !b.length;
+      rows.innerHTML = b.map((i, k) => `<tr><td><b>${i.name}</b><br><span class="note">${chf(i.price_cents)} CHF</span></td><td><input type="number" min="1" max="99" value="${i.qty}" data-k="${k}" style="width:70px"></td><td style="text-align:right">${chf(i.price_cents * i.qty)} CHF</td><td><button type="button" class="btn ghost sm" data-rm="${k}">${T.remove}</button></td></tr>`).join('');
+      const sub = b.reduce((a, i) => a + i.price_cents * i.qty, 0), post = (form.querySelector('[name=shipping]:checked') || {}).value === 'post';
+      const shipC = post ? (+root.dataset.free && sub >= +root.dataset.free ? 0 : +root.dataset.ship) : 0;
+      document.getElementById('bt-sub').textContent = chf(sub) + ' CHF'; document.getElementById('bt-shiplabel').textContent = post ? T.ship : T.pickup; document.getElementById('bt-ship').textContent = chf(shipC) + ' CHF'; document.getElementById('bt-total').textContent = chf(sub + shipC) + ' CHF';
+      rows.querySelectorAll('input[data-k]').forEach(inp => inp.addEventListener('change', () => { const bb = load(); bb[+inp.dataset.k].qty = Math.max(1, Math.min(99, +inp.value || 1)); save(bb); render(); }));
+      rows.querySelectorAll('[data-rm]').forEach(btn => btn.addEventListener('click', () => { const bb = load(); bb.splice(+btn.dataset.rm, 1); save(bb); render(); }));
+    }
+    document.querySelectorAll('[name=shipping]').forEach(r => r.addEventListener('change', render));
+    document.getElementById('checkout-form').addEventListener('submit', async e => {
+      e.preventDefault(); const st = document.getElementById('checkout-status'); st.textContent = T.sending;
+      const f = e.target, d = Object.fromEntries(new FormData(f).entries()); d.items = load().map(i => ({ product_id: i.id, qty: i.qty })); d.lang = L;
+      try { const r = await fetch('/api/public/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) }); const j = await r.json().catch(() => ({}));
+        if (!r.ok) { st.textContent = j.error || T.err; return; } save([]); location.href = /^https?:/.test(j.url || '') ? j.url : P + '/shop/merci/?order=' + (j.order_id || ''); }
+      catch (err) { st.textContent = T.err; }
+    });
+    render();
+  </script>
+</section>

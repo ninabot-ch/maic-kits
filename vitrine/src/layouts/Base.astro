@@ -1,5 +1,5 @@
 ---
-import { company, site, LANGS, DEFAULT, UI, prefix, tagline } from '../site.js';
+import { company, site, LANGS, DEFAULT, UI, prefix, tagline, shopEnabled } from '../site.js';
 const { title, description, noindex = false, lang = DEFAULT, path = '/' } = Astro.props;
 const accent = company.accent || '#1E8C8A'; const T = UI[lang] || UI.fr; const p = prefix(lang); const tg = tagline(lang);
 const alt = LANGS.map(l => ({ l, href: site + prefix(l) + path }));
@@ -86,12 +86,13 @@ const alt = LANGS.map(l => ({ l, href: site + prefix(l) + path }));
 </head>
 <body>
   <div class="wrap">
-    <header class="top"><a class="brand" href={p + '/'}><i>{company.name.trim().slice(0, 1)}</i>{company.name}</a><nav><a href={p + '/#services'}>{T.nav_services}</a><a href={p + '/#about'}>{T.nav_about}</a><a href={p + '/contact/'}>{T.nav_contact}</a>{LANGS.filter(l => l !== lang).map(l => <a class="lang" href={prefix(l) + path} hreflang={l}>{UI[l].lang_name}</a>)}</nav></header>
+    <header class="top"><a class="brand" href={p + '/'}><i>{company.name.trim().slice(0, 1)}</i>{company.name}</a><nav>{shopEnabled ? <a href={p + '/shop/'}>{T.nav_shop}</a> : null}<a href={p + '/#services'}>{T.nav_services}</a><a href={p + '/#about'}>{T.nav_about}</a><a href={p + '/contact/'}>{T.nav_contact}</a>{shopEnabled ? <a class="basket" href={p + '/shop/panier/'} id="basket-link">{T.basket}<b id="basket-count">0</b></a> : null}{LANGS.filter(l => l !== lang).map(l => <a class="lang" href={prefix(l) + path} hreflang={l}>{UI[l].lang_name}</a>)}</nav></header>
     <slot />
     <footer class="foot">
       <span>© {new Date().getFullYear()} {company.name} · {company.contact?.city} <span class="made">· <a href="https://myaicompany.ch">MyAiCompany</a></span></span>
-      <span><a href={p + '/mentions-legales/'}>{T.legal}</a> · <a href={p + '/confidentialite/'}>{T.privacy}</a> · <a href={p + '/contact/'}>{T.contact}</a></span>
+      <span>{shopEnabled ? <><a href={p + '/cgv/'}>{T.legal_cgv}</a> · </> : null}<a href={p + '/mentions-legales/'}>{T.legal}</a> · <a href={p + '/confidentialite/'}>{T.privacy}</a> · <a href={p + '/contact/'}>{T.contact}</a></span>
     </footer>
   </div>
+  {shopEnabled ? <script>try{const c=JSON.parse(localStorage.getItem('maic-basket')||'[]');const n=c.reduce((a,i)=>a+i.qty,0);const e=document.getElementById('basket-count');if(e)e.textContent=n;}catch(e){}</script> : null}
 </body>
 </html>

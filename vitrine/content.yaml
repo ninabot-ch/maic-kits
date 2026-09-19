@@ -15,6 +15,12 @@ fr:
   about:
     title: L'atelier
     text: Un établi, une scie, des chutes de chêne et de mélèze qui auraient fini en copeaux. Quarante lampes vendues sans une pub, uniquement par le bouche-à-oreille.
+  shop:
+    title: La boutique
+    text: Ce qui est en stock part en quelques jours ; le sur-mesure se discute.
+    cta: Voir la boutique
+    add: Ajouter au panier
+    soldout: Épuisé
   contact:
     title: Parlons de votre lampe
     text: Dites-nous ce que vous imaginez, on vous répond sous 48 heures.
@@ -34,6 +40,12 @@ en:
   about:
     title: The workshop
     text: A bench, a saw, oak and larch offcuts that would have ended up as shavings. Forty lamps sold without a single ad, by word of mouth only.
+  shop:
+    title: The shop
+    text: In-stock items ship within days; made-to-order is a conversation.
+    cta: See the shop
+    add: Add to basket
+    soldout: Sold out
   contact:
     title: Let's talk about your lamp
     text: Tell us what you have in mind, we answer within 48 hours.

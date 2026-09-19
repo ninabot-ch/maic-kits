@@ -1,0 +1,16 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ContactForm from '../../../components/ContactForm.astro';
+import Basket from '../../../components/Basket.astro';
+import { products, shop, chf, shopEnabled } from '../../../site.js';
+import { company, content, LANGS, DEFAULT, UI } from '../../../site.js';
+export function getStaticPaths() { if (!shopEnabled) return []; return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+---
+<Base lang={lang} path="/shop/merci/" title={T.thanks_title} noindex>
+  <section class="hero"><h1>{T.thanks_title}</h1><p id="thanks-text">{T.thanks_offline}</p><p class="note" id="thanks-order"></p></section>
+  <script define:vars={{ paidText: T.thanks_paid, orderLabel: T.order_no }}>
+    const q = new URLSearchParams(location.search); if (q.get('paid')) document.getElementById('thanks-text').textContent = paidText; if (q.get('order')) document.getElementById('thanks-order').textContent = orderLabel + ' ' + q.get('order');
+    try { localStorage.setItem('maic-basket', '[]'); } catch (e) {}
+  </script>
+</Base>

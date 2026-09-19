@@ -58,3 +58,8 @@ from its `UI` table.
 `/deck/` (the owner's back-office) on the same host, security headers (CSP frame-ancestors,
 HSTS, nosniff), the "coming soon" page while no build exists, and the custom domain once the
 owner registers one from the deck.
+
+
+## Shop inside the vitrine kit (since 19.09.2026)
+
+The `vitrine` kit also carries a shop under `/shop/` (`/shop/`, `/shop/produit/<id>/`, `/shop/panier/`, `/shop/merci/`, plus `/cgv/`). It is generated only when `catalog.json` holds at least one active product; nothing to switch on. The `boutique` kit keeps the shop at the root. Orders go to `POST /api/public/checkout`; the basket redirects to the kit's own `merci` page unless the API answers with an external (Stripe) URL.

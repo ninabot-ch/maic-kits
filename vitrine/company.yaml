@@ -17,3 +17,12 @@ legal:
   registered: false              # true = inscrite au RC (raison individuelle / Sàrl)
   ide: ""
 social: {}
+shop:                        # la boutique apparaît sous /shop/ dès qu'un produit actif existe dans la Mairie ; rien à activer
+  currency: CHF
+  vat_registered: false      # true = TVA facturée (numéro IDE dans legal.ide)
+  pickup: true               # retrait à l'atelier / en boutique
+  pickup_note: {fr: "Retrait à l'atelier, sur rendez-vous.", en: "Pickup at the workshop, by appointment."}
+  shipping_cents: 900        # livraison Poste suisse (0 = pas de livraison)
+  free_shipping_from_cents: 15000
+  delivery_days: 6
+  return_days: 14            # droit de retour offert (pas obligatoire en CH, attendu)

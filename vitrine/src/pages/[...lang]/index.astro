@@ -1,12 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ContactForm from '../../components/ContactForm.astro';
-import { company, content, LANGS, DEFAULT, UI, tagline } from '../../site.js';
+import { company, content, LANGS, DEFAULT, UI, tagline, shopEnabled } from '../../site.js';
 export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
 const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr; const PFX = lang === DEFAULT ? '' : '/' + lang;
 ---
 <Base lang={lang} path="/">
-  <section class="hero"><div><p class="kicker">{tagline(lang)}</p><h1>{C.hero.title}</h1><p class="lead">{C.hero.text}</p><div class="cta"><a class="btn" href={PFX + '/contact/'}>{C.hero.cta}</a></div></div><div class="art" aria-hidden="true"><span>{company.name.trim().slice(0, 1)}</span></div></section>
+  <section class="hero"><div><p class="kicker">{tagline(lang)}</p><h1>{C.hero.title}</h1><p class="lead">{C.hero.text}</p><div class="cta"><a class="btn" href={PFX + '/contact/'}>{C.hero.cta}</a>{shopEnabled ? <a class="btn ghost" href={PFX + '/shop/'}>{C.shop?.cta || T.nav_shop}</a> : null}</div></div><div class="art" aria-hidden="true"><span>{company.name.trim().slice(0, 1)}</span></div></section>
   <section id="services" class="alt"><h2>{C.services_title}</h2><div class="grid">{C.services.map(s => <div class="card"><h3>{s.title}</h3><p>{s.text}</p></div>)}</div></section>
   <section id="about"><div class="about"><div><h2>{C.about.title}</h2><p class="note" style="font-size:1rem">{C.about.text}</p></div><blockquote>{C.hero.title}</blockquote></div></section>
   <ContactForm lang={lang} title={C.contact.title} text={C.contact.text} />

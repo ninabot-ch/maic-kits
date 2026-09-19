@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import Basket from '../../components/Basket.astro';
+import { products, shop, chf, shopEnabled } from '../../site.js';
+import { company, content, LANGS, DEFAULT, UI } from '../../site.js';
+export function getStaticPaths() { if (!shopEnabled) return []; return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+---
+<Base lang={lang} path="/cgv/" title={T.cgv_title} noindex>
+  <section class="hero"><h1>{T.cgv_title}</h1></section>
+  <section>{lang === 'fr' ? <div>
+    <h2>Vendeur</h2><p>{company.legal?.registered ? company.name : `${company.legal?.responsible || company.name}, à titre personnel`}, {company.legal?.address}. Contact : {company.contact?.email}.</p>
+    <h2>Prix et paiement</h2><p>Prix en francs suisses, {shop.vat_registered ? 'TVA incluse' : 'TVA non applicable (activité non assujettie)'}. Paiement en ligne par TWINT ou carte (Stripe) lorsque disponible, sinon à la remise ou sur facture.</p>
+    <h2>Livraison et retrait</h2><p>{shop.pickup ? 'Retrait possible sur rendez-vous. ' : ''}{shop.shipping_cents ? `Livraison par la Poste suisse : ${chf(shop.shipping_cents)} CHF${shop.free_shipping_from_cents ? `, offerte dès ${chf(shop.free_shipping_from_cents)} CHF` : ''}. ` : ''}Délai indicatif : {shop.delivery_days || 6} jours ouvrés.</p>
+    <h2>Retour</h2><p>Vous pouvez retourner un article non personnalisé dans les {shop.return_days || 14} jours suivant la réception, dans son état d'origine ; les frais de retour sont à votre charge. Les pièces sur mesure ne sont pas reprises.</p>
+    <h2>Garantie et litiges</h2><p>Garantie légale selon le Code des obligations suisse. Droit suisse, for au domicile du vendeur.</p></div>
+  : <div>
+    <h2>Seller</h2><p>{company.legal?.registered ? company.name : `${company.legal?.responsible || company.name}, as a private individual`}, {company.legal?.address}. Contact: {company.contact?.email}.</p>
+    <h2>Prices and payment</h2><p>Prices in Swiss francs, {shop.vat_registered ? 'VAT included' : 'VAT not applicable (non-registered activity)'}. Online payment by TWINT or card (Stripe) when available, otherwise on pickup or on invoice.</p>
+    <h2>Delivery and pickup</h2><p>{shop.pickup ? 'Pickup by appointment. ' : ''}{shop.shipping_cents ? `Delivery by Swiss Post: CHF ${chf(shop.shipping_cents)}${shop.free_shipping_from_cents ? `, free from CHF ${chf(shop.free_shipping_from_cents)}` : ''}. ` : ''}Indicative lead time: {shop.delivery_days || 6} business days.</p>
+    <h2>Returns</h2><p>Non-customised items can be returned within {shop.return_days || 14} days of receipt in their original condition; return shipping is at your expense. Made-to-order pieces are not taken back.</p>
+    <h2>Warranty and disputes</h2><p>Statutory warranty under the Swiss Code of Obligations. Swiss law, jurisdiction at the seller's domicile.</p></div>}
+  </section>
+</Base>
