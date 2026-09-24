@@ -1,19 +1,22 @@
+# ⚠️ Identité du gabarit : NEUTRE. La plateforme réécrit ce fichier à la création de chaque
+# compagnie (provision_repo → company_yaml). Il ne doit nommer aucune compagnie réelle —
+# il a porté « Lumen Atelier » jusqu'au 24.09.2026.
 # La compagnie — édité depuis le deck (Centrale), jamais à la main par le client.
-name: Lumen Atelier
-slug: lumen-atelier
+name: Nouvelle compagnie
+slug: nouvelle-compagnie
 tagline:
-  fr: Des lampes uniques en bois recyclé, fabriquées à Lausanne.
-  en: One-of-a-kind lamps in reclaimed wood, made in Lausanne.
+  fr: ""
+  en: ""
 lang: fr                 # langue par défaut (servie à la racine)
 langs: [fr, en]          # langues publiées ; l'autre est servie sous /en/ ou /fr/
 accent: "#C98B3A"          # couleur d'accent du site
 contact:
-  email: hello@lumen-atelier.myaicompany.ch
+  email: ""
   phone: ""
-  city: Lausanne
+  city: ""
 legal:
   responsible: Alex Morel        # personne responsable (mentions légales : pas d'entreprise inscrite = la personne)
-  address: Lausanne, Suisse
+  address: ""
   registered: false              # true = inscrite au RC (raison individuelle / Sàrl)
   ide: ""
 social: {}

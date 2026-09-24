@@ -1,51 +1,49 @@
-# Le contenu des pages, par langue — modifié par le client (formulaires du deck) ou par un agent (branche → aperçu → validation).
+# Le contenu des pages, par langue — écrit par le client (formulaires du deck) ou par un agent
+# (branche → aperçu → validation). Voir docs/contract.md.
+#
+# ⚠️ CE FICHIER EST VIDE, ET IL DOIT LE RESTER. C'est le contenu de départ de toute compagnie qui
+# prend ce kit : un site neuf ne dit donc rien tant que son propriétaire n'a rien publié.
+# Il a longtemps porté le texte de Lumen Atelier, la compagnie de démonstration — chaque nouveau
+# client publiait un site d'atelier de lampes lausannois sous son propre nom, et personne ne le
+# voyait : le contenu d'un kit ne passe pas par la relecture Nina QA, qui ne juge que ce qu'un
+# agent écrit. Trouvé le 24.09.2026 par Nick sur le compte de la revue éditoriale de TAAFT.
+# Les seules chaînes qui restent sont des étiquettes d'interface (panier, rupture), pas du contenu.
 fr:
   hero:
-    title: La lumière a une seconde vie.
-    text: Chaque lampe Lumen est faite à la main à Lausanne, à partir de bois récupéré sur des chantiers. Aucune ne ressemble à une autre.
-    cta: Demander une lampe
-  services_title: Ce qu'on fait
-  services:
-    - title: Lampes de table
-      text: Pièces uniques, de 89 à 240 CHF, prêtes en 6 jours.
-    - title: Sur mesure
-      text: Une lampe à partir de votre bois, d'un souvenir, d'un lieu.
-    - title: Boutiques et dépôt-vente
-      text: Lots de 4, conditions pour les boutiques de déco et les cafés.
+    title: ""
+    text: ""
+    cta: ""
+  services_title: ""
+  services: []
   about:
-    title: L'atelier
-    text: Un établi, une scie, des chutes de chêne et de mélèze qui auraient fini en copeaux. Quarante lampes vendues sans une pub, uniquement par le bouche-à-oreille.
+    title: ""
+    text: ""
   shop:
-    title: La boutique
-    text: Chaque pièce est unique. Ce qui est en stock part en 6 jours ; le sur-mesure se discute.
+    title: ""
+    text: ""
     cta: Voir la boutique
     add: Ajouter au panier
     soldout: Épuisé
+  # gallery (optionnel, posé par le Studio) : {title, text, items: [{src: /images/x.jpg, alt: légende}]}
   contact:
-    title: Parlons de votre lampe
-    text: Dites-nous ce que vous imaginez, on vous répond sous 48 heures.
+    title: ""
+    text: ""
 en:
   hero:
-    title: Light gets a second life.
-    text: Every Lumen lamp is handmade in Lausanne from wood reclaimed on building sites. No two are alike.
-    cta: Ask for a lamp
-  services_title: What we do
-  services:
-    - title: Table lamps
-      text: One-of-a-kind pieces, CHF 89 to 240, ready in 6 days.
-    - title: Made to order
-      text: A lamp from your own wood, a memory, a place.
-    - title: Shops and consignment
-      text: Batches of 4, terms for decor shops and cafés.
+    title: ""
+    text: ""
+    cta: ""
+  services_title: ""
+  services: []
   about:
-    title: The workshop
-    text: A bench, a saw, oak and larch offcuts that would have ended up as shavings. Forty lamps sold without a single ad, by word of mouth only.
+    title: ""
+    text: ""
   shop:
-    title: The shop
-    text: Every piece is unique. In-stock items ship within 6 days; made-to-order is a conversation.
+    title: ""
+    text: ""
     cta: See the shop
     add: Add to basket
     soldout: Sold out
   contact:
-    title: Let's talk about your lamp
-    text: Tell us what you have in mind, we answer within 48 hours.
+    title: ""
+    text: ""

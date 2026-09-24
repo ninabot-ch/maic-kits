@@ -4,8 +4,9 @@ import ContactForm from '../../components/ContactForm.astro';
 import { company, content, LANGS, DEFAULT, UI } from '../../site.js';
 export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
 const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+const has = v => typeof v === 'string' && v.trim().length > 0;
 ---
-<Base lang={lang} path="/contact/" title={T.contact} description={C.contact.text}>
-  <section class="hero"><h1>{C.contact.title}</h1><p>{C.contact.text}{company.contact?.email ? ` ${T.or_email} ${company.contact.email}.` : ''}</p></section>
+<Base lang={lang} path="/contact/" title={T.contact} description={C.contact.text || ''}>
+  <section class="hero"><h1>{has(C.contact.title) ? C.contact.title : T.contact}</h1>{(has(C.contact.text) || company.contact?.email) ? <p>{C.contact.text}{company.contact?.email ? ` ${T.or_email} ${company.contact.email}.` : ''}</p> : null}</section>
   <ContactForm lang={lang} title={T.write_us} text={T.we_answer} />
 </Base>
