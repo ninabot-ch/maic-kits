@@ -32,3 +32,12 @@ export const UI = {
         legal_title: 'Legal notice', legal_owner: 'Site owner', legal_person: 'as a private individual (activity not registered in the commercial register)', legal_host: 'Hosting', legal_host_text: 'MyAiCompany, a service of Ninabot Sàrl, Chemin de Riantbosson 19, 1217 Meyrin, Switzerland.', legal_content: 'Content', legal_content_text: 'The texts and images on this site belong to their author. Any reproduction requires their consent.',
         priv_title: 'Privacy', priv_sub: 'What this site does with your data, in plain words.', priv_what: 'What is collected', priv_what_text: 'Only what you type in the contact form: name, e-mail, message. No tracking cookies, no advertising.', priv_why: 'Why', priv_why_text: 'To answer you. Your details are neither sold nor passed on to third parties, except the technical providers the site needs (hosting in Switzerland by MyAiCompany / Ninabot Sàrl, e-mail delivery).', priv_how_long: 'For how long', priv_how_long_text: 'As long as it takes to handle your request, then at most 24 months, unless you become a customer.', priv_rights: 'Your rights', priv_rights_text: 'Access, correction, deletion: write to', priv_law: 'Legal basis: Swiss Federal Act on Data Protection (FADP).', lang_name: 'English' },
 };
+
+/* Fiche produit dans la langue de la page. Le Traducteur écrit les traductions dans `i18n` (une entrée par
+   langue) ; sans cette fonction elles ne sont JAMAIS affichées — la boutique anglaise d'une compagnie
+   française montrait des noms français, relevé par la revue de There's An AI For That le 25.09.2026. */
+export const fiche = (p, lang) => {
+  const t = (p && p.i18n && p.i18n[lang]) || null;
+  if (!t) return p;
+  return { ...p, name: (t.name || '').trim() || p.name, description: (t.description || '').trim() || p.description };
+};

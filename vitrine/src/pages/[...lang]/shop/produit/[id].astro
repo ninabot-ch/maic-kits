@@ -1,8 +1,9 @@
 ---
 import Base from '../../../../layouts/Base.astro';
-import { company, content, LANGS, DEFAULT, UI, products, shop, chf, shopEnabled } from '../../../../site.js';
+import { fiche, company, content, LANGS, DEFAULT, UI, products, shop, chf, shopEnabled } from '../../../../site.js';
 export function getStaticPaths() { const out = []; if (!shopEnabled) return out; for (const l of LANGS) for (const p of products) out.push({ params: { lang: l === DEFAULT ? undefined : l, id: String(p.id) }, props: { lang: l, product: p } }); return out; }
-const { lang, product: p } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr; const initial = n => String(n).replace(/[«»"“”]/g, '').trim().slice(0, 1).toUpperCase();
+const { lang, product: p0 } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr; const initial = n => String(n).replace(/[«»"“”]/g, '').trim().slice(0, 1).toUpperCase();
+const p = fiche(p0, lang);   // fiche dans la langue de la page (Traducteur)
 ---
 <Base lang={lang} path={'/shop/produit/' + p.id + '/'} title={p.name} description={p.description} image={p.image}>
   <section class="product-hero"><div class={p.image ? "ph has-img" : "ph"}>{p.image ? <img src={p.image} alt={p.name} /> : <span aria-hidden="true">{initial(p.name)}</span>}</div><div><h1 class="page">{p.name}</h1><p class="note" style="font-size:1.05rem;margin:14px 0">{p.description}</p><div class="price" style="font-size:1.6rem">{chf(p.price_cents)} CHF</div><p class="stock">{p.stock === null || p.stock === undefined ? T.made_to_order : p.stock > 0 ? `${p.stock} ${T.in_stock}` : (C.shop?.soldout || 'Épuisé')}</p>
