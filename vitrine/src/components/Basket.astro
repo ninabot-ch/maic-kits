@@ -13,8 +13,8 @@ const { lang = DEFAULT } = Astro.props; const T = UI[lang] || UI.fr; const p = p
   </div>
   <form id="checkout-form" hidden style="margin-top:24px">
     <h2>{T.your_details}</h2>
-    <label>{UI[lang].f_name}<input name="name" required autocomplete="name"></label>
-    <label>{UI[lang].f_email}<input name="email" type="email" required autocomplete="email"></label>
+    <label>{T.f_name}<input name="name" required autocomplete="name"></label>
+    <label>{T.f_email}<input name="email" type="email" required autocomplete="email"></label>
     {shop.pickup && (shop.mode ? shop.mode !== 'none' : (shop.shipping_cents ?? 0) > 0) ? <fieldset style="border:1px solid var(--line);border-radius:10px;padding:10px 14px"><legend class="note">{T.delivery}</legend>
       <label style="display:flex;gap:8px;align-items:center"><input type="radio" name="shipping" value="pickup" checked style="width:auto">{T.pickup} — {shop.pickup_note?.[lang] || shop.pickup_note?.fr || ''}</label>
       <label style="display:flex;gap:8px;align-items:center"><input type="radio" name="shipping" value="post" style="width:auto">{T.deliver} — <span id="ship-label">{shop.mode === 'table' ? (lang === 'fr' ? 'estimée au poids' : 'estimated by weight') : chf(shop.flat_cents ?? shop.shipping_cents ?? 0) + ' CHF'}</span>{(shop.free_from_cents ?? shop.free_shipping_from_cents) ? ` (${T.free_from} ${chf(shop.free_from_cents ?? shop.free_shipping_from_cents)} CHF)` : ''}</label></fieldset> : null}

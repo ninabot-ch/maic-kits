@@ -1,0 +1,44 @@
+---
+// Page de dépôt d'un avis — capacité « Avis ». Le client arrive avec un lien à usage unique (?t=…) reçu après
+// sa commande. Rien n'est publié ici : l'avis part en attente, la compagnie le relit et décide.
+import Base from '../../layouts/Base.astro';
+import { content, LANGS, DEFAULT, UI } from '../../site.js';
+export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+---
+<Base lang={lang} path="/avis/" title={T.rev_title} description={T.rev_sub}>
+  <section class="hero"><h1>{T.rev_title}</h1><p>{T.rev_sub}</p></section>
+  <section class="wrap" id="rev">
+    <form id="rev-form" class="join-form" method="post" action="/api/public/review">
+      <div class="row">
+        <label class="f"><span>{T.rev_note}</span>
+          <select name="rating" required>
+            <option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option>
+            <option value="2">★★</option><option value="1">★</option>
+          </select></label>
+        <label class="f wide"><span>{T.rev_text}</span><input type="text" name="text" maxlength="600" placeholder={T.rev_ph}></label>
+        <button class="btn big" type="submit">{T.rev_send}</button>
+      </div>
+      <p class="note" id="rev-note">{T.rev_hint}</p>
+    </form>
+  </section>
+  <script is:inline define:vars={{ T }}>
+    const p = new URLSearchParams(location.search), t = p.get('t'), f = document.getElementById('rev-form'), n = document.getElementById('rev-note');
+    if (!t) { f.style.display = 'none'; n.textContent = T.rev_nolink; }
+    else fetch('/api/public/review?t=' + encodeURIComponent(t)).then(r => r.json()).then(d => {
+      if (!d.ok) { f.style.display = 'none'; n.textContent = T.rev_expired; }
+    }).catch(() => {});
+    f.addEventListener('submit', async e => {
+      e.preventDefault();
+      const fd = new FormData(f);
+      n.textContent = T.rev_sending;
+      try {
+        const r = await fetch('/api/public/review', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ t, rating: fd.get('rating'), text: fd.get('text') || '' }) });
+        const d = await r.json();
+        if (r.ok) { f.style.display = 'none'; n.textContent = T.rev_ok; }
+        else n.textContent = d.error || T.rev_err;
+      } catch (err) { n.textContent = T.rev_err; }
+    });
+  </script>
+</Base>

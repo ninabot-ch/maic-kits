@@ -1,17 +1,39 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ContactForm from '../../components/ContactForm.astro';
-import { company, content, LANGS, DEFAULT, UI, tagline, shopEnabled } from '../../site.js';
+import { company, content, LANGS, DEFAULT, UI, reviews, reviewsAvg, tagline, shopEnabled } from '../../site.js';
 export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
 const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr; const PFX = lang === DEFAULT ? '' : '/' + lang;
-// Un site neuf n'a AUCUN contenu (content.yaml est vide par construction) : on n'affiche que les
-// sections que son propriétaire a réellement publiées, jamais un titre vide ni une carte vide.
-const has = v => typeof v === 'string' && v.trim().length > 0;
-const services = (C.services || []).filter(s => has(s?.title) || has(s?.text));
+const hasGallery = !!(C.gallery && C.gallery.items && C.gallery.items.length);
 ---
 <Base lang={lang} path="/">
-  <section class="hero"><div><p class="kicker">{tagline(lang)}</p>{has(C.hero.title) ? <h1>{C.hero.title}</h1> : <h1>{company.name}</h1>}{has(C.hero.text) ? <p class="lead">{C.hero.text}</p> : null}<div class="cta">{has(C.hero.cta) ? <a class="btn" href={PFX + '/contact/'}>{C.hero.cta}</a> : null}{shopEnabled ? <a class="btn ghost" href={PFX + '/shop/'}>{C.shop?.cta || T.nav_shop}</a> : null}</div></div><div class="art" aria-hidden="true"><span>{company.name.trim().slice(0, 1)}</span></div></section>
-  {services.length ? <section id="services" class="alt">{has(C.services_title) ? <h2>{C.services_title}</h2> : null}<div class="grid">{services.map(s => <div class="card">{has(s.title) ? <h3>{s.title}</h3> : null}{has(s.text) ? <p>{s.text}</p> : null}</div>)}</div></section> : null}
-  {(has(C.about.title) || has(C.about.text)) ? <section id="about"><div class="about"><div>{has(C.about.title) ? <h2>{C.about.title}</h2> : null}{has(C.about.text) ? <p class="note" style="font-size:1rem">{C.about.text}</p> : null}</div>{has(C.hero.title) ? <blockquote>{C.hero.title}</blockquote> : null}</div></section> : null}
-  {(has(C.contact.title) || has(C.contact.text)) ? <ContactForm lang={lang} title={C.contact.title} text={C.contact.text} /> : null}
+  <section class="hero"><div><p class="kicker">{tagline(lang)}</p><h1>{C.hero.title}</h1><p class="lead">{C.hero.text}</p><div class="cta"><a class="btn" href={PFX + '/contact/'}>{C.hero.cta}</a>{hasGallery ? <a class="btn ghost" href="#gallery">{C.gallery.cta || C.gallery.title}</a> : null}{shopEnabled ? <a class="btn ghost" href={PFX + '/shop/'}>{C.shop?.cta || T.nav_shop}</a> : null}</div></div><div class="art" aria-hidden="true"><span>{company.name.trim().slice(0, 1)}</span></div></section>
+  <section id="services" class="alt"><h2>{C.services_title || ''}</h2><div class="grid">{(C.services || []).map(s => <div class="card"><h3>{s.title}</h3><p>{s.text}</p></div>)}</div></section>
+  <section id="about"><div class="about"><div><h2>{C.about.title}</h2><p class="note" style="font-size:1rem">{C.about.text}</p></div><blockquote>{C.hero.title}</blockquote></div></section>
+  {hasGallery ? <section id="gallery" class="alt">
+    <h2>{C.gallery.title}</h2>{C.gallery.text ? <p class="note">{C.gallery.text}</p> : null}
+    <div class="gallery">{((C.gallery || {}).items || []).map((g, i) => <figure><button type="button" class="shot" data-i={i} aria-label={g.alt || T.zoom}><img src={g.src} alt={g.alt || ''} loading="lazy" decoding="async" /></button>{g.alt ? <figcaption>{g.alt}</figcaption> : null}</figure>)}</div>
+    <dialog class="lightbox" id="lb" aria-label={C.gallery.title}>
+      <button class="lb-x" id="lb-x" aria-label={T.close}>×</button>
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label={T.prev}>‹</button>
+      <img id="lb-img" src="" alt="" />
+      <button class="lb-nav lb-next" id="lb-next" aria-label={T.next}>›</button>
+      <p class="lb-cap" id="lb-cap"></p>
+    </dialog>
+    <script is:inline define:vars={{ items: C.gallery.items }}>
+      (function () {
+        var lb = document.getElementById('lb'), img = document.getElementById('lb-img'), cap = document.getElementById('lb-cap'), i = 0;
+        if (!lb || !lb.showModal) return;
+        function show(n) { i = (n + items.length) % items.length; img.src = items[i].src; img.alt = items[i].alt || ''; cap.textContent = items[i].alt || ''; }
+        document.querySelectorAll('.gallery .shot').forEach(function (b) { b.addEventListener('click', function () { show(+b.dataset.i); lb.showModal(); }); });
+        document.getElementById('lb-x').addEventListener('click', function () { lb.close(); });
+        document.getElementById('lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(i - 1); });
+        document.getElementById('lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(i + 1); });
+        lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+        lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') show(i + 1); if (e.key === 'ArrowLeft') show(i - 1); });
+      })();
+    </script>
+  </section> : null}
+  <ContactForm lang={lang} title={C.contact.title} text={C.contact.text} />
+  {reviews.length ? <section id="avis" class="alt"><div class="wrap"><h2>{T.rev_wall}{reviewsAvg.moyenne ? <span class="muted"> · {reviewsAvg.moyenne}/5 ({reviewsAvg.n})</span> : null}</h2><div class="grid">{reviews.slice(0, 6).map(r => <div class="card"><p><b>{'★'.repeat(r.note)}<span class="muted">{'★'.repeat(5 - r.note)}</span></b></p><p>{r.texte}</p><p class="muted small">{r.nom}{r.reponse ? ' — ' : ''}{r.reponse}</p></div>)}</div></div></section> : null}
 </Base>

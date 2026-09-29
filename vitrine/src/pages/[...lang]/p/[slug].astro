@@ -1,0 +1,21 @@
+---
+// Pages LIBRES du site (connecteur site.page, docs/harness.md étape 5) : `content.yaml` → <lang>.pages.<slug> = {title, nav?,
+// intro?, sections: [{title, text}], cta?: {text, href}}. Texte seulement ; rendues sous /p/<slug>/ dans chaque langue en ligne
+// (une page non traduite retombe sur la langue principale, comme le reste du contenu).
+import Base from '../../../layouts/Base.astro';
+import { content, LANGS, DEFAULT } from '../../../site.js';
+export function getStaticPaths() {
+  const out = [];
+  for (const l of LANGS) {
+    const pages = content(l).pages || {};
+    for (const slug of Object.keys(pages)) out.push({ params: { lang: l === DEFAULT ? undefined : l, slug }, props: { lang: l, slug } });
+  }
+  return out;
+}
+const { lang, slug } = Astro.props; const C = content(lang); const PFX = lang === DEFAULT ? '' : '/' + lang;
+const P = (C.pages || {})[slug] || { title: slug, sections: [] };
+---
+<Base lang={lang} path={`/p/${slug}/`} title={P.title} description={P.intro || ''}>
+  <section class="hero" style="grid-template-columns:minmax(0,1fr)"><div><h1 class="page">{P.title}</h1>{P.intro ? <p class="lead">{P.intro}</p> : null}{P.cta && P.cta.text ? <div class="cta"><a class="btn" href={(P.cta.href || '/contact/').startsWith('#') ? (P.cta.href) : PFX + (P.cta.href || '/contact/')}>{P.cta.text}</a></div> : null}</div></section>
+  {(P.sections || []).map(s => <section class="alt"><h2>{s.title}</h2><p>{s.text}</p></section>)}
+</Base>
