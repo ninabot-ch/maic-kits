@@ -1,0 +1,469 @@
+# ÉCHANTILLON du thème « boutique-mode » — contenu FICTIF (Maison Salomé, Genève). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Atelier de couture — Genève, Eaux-Vives
+    title: Vêtements faits pour durer, et pour vous.
+    text: Des pièces coupées à vos mesures et de petites séries en lin, laine et soie, cousues dans l'atelier des Eaux-Vives.
+    cta: Prendre rendez-vous
+    cta2: Voir les pièces
+    cta2_href: "#services"
+  about:
+    title: La maison
+    text: Salomé Girard a appris la coupe à Paris avant de revenir à Genève ouvrir son atelier. Elle dessine deux collections par an, en série de douze pièces au plus, et coud le sur-mesure elle-même.
+    quote: Une pièce bien coupée ne se démode pas ; elle s'use, et c'est différent.
+    icon: scissors
+  split:
+    - title: Les matières
+      text: Lin de Normandie, laine des Grisons, soie italienne. Les tissus sont choisis en rouleau, jamais sur catalogue, et coupés dans le fil.
+      icon: leaf
+  story:
+    kicker: Une pièce sur mesure
+    title: Du premier essayage à la livraison.
+    steps:
+      - label: Rendez-vous 1
+        title: Les mesures
+        text: Une heure à l'atelier. On parle de ce que vous portez, on prend vingt-deux mesures, on choisit le tissu en rouleau.
+        visual:
+          kind: list
+          title: Vingt-deux mesures
+          items: [Épaules et carrure, Tour de poitrine et de taille, Longueur de manche et d'ourlet]
+      - label: Semaine 2
+        title: La toile
+        text: Un premier modèle en coton écru, pour régler la coupe sur vous avant de couper le tissu définitif.
+        visual:
+          kind: steps
+          title: L'atelier
+          done: 2
+          items: [Patron à vos mesures, Toile d'essai, Coupe du tissu, Montage et finitions]
+      - label: Semaine 4
+        title: L'essayage
+        text: La pièce presque finie, sans doublure. On ajuste au millimètre — c'est là que tout se joue.
+        visual:
+          kind: quote
+          text: On n'achète pas une robe, on adopte une coupe.
+          author: Salomé Girard
+      - label: Semaine 6
+        title: La livraison
+        text: Finitions main, boutonnières cousues, étiquette brodée à votre nom. Retouches gratuites pendant un an.
+        visual:
+          kind: stat
+          value: "6 sem."
+          label: Du premier rendez-vous à la livraison
+          sub: Retouches offertes pendant un an
+  services_title: Les pièces
+  services:
+    - title: Sur mesure
+      text: Robes, vestes, pantalons — coupés à vos mesures, cousus main.
+      detail: Trois rendez-vous, six semaines. Prix selon la pièce et le tissu, annoncé avant la toile.
+      icon: scissors
+      price: dès 890 CHF
+    - title: Séries courtes
+      text: Deux collections par an, douze exemplaires par modèle, numérotés.
+      detail: Disponibles à l'atelier et en boutique en ligne. Quand c'est fini, c'est fini.
+      icon: tag
+      price: 240 à 620 CHF
+    - title: Retouches
+      text: Vos vêtements existants, ajustés comme s'ils avaient été faits ici.
+      detail: Ourlets, cintrage, remplacement de doublure. Devis en dix minutes à l'atelier.
+      icon: wrench
+      price: dès 40 CHF
+  proof:
+    items:
+      - {value: "12", label: Exemplaires par modèle, note: Numérotés}
+      - {value: "22", label: Mesures prises, note: Au premier rendez-vous}
+      - {value: "1 an", label: Retouches offertes, note: Sur le sur-mesure}
+  pricing:
+    title: Tarifs
+    text: Tissu compris, sauf mention.
+    items:
+      - name: Retouche
+        price: 40 CHF
+        unit: dès
+        features: [Devis en 10 minutes, Prêt sous 5 jours, Même finition que l'atelier]
+        cta: Passer à l'atelier
+      - name: Sur mesure
+        price: 890 CHF
+        unit: dès
+        features: [Trois rendez-vous, Toile d'essai, Retouches un an]
+        featured: true
+        badge: La signature
+        cta: Prendre rendez-vous
+      - name: Série courte
+        price: 240 CHF
+        unit: dès
+        features: [Douze exemplaires, Numérotés, Retour 14 jours]
+        cta: Voir la boutique
+        href: /shop/
+  faq:
+    title: Questions
+    items:
+      - q: Combien de temps pour une pièce sur mesure ?
+        a: Six semaines, avec trois rendez-vous à l'atelier. Pour une date précise, prévenez dès le premier.
+      - q: Faites-vous du sur-mesure pour homme ?
+        a: Oui — vestes, pantalons, chemises. Les mêmes six semaines, les mêmes retouches offertes.
+      - q: Peut-on apporter son tissu ?
+        a: Volontiers, si sa qualité le permet. On le regarde ensemble avant de s'engager.
+  contact:
+    title: Un rendez-vous, une question ?
+    text: L'atelier reçoit sur rendez-vous, du mardi au samedi.
+  cta:
+    title: Une pièce à vos mesures.
+    text: Premier rendez-vous d'une heure, sans engagement.
+    button: Prendre rendez-vous
+  shop:
+    title: La boutique
+    text: Les séries courtes de la saison, douze exemplaires par modèle.
+    cta: Voir la boutique
+    add: Ajouter au panier
+    soldout: Série épuisée
+en:
+  hero:
+    kicker: Sewing atelier — Geneva, Eaux-Vives
+    title: Clothes made to last, and made for you.
+    text: Pieces cut to your measurements and small runs in linen, wool and silk, sewn in the Eaux-Vives atelier.
+    cta: Book an appointment
+    cta2: See the pieces
+    cta2_href: "#services"
+  about:
+    title: The house
+    text: Salomé Girard learned cutting in Paris before coming back to Geneva to open her atelier. She draws two collections a year, in runs of twelve pieces at most, and sews the made-to-measure herself.
+    quote: A well-cut piece does not go out of fashion; it wears, and that is different.
+    icon: scissors
+  split:
+    - title: The fabrics
+      text: Linen from Normandy, wool from Graubünden, Italian silk. Fabrics are chosen on the roll, never from a catalogue, and cut on grain.
+      icon: leaf
+  story:
+    kicker: A made-to-measure piece
+    title: From the first fitting to delivery.
+    steps:
+      - label: Appointment 1
+        title: Measurements
+        text: One hour at the atelier. We talk about what you wear, take twenty-two measurements, choose the fabric on the roll.
+        visual:
+          kind: list
+          title: Twenty-two measurements
+          items: [Shoulders and back width, Chest and waist, Sleeve and hem length]
+      - label: Week 2
+        title: The toile
+        text: A first model in unbleached cotton, to set the cut on you before cutting the final fabric.
+        visual:
+          kind: steps
+          title: The atelier
+          done: 2
+          items: [Pattern to your measurements, Test toile, Cutting the fabric, Assembly and finishing]
+      - label: Week 4
+        title: The fitting
+        text: The piece almost finished, without lining. We adjust to the millimetre — this is where everything is decided.
+        visual:
+          kind: quote
+          text: You do not buy a dress, you adopt a cut.
+          author: Salomé Girard
+      - label: Week 6
+        title: Delivery
+        text: Hand finishing, sewn buttonholes, label embroidered with your name. Free alterations for a year.
+        visual:
+          kind: stat
+          value: "6 wks"
+          label: From first appointment to delivery
+          sub: Alterations free for a year
+  services_title: The pieces
+  services:
+    - title: Made to measure
+      text: Dresses, jackets, trousers — cut to your measurements, hand sewn.
+      detail: Three appointments, six weeks. Price according to the piece and fabric, announced before the toile.
+      icon: scissors
+      price: from CHF 890
+    - title: Short runs
+      text: Two collections a year, twelve pieces per model, numbered.
+      detail: Available at the atelier and in the online shop. When it is gone, it is gone.
+      icon: tag
+      price: CHF 240 to 620
+    - title: Alterations
+      text: Your existing clothes, adjusted as if they had been made here.
+      detail: Hems, taking in, lining replacement. Quote in ten minutes at the atelier.
+      icon: wrench
+      price: from CHF 40
+  proof:
+    items:
+      - {value: "12", label: Pieces per model, note: Numbered}
+      - {value: "22", label: Measurements taken, note: At the first appointment}
+      - {value: "1 yr", label: Free alterations, note: On made to measure}
+  pricing:
+    title: Prices
+    text: Fabric included, unless stated.
+    items:
+      - name: Alteration
+        price: CHF 40
+        unit: from
+        features: [Quote in 10 minutes, Ready within 5 days, Same finish as the atelier]
+        cta: Come to the atelier
+      - name: Made to measure
+        price: CHF 890
+        unit: from
+        features: [Three appointments, Test toile, Alterations for a year]
+        featured: true
+        badge: The signature
+        cta: Book an appointment
+      - name: Short run
+        price: CHF 240
+        unit: from
+        features: [Twelve pieces, Numbered, 14-day returns]
+        cta: See the shop
+        href: /shop/
+  faq:
+    title: Questions
+    items:
+      - q: How long for a made-to-measure piece?
+        a: Six weeks, with three appointments at the atelier. For a fixed date, say so at the first one.
+      - q: Do you do made to measure for men?
+        a: Yes — jackets, trousers, shirts. The same six weeks, the same free alterations.
+      - q: Can I bring my own fabric?
+        a: Gladly, if its quality allows. We look at it together before committing.
+  contact:
+    title: An appointment, a question?
+    text: The atelier welcomes you by appointment, Tuesday to Saturday.
+  cta:
+    title: A piece to your measurements.
+    text: First one-hour appointment, no commitment.
+    button: Book an appointment
+  shop:
+    title: The shop
+    text: This season's short runs, twelve pieces per model.
+    cta: See the shop
+    add: Add to basket
+    soldout: Run sold out
+de:
+  hero:
+    kicker: Schneideratelier — Genf, Eaux-Vives
+    title: Kleider, die halten — und die zu Ihnen gehören.
+    text: Stücke nach Ihren Massen geschnitten und Kleinserien aus Leinen, Wolle und Seide, genäht im Atelier in Eaux-Vives.
+    cta: Termin vereinbaren
+    cta2: Die Stücke ansehen
+    cta2_href: "#services"
+  about:
+    title: Das Haus
+    text: Salomé Girard hat den Zuschnitt in Paris gelernt, bevor sie nach Genf zurückkam und ihr Atelier eröffnete. Sie entwirft zwei Kollektionen pro Jahr, in Serien von höchstens zwölf Stück, und näht das Mass selbst.
+    quote: Ein gut geschnittenes Stück kommt nicht aus der Mode; es nutzt sich ab, und das ist etwas anderes.
+    icon: scissors
+  split:
+    - title: Die Stoffe
+      text: Leinen aus der Normandie, Wolle aus Graubünden, italienische Seide. Die Stoffe werden am Ballen gewählt, nie aus dem Katalog, und im Fadenlauf geschnitten.
+      icon: leaf
+  story:
+    kicker: Ein Stück nach Mass
+    title: Von der ersten Anprobe bis zur Lieferung.
+    steps:
+      - label: Termin 1
+        title: Die Masse
+        text: Eine Stunde im Atelier. Wir sprechen darüber, was Sie tragen, nehmen zweiundzwanzig Masse, wählen den Stoff am Ballen.
+        visual:
+          kind: list
+          title: Zweiundzwanzig Masse
+          items: [Schultern und Rückenbreite, Brust- und Taillenumfang, Ärmel- und Saumlänge]
+      - label: Woche 2
+        title: Das Nesselmodell
+        text: Ein erstes Modell aus rohem Baumwollstoff, um den Schnitt an Ihnen einzustellen, bevor der endgültige Stoff geschnitten wird.
+        visual:
+          kind: steps
+          title: Das Atelier
+          done: 2
+          items: [Schnittmuster nach Ihren Massen, Nesselmodell, Zuschnitt des Stoffs, Montage und Ausarbeitung]
+      - label: Woche 4
+        title: Die Anprobe
+        text: Das Stück fast fertig, ohne Futter. Wir passen auf den Millimeter an — hier entscheidet sich alles.
+        visual:
+          kind: quote
+          text: Man kauft kein Kleid, man übernimmt einen Schnitt.
+          author: Salomé Girard
+      - label: Woche 6
+        title: Die Lieferung
+        text: Handausarbeitung, genähte Knopflöcher, Etikett mit Ihrem Namen bestickt. Änderungen ein Jahr lang gratis.
+        visual:
+          kind: stat
+          value: "6 Wo."
+          label: Vom ersten Termin bis zur Lieferung
+          sub: Änderungen ein Jahr lang gratis
+  services_title: Die Stücke
+  services:
+    - title: Nach Mass
+      text: Kleider, Jacken, Hosen — nach Ihren Massen geschnitten, von Hand genäht.
+      detail: Drei Termine, sechs Wochen. Preis je nach Stück und Stoff, vor dem Nesselmodell angekündigt.
+      icon: scissors
+      price: ab CHF 890
+    - title: Kleinserien
+      text: Zwei Kollektionen pro Jahr, zwölf Exemplare pro Modell, nummeriert.
+      detail: Im Atelier und im Online-Shop erhältlich. Wenn sie weg sind, sind sie weg.
+      icon: tag
+      price: CHF 240 bis 620
+    - title: Änderungen
+      text: Ihre vorhandenen Kleider, angepasst, als wären sie hier entstanden.
+      detail: Säume, Taillieren, Futterersatz. Offerte in zehn Minuten im Atelier.
+      icon: wrench
+      price: ab CHF 40
+  proof:
+    items:
+      - {value: "12", label: Exemplare pro Modell, note: Nummeriert}
+      - {value: "22", label: Genommene Masse, note: Beim ersten Termin}
+      - {value: "1 Jahr", label: Gratis-Änderungen, note: Bei Massarbeit}
+  pricing:
+    title: Preise
+    text: Stoff inbegriffen, sofern nicht anders vermerkt.
+    items:
+      - name: Änderung
+        price: CHF 40
+        unit: ab
+        features: [Offerte in 10 Minuten, Fertig innert 5 Tagen, Gleiche Ausarbeitung wie im Atelier]
+        cta: Im Atelier vorbeikommen
+      - name: Nach Mass
+        price: CHF 890
+        unit: ab
+        features: [Drei Termine, Nesselmodell, Änderungen ein Jahr]
+        featured: true
+        badge: Die Signatur
+        cta: Termin vereinbaren
+      - name: Kleinserie
+        price: CHF 240
+        unit: ab
+        features: [Zwölf Exemplare, Nummeriert, Rückgabe 14 Tage]
+        cta: Zum Shop
+        href: /shop/
+  faq:
+    title: Fragen
+    items:
+      - q: Wie lange dauert ein Stück nach Mass?
+        a: Sechs Wochen, mit drei Terminen im Atelier. Für einen festen Termin sagen Sie es beim ersten.
+      - q: Machen Sie Massarbeit für Herren?
+        a: Ja — Jacken, Hosen, Hemden. Dieselben sechs Wochen, dieselben Gratis-Änderungen.
+      - q: Kann ich eigenen Stoff mitbringen?
+        a: Gern, wenn seine Qualität es erlaubt. Wir schauen ihn gemeinsam an, bevor wir uns festlegen.
+  contact:
+    title: Ein Termin, eine Frage?
+    text: Das Atelier empfängt nach Vereinbarung, Dienstag bis Samstag.
+  cta:
+    title: Ein Stück nach Ihren Massen.
+    text: Erster einstündiger Termin, ohne Verpflichtung.
+    button: Termin vereinbaren
+  shop:
+    title: Der Shop
+    text: Die Kleinserien der Saison, zwölf Exemplare pro Modell.
+    cta: Zum Shop
+    add: In den Warenkorb
+    soldout: Serie ausverkauft
+it:
+  hero:
+    kicker: Atelier di sartoria — Ginevra, Eaux-Vives
+    title: Abiti fatti per durare, e fatti per voi.
+    text: Capi tagliati sulle vostre misure e piccole serie in lino, lana e seta, cuciti nell'atelier di Eaux-Vives.
+    cta: Prendere appuntamento
+    cta2: Vedere i capi
+    cta2_href: "#services"
+  about:
+    title: La maison
+    text: Salomé Girard ha imparato il taglio a Parigi prima di tornare a Ginevra ad aprire il suo atelier. Disegna due collezioni all'anno, in serie di dodici capi al massimo, e cuce il su misura lei stessa.
+    quote: Un capo ben tagliato non passa di moda; si consuma, ed è diverso.
+    icon: scissors
+  split:
+    - title: I tessuti
+      text: Lino di Normandia, lana dei Grigioni, seta italiana. I tessuti si scelgono in rotolo, mai su catalogo, e si tagliano in drittofilo.
+      icon: leaf
+  story:
+    kicker: Un capo su misura
+    title: Dalla prima prova alla consegna.
+    steps:
+      - label: Appuntamento 1
+        title: Le misure
+        text: Un'ora in atelier. Parliamo di ciò che portate, prendiamo ventidue misure, scegliamo il tessuto in rotolo.
+        visual:
+          kind: list
+          title: Ventidue misure
+          items: [Spalle e larghezza dorso, Giro petto e vita, Lunghezza manica e orlo]
+      - label: Settimana 2
+        title: La tela
+        text: Un primo modello in cotone grezzo, per regolare il taglio su di voi prima di tagliare il tessuto definitivo.
+        visual:
+          kind: steps
+          title: L'atelier
+          done: 2
+          items: [Cartamodello sulle vostre misure, Tela di prova, Taglio del tessuto, Montaggio e rifiniture]
+      - label: Settimana 4
+        title: La prova
+        text: Il capo quasi finito, senza fodera. Aggiustiamo al millimetro — è qui che si gioca tutto.
+        visual:
+          kind: quote
+          text: Non si compra un vestito, si adotta un taglio.
+          author: Salomé Girard
+      - label: Settimana 6
+        title: La consegna
+        text: Rifiniture a mano, asole cucite, etichetta ricamata con il vostro nome. Ritocchi gratuiti per un anno.
+        visual:
+          kind: stat
+          value: "6 sett."
+          label: Dal primo appuntamento alla consegna
+          sub: Ritocchi offerti per un anno
+  services_title: I capi
+  services:
+    - title: Su misura
+      text: Abiti, giacche, pantaloni — tagliati sulle vostre misure, cuciti a mano.
+      detail: Tre appuntamenti, sei settimane. Prezzo secondo il capo e il tessuto, annunciato prima della tela.
+      icon: scissors
+      price: da CHF 890
+    - title: Serie limitate
+      text: Due collezioni all'anno, dodici esemplari per modello, numerati.
+      detail: Disponibili in atelier e nel negozio online. Quando finiscono, finiscono.
+      icon: tag
+      price: da CHF 240 a 620
+    - title: Ritocchi
+      text: I vostri abiti esistenti, aggiustati come se fossero stati fatti qui.
+      detail: Orli, stringere, sostituzione della fodera. Preventivo in dieci minuti in atelier.
+      icon: wrench
+      price: da CHF 40
+  proof:
+    items:
+      - {value: "12", label: Esemplari per modello, note: Numerati}
+      - {value: "22", label: Misure prese, note: Al primo appuntamento}
+      - {value: "1 anno", label: Ritocchi offerti, note: Sul su misura}
+  pricing:
+    title: Prezzi
+    text: Tessuto compreso, salvo indicazione.
+    items:
+      - name: Ritocco
+        price: CHF 40
+        unit: da
+        features: [Preventivo in 10 minuti, Pronto entro 5 giorni, Stessa rifinitura dell'atelier]
+        cta: Passare in atelier
+      - name: Su misura
+        price: CHF 890
+        unit: da
+        features: [Tre appuntamenti, Tela di prova, Ritocchi per un anno]
+        featured: true
+        badge: La firma
+        cta: Prendere appuntamento
+      - name: Serie limitata
+        price: CHF 240
+        unit: da
+        features: [Dodici esemplari, Numerati, Reso entro 14 giorni]
+        cta: Vedere il negozio
+        href: /shop/
+  faq:
+    title: Domande
+    items:
+      - q: Quanto tempo per un capo su misura?
+        a: Sei settimane, con tre appuntamenti in atelier. Per una data precisa, avvisate dal primo.
+      - q: Fate su misura da uomo?
+        a: Sì — giacche, pantaloni, camicie. Le stesse sei settimane, gli stessi ritocchi offerti.
+      - q: Si può portare il proprio tessuto?
+        a: Volentieri, se la qualità lo permette. Lo guardiamo insieme prima di impegnarci.
+  contact:
+    title: Un appuntamento, una domanda?
+    text: L'atelier riceve su appuntamento, dal martedì al sabato.
+  cta:
+    title: Un capo sulle vostre misure.
+    text: Primo appuntamento di un'ora, senza impegno.
+    button: Prendere appuntamento
+  shop:
+    title: Il negozio
+    text: Le serie limitate della stagione, dodici esemplari per modello.
+    cta: Vedere il negozio
+    add: Aggiungere al carrello
+    soldout: Serie esaurita

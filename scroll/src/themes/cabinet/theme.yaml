@@ -1,0 +1,14 @@
+# Thème « cabinet » — conseil, juridique, finance : bleu nuit, or discret, serif, glissement latéral.
+label: {fr: Cabinet, en: Firm, de: Kanzlei, it: Studio}
+mood: dark
+fonts:
+  display: {family: "Playfair Display", fallback: "Georgia, 'Times New Roman', serif", files: [{file: playfair-600.woff2, weight: 600}]}
+  text: {family: "IBM Plex Sans", fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: plexsans-400.woff2, weight: 400}, {file: plexsans-600.woff2, weight: 600}]}
+colors: {bg: "#0E1B2E", bg-2: "#122238", ink: "#EEF2F7", muted: "#9FB0C6", line: "#243956", panel: "#142338", accent: "#C9A45C", accent-ink: "#0E1B2E", hero-a: "#0E1B2E", hero-b: "#1C3352", hero-ink: "#EEF2F7"}
+radius: {card: 6px, btn: 6px}
+shadow: "0 30px 60px -40px rgba(0,0,0,.8)"
+hero: editorial
+motion: slide
+sections: [hero, split, rail, story, proof, pricing, faq, contact, cta]
+alt: [proof]
+variants: {rail: pinned, proof: band}

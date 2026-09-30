@@ -1,0 +1,30 @@
+/* clinique — clair, vert doux, galets */
+[data-theme="clinique"] h1,[data-theme="clinique"] h2,[data-theme="clinique"] h3{letter-spacing:-.02em}
+[data-theme="clinique"] .home .hero--editorial .hero__media{border-radius:48% 52% 46% 54% / 52% 44% 56% 48%;box-shadow:none;aspect-ratio:1}
+[data-theme="clinique"] .home .hero__art{background:radial-gradient(circle at 30% 30%,#fff,transparent 40%),linear-gradient(160deg,var(--c-hero-a),var(--c-hero-b))}
+[data-theme="clinique"] .home .hero__art::before{content:"";position:absolute;right:-10%;bottom:-16%;width:60%;aspect-ratio:1;border-radius:50%;background:var(--c-accent);opacity:.18}
+[data-theme="clinique"] .home .hero__art::after{content:"";position:absolute;left:12%;top:10%;width:34%;aspect-ratio:1;border-radius:50%;background:#fff;opacity:.55}
+[data-theme="clinique"] .home .hero__initial{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--font-display);font-size:clamp(6rem,14vw,12rem);color:var(--c-accent);opacity:.9}
+[data-theme="clinique"] .home .hero__kicker{color:var(--c-accent)}
+[data-theme="clinique"] .home .hero__lead{color:var(--c-muted)}
+[data-theme="clinique"] .btn{background:var(--c-accent);color:#fff}
+[data-theme="clinique"] .btn:hover{background:var(--c-ink);color:#fff}
+[data-theme="clinique"] .btn.ghost{background:#fff;color:var(--c-ink);border-color:var(--c-line)}
+[data-theme="clinique"] .rail__card,[data-theme="clinique"] .pricing__card,[data-theme="clinique"] .proof__item,[data-theme="clinique"] .reviews__card{border:0;box-shadow:0 12px 40px -28px rgba(22,48,43,.35)}
+[data-theme="clinique"] .rail__ico{border-radius:999px;background:var(--c-bg-2);color:var(--c-accent)}
+[data-theme="clinique"] .rail__idx{display:none}
+[data-theme="clinique"] .proof__item{text-align:center;background:var(--c-bg-2)}
+[data-theme="clinique"] .story__frame{border:0;background:linear-gradient(160deg,#fff,var(--c-bg-2));border-radius:40px}
+[data-theme="clinique"] .story__visual .story__ico{border-radius:46% 54% 50% 50% / 50% 46% 54% 50%}
+[data-theme="clinique"] .story__rail li{background:var(--c-bg-2);border:0}
+[data-theme="clinique"] .split__visual{border-radius:52% 48% 50% 50% / 46% 54% 46% 54%;background:linear-gradient(160deg,var(--c-hero-b),var(--c-accent));aspect-ratio:1;max-width:420px;margin:0 auto}
+[data-theme="clinique"] .pricing__card--featured{background:var(--c-ink);color:#fff}
+[data-theme="clinique"] .pricing__card--featured .pricing__text,[data-theme="clinique"] .pricing__card--featured .pricing__price small{color:rgba(255,255,255,.7)}
+[data-theme="clinique"] .pricing__card--featured .pricing__features li{color:#fff}
+[data-theme="clinique"] .pricing__card--featured .pricing__features .ico{color:var(--c-hero-b)}
+[data-theme="clinique"] .faq__list{background:#fff;border:0;border-radius:var(--r-card);padding:8px 24px}
+[data-theme="clinique"] .cta__box{background:var(--c-ink);color:#fff}
+[data-theme="clinique"] .cta__box::after{content:"";position:absolute;right:-10%;top:-40%;width:50%;aspect-ratio:1;border-radius:50%;background:var(--c-accent);opacity:.5}
+[data-theme="clinique"] .cta__box>*{position:relative;z-index:1}
+[data-theme="clinique"] .cta__box .btn{background:#fff;color:var(--c-ink)}
+[data-theme="clinique"] header.top .brand i{border-radius:999px}

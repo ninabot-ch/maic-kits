@@ -1,0 +1,29 @@
+---
+// Hero — variantes `full` (plein écran, média derrière), `editorial` (deux colonnes) et `type` (typo géante), choisies par le
+// thème. Média : hero.media.video (mp4) + webm/poster/video_portrait… montés par scroll.js seulement (jamais dans le HTML servi,
+// jamais sous reduced-motion/saveData) ; repli hero.image ; sans rien : la matière du thème (.hero__art). Le H1 est le LCP.
+import { icon } from './icons.js';
+import { words } from '../site.js';
+const { C, T, lang, theme, prefix, tagline, company } = Astro.props;
+const H = C.hero || {}; const M = H.media || {}; const v = theme.hero || 'editorial';
+const href = (h, d) => (h || d).startsWith('#') || (h || d).startsWith('http') ? (h || d) : prefix + (h || d);
+const media = { 'data-video': M.video || null, 'data-webm': M.webm || null, 'data-poster': M.poster || null, 'data-video-portrait': M.video_portrait || null, 'data-webm-portrait': M.webm_portrait || null, 'data-poster-portrait': M.poster_portrait || null };
+const still = H.image || M.poster || null;
+---
+<section id="top" class={`hero hero--${v}`} data-scroll="hero" aria-labelledby="hero-title">
+  <div class="hero__media" aria-hidden="true" {...media}>
+    <div class="hero__art"><span class="hero__initial">{(company.name || '').trim().slice(0, 1)}</span></div>
+    {still ? <img class="hero__img" src={still} alt="" decoding="async" fetchpriority="high" /> : null}
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__inner wrap">
+    <p class="hero__kicker">{H.kicker || tagline}</p>
+    <h1 id="hero-title" class="hero__title reveal-title">{words(H.title).map((w, i) => <><span class="w" style={`--i:${i}`}>{w}</span>{' '}</>)}</h1>
+    {H.text ? <p class="hero__lead">{H.text}</p> : null}
+    <div class="hero__cta">
+      {H.cta ? <a class="btn" href={href(H.cta_href, '/contact/')}>{H.cta}</a> : null}
+      {H.cta2 ? <a class="btn ghost" href={href(H.cta2_href, '#services')}>{H.cta2}</a> : null}
+    </div>
+  </div>
+  <a class="hero__more" href="#next" aria-label={T.scroll_hint} set:html={icon('chevron')}></a>
+</section>

@@ -1,0 +1,429 @@
+# ÉCHANTILLON du thème « atelier » — contenu FICTIF (Rive & Fil, Vevey). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    title: Des livres qui tiennent une vie.
+    text: Carnets cousus main, reliures sur mesure et restauration de livres anciens, dans un petit atelier au bord du lac.
+    cta: Demander un devis
+    cta2: Voir les prestations
+  services_title: Ce que l'atelier fait
+  services_text: Quatre savoir-faire, un seul établi.
+  services:
+    - title: Reliure sur mesure
+      text: Un mémoire, un livre d'or, un recueil de famille — relié à votre format, dans le cuir ou la toile de votre choix.
+      detail: Comptez deux à trois semaines. Vous choisissez la couverture, le papier de garde et la dorure sur un échantillon avant le début du travail.
+      icon: book
+      price: dès 180 CHF
+    - title: Restauration
+      text: Dos décollé, coins usés, pages détachées — on répare sans effacer l'histoire du livre.
+      detail: Chaque restauration commence par un diagnostic gratuit à l'atelier. Les matériaux sont réversibles et sans acide.
+      icon: hammer
+      price: sur devis
+    - title: Carnets et papeterie
+      text: Carnets cousus, cahiers de croquis, papiers à lettres — des séries courtes, jamais deux pareils.
+      detail: Papiers suisses et italiens, couture copte ou japonaise, formats A6 à A4.
+      icon: paper
+      price: 24 à 68 CHF
+    - title: Ateliers du samedi
+      text: Repartez avec votre carnet cousu en une matinée, outils et papier fournis.
+      detail: Six personnes au plus, tous niveaux, dès 14 ans. Café et thé compris.
+      icon: users
+      price: 95 CHF
+  story:
+    kicker: Comment naît un livre
+    title: Quatre temps, tous à la main.
+    steps:
+      - label: Le papier
+        title: Choisir la feuille
+        text: Tout commence par le grain du papier. On le plie, on le compte, on l'assemble en cahiers.
+        visual: {kind: list, title: Trois papiers, items: [Vergé de Vaud — 120 g, Coton italien — 160 g, Washi japonais — 80 g]}
+      - label: La couture
+        title: Coudre les cahiers
+        text: Fil de lin ciré, aiguille, patience. La couture décide de la manière dont le livre s'ouvrira dans trente ans.
+        visual: {kind: steps, title: La couture copte, done: 2, items: [Plier les cahiers, Percer les stations, Coudre au fil de lin, Presser une nuit]}
+      - label: La couverture
+        title: Habiller le bloc
+        text: Toile, cuir ou papier marbré, cartons coupés au millimètre, dorure au fer chaud si vous le souhaitez.
+        visual: {kind: quote, text: "Un livre bien relié se lit à plat, sans forcer.", author: "Claire, relieuse"}
+      - label: La remise
+        title: Ouvrir le livre
+        text: On vous le remet à l'atelier, on l'ouvre ensemble, et on vous montre comment en prendre soin.
+        visual: {kind: map, city: Vevey, label: "Atelier — Vevey", caption: "Remise à l'atelier, trois semaines plus tard"}
+  about:
+    title: L'atelier
+    text: Un établi en chêne, une presse ancienne et des rouleaux de toile. Claire a appris le métier à Ascona avant d'ouvrir l'atelier de Vevey ; elle y travaille seule, sur commande, un livre après l'autre.
+    quote: Un livre bien relié se lit à plat, sans forcer. C'est à ça qu'on le reconnaît.
+    icon: book
+  proof:
+    items:
+      - {value: "2019", label: Ouverture de l'atelier, note: "Rue du Simplon, Vevey"}
+      - {value: "3 sem.", label: Délai moyen, note: "Reliure sur mesure"}
+      - {value: "6", label: Places par atelier, note: "Le samedi matin"}
+  pricing:
+    title: Les tarifs
+    text: Des prix posés, un devis pour tout ce qui sort du cadre.
+    items:
+      - name: Carnet cousu
+        price: 24 CHF
+        unit: dès
+        text: Séries courtes, en boutique et sur commande.
+        features: [Formats A6 à A4, Papier 120 g, Couture apparente]
+        cta: Voir la boutique
+        href: /shop/
+      - name: Reliure sur mesure
+        price: 180 CHF
+        unit: dès
+        text: Votre texte, votre format, votre couverture.
+        features: [Échantillons avant travail, Toile ou cuir, Dorure en option]
+        featured: true
+        badge: Le plus demandé
+      - name: Atelier du samedi
+        price: 95 CHF
+        unit: par personne
+        text: Une matinée pour coudre votre premier carnet.
+        features: [Outils et papier fournis, 6 personnes au plus, Dès 14 ans]
+        cta: Réserver une place
+  faq:
+    title: Questions fréquentes
+    items:
+      - q: Combien de temps pour une reliure ?
+        a: Deux à trois semaines en général. Pour une date précise (mariage, remise de diplôme), dites-le dès le devis.
+      - q: Pouvez-vous restaurer un livre très abîmé ?
+        a: "Souvent, oui. Apportez-le à l'atelier : le diagnostic est gratuit et on vous dit honnêtement ce qui est possible."
+      - q: Faites-vous des envois ?
+        a: Oui, en Suisse par la Poste, dans un emballage rigide. Les reliures sur mesure se remettent de préférence à l'atelier.
+      - q: Peut-on vous confier son propre papier ?
+        a: Avec plaisir, à condition qu'il supporte le pliage. On le teste ensemble avant de s'engager.
+  contact:
+    title: Parlons de votre livre
+    text: Décrivez le projet en quelques lignes, on vous répond sous 48 heures avec un devis.
+  cta:
+    title: Un livre à relier, un carnet à offrir ?
+    text: L'atelier reçoit sur rendez-vous, du mardi au samedi.
+    button: Écrire à l'atelier
+  shop:
+    title: La boutique
+    text: Carnets et papeterie en stock partent en quelques jours ; le sur-mesure se discute.
+    cta: Voir la boutique
+    add: Ajouter au panier
+    soldout: Épuisé
+en:
+  hero:
+    title: Books that last a lifetime.
+    text: Hand-sewn notebooks, bespoke bindings and restoration of old books, in a small workshop by the lake.
+    cta: Ask for a quote
+    cta2: See the services
+  services_title: What the workshop does
+  services_text: Four crafts, one bench.
+  services:
+    - title: Bespoke binding
+      text: A thesis, a guest book, a family collection — bound to your format, in the leather or cloth of your choice.
+      detail: Allow two to three weeks. You choose the cover, endpapers and gilding on a sample before work begins.
+      icon: book
+      price: from CHF 180
+    - title: Restoration
+      text: Loose spine, worn corners, detached pages — repaired without erasing the book's history.
+      detail: Every restoration starts with a free assessment at the workshop. Materials are reversible and acid-free.
+      icon: hammer
+      price: on quote
+    - title: Notebooks and stationery
+      text: Sewn notebooks, sketchbooks, writing paper — short runs, no two alike.
+      detail: Swiss and Italian papers, Coptic or Japanese stitching, A6 to A4.
+      icon: paper
+      price: CHF 24 to 68
+    - title: Saturday workshops
+      text: Leave with your own sewn notebook in one morning, tools and paper provided.
+      detail: Six people at most, all levels, from age 14. Coffee and tea included.
+      icon: users
+      price: CHF 95
+  story:
+    kicker: How a book is born
+    title: Four steps, all by hand.
+    steps:
+      - label: The paper
+        title: Choosing the sheet
+        text: It all starts with the grain of the paper. Folded, counted, gathered into sections.
+        visual: {kind: list, title: Three papers, items: [Laid paper from Vaud — 120 g, Italian cotton — 160 g, Japanese washi — 80 g]}
+      - label: The sewing
+        title: Sewing the sections
+        text: Waxed linen thread, a needle, patience. The sewing decides how the book will open thirty years from now.
+        visual: {kind: steps, title: Coptic sewing, done: 2, items: [Fold the sections, Punch the stations, Sew with linen thread, Press overnight]}
+      - label: The cover
+        title: Dressing the block
+        text: Cloth, leather or marbled paper, boards cut to the millimetre, hot-foil gilding if you wish.
+        visual: {kind: quote, text: "A well-bound book opens flat, without forcing.", author: "Claire, bookbinder"}
+      - label: The handover
+        title: Opening the book
+        text: We hand it over at the workshop, open it together, and show you how to care for it.
+        visual: {kind: map, city: Vevey, label: "Workshop — Vevey", caption: "Handed over at the workshop, three weeks later"}
+  about:
+    title: The workshop
+    text: An oak bench, an old press and rolls of cloth. Claire learned the craft in Ascona before opening the Vevey workshop; she works alone, to order, one book at a time.
+    quote: A well-bound book opens flat, without forcing. That is how you recognise it.
+    icon: book
+  proof:
+    items:
+      - {value: "2019", label: Workshop opened, note: "Rue du Simplon, Vevey"}
+      - {value: "3 wks", label: Average lead time, note: "Bespoke binding"}
+      - {value: "6", label: Seats per workshop, note: "Saturday mornings"}
+  pricing:
+    title: Prices
+    text: Set prices, and a quote for anything outside the frame.
+    items:
+      - name: Sewn notebook
+        price: CHF 24
+        unit: from
+        text: Short runs, in the shop and to order.
+        features: [A6 to A4, 120 g paper, Exposed stitching]
+        cta: See the shop
+        href: /shop/
+      - name: Bespoke binding
+        price: CHF 180
+        unit: from
+        text: Your text, your format, your cover.
+        features: [Samples before work, Cloth or leather, Optional gilding]
+        featured: true
+        badge: Most requested
+      - name: Saturday workshop
+        price: CHF 95
+        unit: per person
+        text: One morning to sew your first notebook.
+        features: [Tools and paper provided, 6 people at most, From age 14]
+        cta: Book a seat
+  faq:
+    title: Frequently asked questions
+    items:
+      - q: How long does a binding take?
+        a: Two to three weeks in general. For a fixed date (wedding, graduation), say so at the quote stage.
+      - q: Can you restore a badly damaged book?
+        a: Often, yes. Bring it to the workshop — the assessment is free and we tell you honestly what is possible.
+      - q: Do you ship?
+        a: Yes, within Switzerland by post, in rigid packaging. Bespoke bindings are best collected at the workshop.
+      - q: Can I bring my own paper?
+        a: Gladly, provided it can take the folding. We test it together before committing.
+  contact:
+    title: Let's talk about your book
+    text: Describe the project in a few lines; we answer within 48 hours with a quote.
+  cta:
+    title: A book to bind, a notebook to give?
+    text: The workshop welcomes you by appointment, Tuesday to Saturday.
+    button: Write to the workshop
+  shop:
+    title: The shop
+    text: Notebooks and stationery in stock ship within days; bespoke work is a conversation.
+    cta: See the shop
+    add: Add to basket
+    soldout: Sold out
+de:
+  hero:
+    title: Bücher, die ein Leben lang halten.
+    text: Handgenähte Notizbücher, Einbände nach Mass und Restaurierung alter Bücher, in einer kleinen Werkstatt am See.
+    cta: Offerte anfragen
+    cta2: Leistungen ansehen
+  services_title: Was die Werkstatt macht
+  services_text: Vier Handwerke, eine Werkbank.
+  services:
+    - title: Einband nach Mass
+      text: Eine Masterarbeit, ein Gästebuch, eine Familienchronik — gebunden in Ihrem Format, in Leder oder Leinen nach Wahl.
+      detail: Rechnen Sie mit zwei bis drei Wochen. Deckel, Vorsatzpapier und Prägung wählen Sie an einem Muster, bevor die Arbeit beginnt.
+      icon: book
+      price: ab CHF 180
+    - title: Restaurierung
+      text: Gelöster Rücken, abgestossene Ecken, lose Seiten — repariert, ohne die Geschichte des Buches zu löschen.
+      detail: Jede Restaurierung beginnt mit einer kostenlosen Begutachtung in der Werkstatt. Die Materialien sind reversibel und säurefrei.
+      icon: hammer
+      price: nach Offerte
+    - title: Notizbücher und Papeterie
+      text: Genähte Notizbücher, Skizzenhefte, Briefpapier — kleine Serien, keines gleicht dem anderen.
+      detail: Schweizer und italienische Papiere, koptische oder japanische Bindung, A6 bis A4.
+      icon: paper
+      price: CHF 24 bis 68
+    - title: Samstagskurse
+      text: An einem Vormittag nähen Sie Ihr eigenes Notizbuch, Werkzeug und Papier inklusive.
+      detail: Höchstens sechs Personen, alle Stufen, ab 14 Jahren. Kaffee und Tee inbegriffen.
+      icon: users
+      price: CHF 95
+  story:
+    kicker: Wie ein Buch entsteht
+    title: Vier Schritte, alle von Hand.
+    steps:
+      - label: Das Papier
+        title: Den Bogen wählen
+        text: Alles beginnt mit der Laufrichtung des Papiers. Gefalzt, gezählt, zu Lagen gesammelt.
+        visual: {kind: list, title: Drei Papiere, items: [Waadtländer Bütten — 120 g, Italienische Baumwolle — 160 g, Japanisches Washi — 80 g]}
+      - label: Die Heftung
+        title: Die Lagen heften
+        text: Gewachster Leinenfaden, Nadel, Geduld. Die Heftung entscheidet, wie sich das Buch in dreissig Jahren öffnet.
+        visual: {kind: steps, title: Die koptische Heftung, done: 2, items: [Lagen falzen, Stationen stechen, Mit Leinenfaden heften, Über Nacht pressen]}
+      - label: Der Einband
+        title: Den Block einkleiden
+        text: Leinen, Leder oder Marmorpapier, Deckel auf den Millimeter geschnitten, auf Wunsch Heissfolienprägung.
+        visual: {kind: quote, text: "Ein gut gebundenes Buch liegt flach auf, ohne Zwang.", author: "Claire, Buchbinderin"}
+      - label: Die Übergabe
+        title: Das Buch öffnen
+        text: Wir übergeben es in der Werkstatt, öffnen es gemeinsam und zeigen Ihnen, wie Sie es pflegen.
+        visual: {kind: map, city: Vevey, label: "Werkstatt — Vevey", caption: "Übergabe in der Werkstatt, drei Wochen später"}
+  about:
+    title: Die Werkstatt
+    text: Eine Werkbank aus Eiche, eine alte Presse und Rollen von Leinen. Claire hat das Handwerk in Ascona gelernt, bevor sie die Werkstatt in Vevey eröffnete; sie arbeitet allein, auf Bestellung, ein Buch nach dem anderen.
+    quote: Ein gut gebundenes Buch liegt flach auf, ohne Zwang. Daran erkennt man es.
+    icon: book
+  proof:
+    items:
+      - {value: "2019", label: Eröffnung der Werkstatt, note: "Rue du Simplon, Vevey"}
+      - {value: "3 Wo.", label: Durchschnittliche Frist, note: "Einband nach Mass"}
+      - {value: "6", label: Plätze pro Kurs, note: "Samstagvormittag"}
+  pricing:
+    title: Preise
+    text: Feste Preise, und eine Offerte für alles ausserhalb des Rahmens.
+    items:
+      - name: Genähtes Notizbuch
+        price: CHF 24
+        unit: ab
+        text: Kleine Serien, im Laden und auf Bestellung.
+        features: [A6 bis A4, Papier 120 g, Sichtbare Heftung]
+        cta: Zum Shop
+        href: /shop/
+      - name: Einband nach Mass
+        price: CHF 180
+        unit: ab
+        text: Ihr Text, Ihr Format, Ihr Einband.
+        features: [Muster vor der Arbeit, Leinen oder Leder, Prägung optional]
+        featured: true
+        badge: Am meisten gefragt
+      - name: Samstagskurs
+        price: CHF 95
+        unit: pro Person
+        text: Ein Vormittag für Ihr erstes genähtes Notizbuch.
+        features: [Werkzeug und Papier inklusive, Höchstens 6 Personen, Ab 14 Jahren]
+        cta: Platz reservieren
+  faq:
+    title: Häufige Fragen
+    items:
+      - q: Wie lange dauert ein Einband?
+        a: In der Regel zwei bis drei Wochen. Für einen festen Termin (Hochzeit, Diplomfeier) sagen Sie es bitte schon bei der Offerte.
+      - q: Können Sie ein stark beschädigtes Buch restaurieren?
+        a: Oft ja. Bringen Sie es in die Werkstatt — die Begutachtung ist kostenlos, und wir sagen Ihnen ehrlich, was möglich ist.
+      - q: Versenden Sie?
+        a: Ja, in der Schweiz per Post, in stabiler Verpackung. Einbände nach Mass werden am besten in der Werkstatt abgeholt.
+      - q: Kann ich eigenes Papier mitbringen?
+        a: Gern, sofern es das Falzen verträgt. Wir testen es gemeinsam, bevor wir uns festlegen.
+  contact:
+    title: Sprechen wir über Ihr Buch
+    text: Beschreiben Sie das Projekt in ein paar Zeilen; wir antworten innert 48 Stunden mit einer Offerte.
+  cta:
+    title: Ein Buch zu binden, ein Notizbuch zu verschenken?
+    text: Die Werkstatt empfängt nach Vereinbarung, Dienstag bis Samstag.
+    button: Der Werkstatt schreiben
+  shop:
+    title: Der Shop
+    text: Notizbücher und Papeterie ab Lager gehen in wenigen Tagen raus; Massarbeit besprechen wir.
+    cta: Zum Shop
+    add: In den Warenkorb
+    soldout: Ausverkauft
+it:
+  hero:
+    title: Libri che durano una vita.
+    text: Quaderni cuciti a mano, rilegature su misura e restauro di libri antichi, in una piccola bottega in riva al lago.
+    cta: Chiedere un preventivo
+    cta2: Vedere i servizi
+  services_title: Cosa fa la bottega
+  services_text: Quattro mestieri, un solo banco.
+  services:
+    - title: Rilegatura su misura
+      text: Una tesi, un libro degli ospiti, una raccolta di famiglia — rilegati nel vostro formato, in pelle o tela a scelta.
+      detail: Contate due o tre settimane. Scegliete copertina, risguardi e doratura su un campione prima dell'inizio del lavoro.
+      icon: book
+      price: da CHF 180
+    - title: Restauro
+      text: Dorso scollato, angoli consumati, pagine staccate — si ripara senza cancellare la storia del libro.
+      detail: Ogni restauro comincia con una diagnosi gratuita in bottega. I materiali sono reversibili e senza acidi.
+      icon: hammer
+      price: su preventivo
+    - title: Quaderni e cartoleria
+      text: Quaderni cuciti, album da schizzi, carta da lettere — serie brevi, mai due uguali.
+      detail: Carte svizzere e italiane, cucitura copta o giapponese, formati da A6 ad A4.
+      icon: paper
+      price: da CHF 24 a 68
+    - title: Laboratori del sabato
+      text: In una mattina tornate a casa con il vostro quaderno cucito, attrezzi e carta forniti.
+      detail: Al massimo sei persone, tutti i livelli, dai 14 anni. Caffè e tè compresi.
+      icon: users
+      price: CHF 95
+  story:
+    kicker: Come nasce un libro
+    title: Quattro tempi, tutti a mano.
+    steps:
+      - label: La carta
+        title: Scegliere il foglio
+        text: Tutto comincia dalla grana della carta. Si piega, si conta, si raccoglie in fascicoli.
+        visual: {kind: list, title: Tre carte, items: [Vergata vodese — 120 g, Cotone italiano — 160 g, Washi giapponese — 80 g]}
+      - label: La cucitura
+        title: Cucire i fascicoli
+        text: Filo di lino cerato, ago, pazienza. La cucitura decide come il libro si aprirà fra trent'anni.
+        visual: {kind: steps, title: La cucitura copta, done: 2, items: [Piegare i fascicoli, Forare le stazioni, Cucire con filo di lino, Pressare una notte]}
+      - label: La copertina
+        title: Vestire il blocco
+        text: Tela, pelle o carta marmorizzata, cartoni tagliati al millimetro, doratura a caldo se lo desiderate.
+        visual: {kind: quote, text: "Un libro ben rilegato si apre piatto, senza forzare.", author: "Claire, legatrice"}
+      - label: La consegna
+        title: Aprire il libro
+        text: Ve lo consegniamo in bottega, lo apriamo insieme e vi mostriamo come prendervene cura.
+        visual: {kind: map, city: Vevey, label: "Bottega — Vevey", caption: "Consegna in bottega, tre settimane dopo"}
+  about:
+    title: La bottega
+    text: Un banco di quercia, una vecchia pressa e rotoli di tela. Claire ha imparato il mestiere ad Ascona prima di aprire la bottega di Vevey; lavora da sola, su ordinazione, un libro dopo l'altro.
+    quote: Un libro ben rilegato si apre piatto, senza forzare. È da questo che lo si riconosce.
+    icon: book
+  proof:
+    items:
+      - {value: "2019", label: Apertura della bottega, note: "Rue du Simplon, Vevey"}
+      - {value: "3 sett.", label: Tempo medio, note: "Rilegatura su misura"}
+      - {value: "6", label: Posti per laboratorio, note: "Il sabato mattina"}
+  pricing:
+    title: I prezzi
+    text: Prezzi fissi, e un preventivo per tutto ciò che esce dal quadro.
+    items:
+      - name: Quaderno cucito
+        price: CHF 24
+        unit: da
+        text: Serie brevi, in negozio e su ordinazione.
+        features: [Formati da A6 ad A4, Carta 120 g, Cucitura a vista]
+        cta: Vedere il negozio
+        href: /shop/
+      - name: Rilegatura su misura
+        price: CHF 180
+        unit: da
+        text: Il vostro testo, il vostro formato, la vostra copertina.
+        features: [Campioni prima del lavoro, Tela o pelle, Doratura opzionale]
+        featured: true
+        badge: La più richiesta
+      - name: Laboratorio del sabato
+        price: CHF 95
+        unit: a persona
+        text: Una mattina per cucire il vostro primo quaderno.
+        features: [Attrezzi e carta forniti, Al massimo 6 persone, Dai 14 anni]
+        cta: Prenotare un posto
+  faq:
+    title: Domande frequenti
+    items:
+      - q: Quanto tempo per una rilegatura?
+        a: In genere due o tre settimane. Per una data precisa (matrimonio, consegna del diploma), ditelo già al preventivo.
+      - q: Potete restaurare un libro molto rovinato?
+        a: Spesso sì. Portatelo in bottega — la diagnosi è gratuita e vi diciamo onestamente cosa è possibile.
+      - q: Fate spedizioni?
+        a: Sì, in Svizzera per posta, in un imballaggio rigido. Le rilegature su misura si consegnano di preferenza in bottega.
+      - q: Si può portare la propria carta?
+        a: Volentieri, purché sopporti la piegatura. La testiamo insieme prima di impegnarci.
+  contact:
+    title: Parliamo del vostro libro
+    text: Descrivete il progetto in poche righe, rispondiamo entro 48 ore con un preventivo.
+  cta:
+    title: Un libro da rilegare, un quaderno da regalare?
+    text: La bottega riceve su appuntamento, dal martedì al sabato.
+    button: Scrivere alla bottega
+  shop:
+    title: Il negozio
+    text: Quaderni e cartoleria disponibili partono in pochi giorni; il su misura si discute.
+    cta: Vedere il negozio
+    add: Aggiungere al carrello
+    soldout: Esaurito

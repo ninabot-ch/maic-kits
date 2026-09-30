@@ -1,0 +1,425 @@
+# ÉCHANTILLON du thème « tech » — contenu FICTIF (Kestrel, Yverdon-les-Bains). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Nouveau — connecteur Bexio
+    title: Vos chiffres, à jour, sans tableur.
+    text: Kestrel branche votre comptabilité, votre caisse et votre boutique en ligne, et vous montre chaque matin ce qui compte.
+    cta: Essayer 14 jours
+    cta2: Voir comment ça marche
+    cta2_href: "#story"
+  proof:
+    items:
+      - {value: "1 h", label: Pour brancher vos sources, note: Sans développeur}
+      - {value: "12", label: Connecteurs, note: Compta, caisse, e-commerce, banque}
+      - {value: "CH", label: Données hébergées en Suisse, note: Centre de données à Gland}
+      - {value: "0", label: Ligne de code à écrire, note: Tout se règle à la souris}
+  story:
+    kicker: Comment ça marche
+    title: De la connexion au premier rapport.
+    steps:
+      - label: Connecter
+        title: Branchez vos outils
+        text: Bexio, Abacus, SumUp, Shopify, votre banque — un clic par source, autorisation sécurisée, rien à installer.
+        visual: {kind: ui, url: app.kestrel.ch/sources, title: Sources connectées, badge: 4 actives, items: [Bexio — comptabilité, SumUp — caisse, Shopify — boutique en ligne, Raiffeisen — compte courant], chips: [Abacus, Stripe, Lightspeed], bar: 80, bar_label: Première synchronisation}
+      - label: Modéliser
+        title: Kestrel range les données
+        text: Ventes, marges, encaissements, stocks — tout arrive dans un même modèle, réconcilié chaque nuit.
+        visual: {kind: chart, title: Marge par famille (exemple), badge: cette semaine, unit: " %", series: [{label: Ventes, value: 42}, {label: Services, value: 61, hot: true}, {label: Abonnements, value: 74}, {label: Divers, value: 18}]}
+      - label: Lire
+        title: Un tableau de bord par métier
+        text: Direction, ventes, finance — chaque rôle voit ses indicateurs, sur ordinateur comme sur téléphone.
+        visual: {kind: list, title: Un tableau par rôle, items: [Direction — trésorerie et marge, Ventes — pipeline et devis, Finance — encours et échéances]}
+      - label: Agir
+        title: Les alertes qui comptent
+        text: Trésorerie sous un seuil, client en retard, stock critique — vous recevez un message, pas un rapport de 40 pages.
+        visual: {kind: calendar, month: Octobre, label: "07:30 chaque matin", days: [1, 2, 3, 6, 7, 8, 9, 10, 13, 14], first_weekday: 3, days_in_month: 31, caption: "Le résumé du matin, dans votre boîte"}
+  services_title: Ce que vous obtenez
+  services_text: Un abonnement, quatre briques.
+  services:
+    - title: Tableaux de bord
+      text: Des vues prêtes pour la direction, les ventes et la finance — modifiables sans formule.
+      detail: Filtres par période, par site et par produit ; export PDF pour le conseil d'administration ou la banque.
+      icon: chart
+    - title: Alertes
+      text: Des seuils que vous fixez, des messages courts par e-mail ou Slack.
+      detail: Trésorerie, encours clients, stocks, marge par produit — chaque alerte dit quoi regarder et où.
+      icon: bolt
+    - title: Prévisions
+      text: Trois mois de trésorerie projetée, à partir de vos factures et de vos habitudes de paiement.
+      detail: Le modèle apprend de vos retards de paiement réels ; vous ajustez les hypothèses à la main si besoin.
+      icon: clock
+    - title: Partage
+      text: Un lien sécurisé pour votre fiduciaire ou votre banque, en lecture seule, révocable à tout moment.
+      detail: Accès par rôle, journal des consultations, données jamais exportées hors de Suisse.
+      icon: shield
+  about:
+    title: Pourquoi Kestrel
+    text: Trois fondateurs passés par la finance de PME, lassés de reconstruire le même tableur chaque lundi. Kestrel est né à Yverdon-les-Bains pour que le dirigeant regarde ses chiffres sans les préparer.
+    icon: sparkles
+  split:
+    - title: Vos données restent en Suisse
+      text: Hébergement dans un centre de données à Gland, chiffrement au repos, sauvegardes quotidiennes. Vous pouvez tout exporter et tout effacer, à tout moment.
+      icon: lock
+    - title: Votre fiduciaire aussi
+      text: Un accès en lecture pour votre comptable évite les allers-retours de fichiers. Elle voit la même chose que vous, au même moment.
+      icon: users
+  pricing:
+    title: Un prix par entreprise, pas par utilisateur
+    text: Sans engagement, résiliable chaque mois.
+    items:
+      - name: Solo
+        price: 49 CHF
+        unit: / mois
+        text: Pour une raison individuelle ou un premier salarié.
+        features: [3 connecteurs, 1 tableau de bord, Alertes par e-mail]
+        cta: Essayer
+      - name: Équipe
+        price: 149 CHF
+        unit: / mois
+        text: Pour une PME de 2 à 30 personnes.
+        features: [Connecteurs illimités, Tableaux par rôle, Prévisions de trésorerie, Accès fiduciaire]
+        featured: true
+        badge: Le plus choisi
+        cta: Essayer 14 jours
+      - name: Groupe
+        price: Sur devis
+        text: Plusieurs sociétés, plusieurs sites.
+        features: [Consolidation, Utilisateurs illimités, Accompagnement à la mise en place]
+        cta: Nous parler
+    note: Prix hors TVA. Essai gratuit de 14 jours, sans carte.
+  faq:
+    title: Questions fréquentes
+    items:
+      - q: Faut-il un informaticien pour la mise en place ?
+        a: Non. Chaque connecteur s'autorise en un clic depuis votre navigateur, et un premier tableau de bord apparaît dans l'heure.
+      - q: Où sont hébergées les données ?
+        a: En Suisse, dans un centre de données à Gland. Elles ne quittent jamais le pays, et vous pouvez les exporter ou les effacer quand vous voulez.
+      - q: Que se passe-t-il si je résilie ?
+        a: Vous exportez tout au format tableur, puis vos données sont effacées sous 30 jours.
+      - q: Kestrel remplace-t-il ma comptabilité ?
+        a: Non, il la lit. Votre logiciel comptable reste la référence ; Kestrel en fait une lecture claire et quotidienne.
+  contact:
+    title: Une question avant d'essayer ?
+    text: Écrivez-nous, un fondateur vous répond dans la journée.
+  cta:
+    title: Regardez vos chiffres demain matin.
+    text: Quatorze jours d'essai, aucune carte, tout se branche en une heure.
+    button: Créer mon compte
+en:
+  hero:
+    kicker: New — Bexio connector
+    title: Your numbers, up to date, no spreadsheet.
+    text: Kestrel connects your accounting, your till and your online shop, and shows you every morning what matters.
+    cta: Try for 14 days
+    cta2: See how it works
+    cta2_href: "#story"
+  proof:
+    items:
+      - {value: "1 h", label: To connect your sources, note: No developer needed}
+      - {value: "12", label: Connectors, note: Accounting, till, e-commerce, bank}
+      - {value: "CH", label: Data hosted in Switzerland, note: Data centre in Gland}
+      - {value: "0", label: Lines of code to write, note: Everything is set with a mouse}
+  story:
+    kicker: How it works
+    title: From connection to first report.
+    steps:
+      - label: Connect
+        title: Plug in your tools
+        text: Bexio, Abacus, SumUp, Shopify, your bank — one click per source, secure authorisation, nothing to install.
+        visual: {kind: ui, url: app.kestrel.ch/sources, title: Connected sources, badge: 4 active, items: [Bexio — accounting, SumUp — till, Shopify — online shop, Raiffeisen — current account], chips: [Abacus, Stripe, Lightspeed], bar: 80, bar_label: First synchronisation}
+      - label: Model
+        title: Kestrel tidies the data
+        text: Sales, margins, receipts, stock — everything lands in one model, reconciled every night.
+        visual: {kind: chart, title: Margin by family (example), badge: this week, unit: " %", series: [{label: Sales, value: 42}, {label: Services, value: 61, hot: true}, {label: Subscriptions, value: 74}, {label: Other, value: 18}]}
+      - label: Read
+        title: One dashboard per role
+        text: Management, sales, finance — each role sees its own indicators, on desktop and on the phone.
+        visual: {kind: list, title: One dashboard per role, items: [Management — cash and margin, Sales — pipeline and quotes, Finance — receivables and due dates]}
+      - label: Act
+        title: The alerts that matter
+        text: Cash below a threshold, a late customer, critical stock — you get a message, not a 40-page report.
+        visual: {kind: calendar, month: October, label: "07:30 every morning", days: [1, 2, 3, 6, 7, 8, 9, 10, 13, 14], first_weekday: 3, days_in_month: 31, caption: "The morning summary, in your inbox"}
+  services_title: What you get
+  services_text: One subscription, four building blocks.
+  services:
+    - title: Dashboards
+      text: Ready-made views for management, sales and finance — editable without formulas.
+      detail: Filters by period, site and product; PDF export for the board or the bank.
+      icon: chart
+    - title: Alerts
+      text: Thresholds you set, short messages by e-mail or Slack.
+      detail: Cash, receivables, stock, margin per product — each alert says what to look at and where.
+      icon: bolt
+    - title: Forecasts
+      text: Three months of projected cash, from your invoices and your payment habits.
+      detail: The model learns from your real payment delays; you adjust the assumptions by hand if needed.
+      icon: clock
+    - title: Sharing
+      text: A secure, read-only link for your accountant or your bank, revocable at any time.
+      detail: Role-based access, viewing log, data never exported outside Switzerland.
+      icon: shield
+  about:
+    title: Why Kestrel
+    text: Three founders who came through SME finance, tired of rebuilding the same spreadsheet every Monday. Kestrel was born in Yverdon-les-Bains so that owners can look at their numbers without preparing them.
+    icon: sparkles
+  split:
+    - title: Your data stays in Switzerland
+      text: Hosted in a data centre in Gland, encrypted at rest, backed up daily. You can export everything and delete everything, at any time.
+      icon: lock
+    - title: Your accountant too
+      text: Read access for your accountant ends the back-and-forth of files. They see the same thing as you, at the same time.
+      icon: users
+  pricing:
+    title: One price per company, not per user
+    text: No commitment, cancel monthly.
+    items:
+      - name: Solo
+        price: CHF 49
+        unit: / month
+        text: For a sole trader or a first employee.
+        features: [3 connectors, 1 dashboard, E-mail alerts]
+        cta: Try it
+      - name: Team
+        price: CHF 149
+        unit: / month
+        text: For an SME of 2 to 30 people.
+        features: [Unlimited connectors, Dashboards per role, Cash forecasts, Accountant access]
+        featured: true
+        badge: Most chosen
+        cta: Try for 14 days
+      - name: Group
+        price: On quote
+        text: Several companies, several sites.
+        features: [Consolidation, Unlimited users, Onboarding support]
+        cta: Talk to us
+    note: Prices excl. VAT. Free 14-day trial, no card.
+  faq:
+    title: Frequently asked questions
+    items:
+      - q: Do I need an IT person to set it up?
+        a: No. Each connector authorises in one click from your browser, and a first dashboard appears within the hour.
+      - q: Where is the data hosted?
+        a: In Switzerland, in a data centre in Gland. It never leaves the country, and you can export or delete it whenever you want.
+      - q: What happens if I cancel?
+        a: You export everything as a spreadsheet, then your data is deleted within 30 days.
+      - q: Does Kestrel replace my accounting?
+        a: No, it reads it. Your accounting software remains the reference; Kestrel turns it into a clear daily read.
+  contact:
+    title: A question before trying?
+    text: Write to us, a founder answers within the day.
+  cta:
+    title: Look at your numbers tomorrow morning.
+    text: Fourteen days of trial, no card, everything connects in an hour.
+    button: Create my account
+de:
+  hero:
+    kicker: Neu — Bexio-Anbindung
+    title: Ihre Zahlen, aktuell, ohne Tabelle.
+    text: Kestrel verbindet Buchhaltung, Kasse und Online-Shop und zeigt Ihnen jeden Morgen, was zählt.
+    cta: 14 Tage testen
+    cta2: So funktioniert es
+    cta2_href: "#story"
+  proof:
+    items:
+      - {value: "1 h", label: Um Ihre Quellen anzubinden, note: Ohne Entwickler}
+      - {value: "12", label: Anbindungen, note: Buchhaltung, Kasse, E-Commerce, Bank}
+      - {value: "CH", label: Daten in der Schweiz gehostet, note: Rechenzentrum in Gland}
+      - {value: "0", label: Zeilen Code zu schreiben, note: Alles per Maus einstellbar}
+  story:
+    kicker: So funktioniert es
+    title: Von der Anbindung zum ersten Bericht.
+    steps:
+      - label: Verbinden
+        title: Schliessen Sie Ihre Tools an
+        text: Bexio, Abacus, SumUp, Shopify, Ihre Bank — ein Klick pro Quelle, sichere Freigabe, nichts zu installieren.
+        visual: {kind: ui, url: app.kestrel.ch/quellen, title: Verbundene Quellen, badge: 4 aktiv, items: [Bexio — Buchhaltung, SumUp — Kasse, Shopify — Online-Shop, Raiffeisen — Kontokorrent], chips: [Abacus, Stripe, Lightspeed], bar: 80, bar_label: Erste Synchronisation}
+      - label: Ordnen
+        title: Kestrel sortiert die Daten
+        text: Umsatz, Margen, Zahlungseingänge, Lager — alles landet in einem Modell, jede Nacht abgeglichen.
+        visual: {kind: chart, title: Marge pro Familie (Beispiel), badge: diese Woche, unit: " %", series: [{label: Verkauf, value: 42}, {label: Dienste, value: 61, hot: true}, {label: Abos, value: 74}, {label: Diverses, value: 18}]}
+      - label: Lesen
+        title: Ein Dashboard pro Rolle
+        text: Geschäftsleitung, Verkauf, Finanzen — jede Rolle sieht ihre Kennzahlen, am Computer wie am Telefon.
+        visual: {kind: list, title: Ein Dashboard pro Rolle, items: [Geschäftsleitung — Liquidität und Marge, Verkauf — Pipeline und Offerten, Finanzen — Debitoren und Fälligkeiten]}
+      - label: Handeln
+        title: Die Warnungen, die zählen
+        text: Liquidität unter einer Schwelle, säumiger Kunde, kritischer Lagerbestand — Sie erhalten eine Nachricht, keinen 40-seitigen Bericht.
+        visual: {kind: calendar, month: Oktober, label: "07:30 jeden Morgen", days: [1, 2, 3, 6, 7, 8, 9, 10, 13, 14], first_weekday: 3, days_in_month: 31, caption: "Die Morgenzusammenfassung, in Ihrem Postfach"}
+  services_title: Was Sie bekommen
+  services_text: Ein Abo, vier Bausteine.
+  services:
+    - title: Dashboards
+      text: Fertige Ansichten für Geschäftsleitung, Verkauf und Finanzen — ohne Formeln anpassbar.
+      detail: Filter nach Zeitraum, Standort und Produkt; PDF-Export für den Verwaltungsrat oder die Bank.
+      icon: chart
+    - title: Warnungen
+      text: Schwellen, die Sie setzen, kurze Nachrichten per E-Mail oder Slack.
+      detail: Liquidität, Debitoren, Lager, Marge pro Produkt — jede Warnung sagt, wo hinzuschauen ist.
+      icon: bolt
+    - title: Prognosen
+      text: Drei Monate projizierte Liquidität, aus Ihren Rechnungen und Zahlungsgewohnheiten.
+      detail: Das Modell lernt aus Ihren tatsächlichen Zahlungsverzögerungen; die Annahmen passen Sie bei Bedarf von Hand an.
+      icon: clock
+    - title: Teilen
+      text: Ein sicherer Lese-Link für Ihre Treuhänderin oder Ihre Bank, jederzeit widerrufbar.
+      detail: Zugriff nach Rolle, Einsichtsprotokoll, Daten verlassen die Schweiz nie.
+      icon: shield
+  about:
+    title: Warum Kestrel
+    text: Drei Gründer aus der KMU-Finanz, müde, jeden Montag dieselbe Tabelle neu zu bauen. Kestrel entstand in Yverdon-les-Bains, damit die Geschäftsführung ihre Zahlen ansieht, ohne sie vorzubereiten.
+    icon: sparkles
+  split:
+    - title: Ihre Daten bleiben in der Schweiz
+      text: Gehostet in einem Rechenzentrum in Gland, verschlüsselt, täglich gesichert. Sie können alles exportieren und alles löschen, jederzeit.
+      icon: lock
+    - title: Ihre Treuhänderin auch
+      text: Ein Lesezugriff für Ihre Buchhaltung beendet das Hin und Her von Dateien. Sie sieht dasselbe wie Sie, zur selben Zeit.
+      icon: users
+  pricing:
+    title: Ein Preis pro Unternehmen, nicht pro Nutzer
+    text: Ohne Bindung, monatlich kündbar.
+    items:
+      - name: Solo
+        price: CHF 49
+        unit: / Monat
+        text: Für eine Einzelfirma oder den ersten Mitarbeitenden.
+        features: [3 Anbindungen, 1 Dashboard, Warnungen per E-Mail]
+        cta: Testen
+      - name: Team
+        price: CHF 149
+        unit: / Monat
+        text: Für ein KMU mit 2 bis 30 Personen.
+        features: [Unbegrenzte Anbindungen, Dashboards pro Rolle, Liquiditätsprognosen, Zugriff für die Treuhand]
+        featured: true
+        badge: Am meisten gewählt
+        cta: 14 Tage testen
+      - name: Gruppe
+        price: Auf Anfrage
+        text: Mehrere Gesellschaften, mehrere Standorte.
+        features: [Konsolidierung, Unbegrenzte Nutzer, Begleitung bei der Einführung]
+        cta: Mit uns sprechen
+    note: Preise exkl. MWST. 14 Tage gratis testen, ohne Karte.
+  faq:
+    title: Häufige Fragen
+    items:
+      - q: Brauche ich einen Informatiker für die Einrichtung?
+        a: Nein. Jede Anbindung wird mit einem Klick im Browser freigegeben, und ein erstes Dashboard erscheint innerhalb einer Stunde.
+      - q: Wo werden die Daten gehostet?
+        a: In der Schweiz, in einem Rechenzentrum in Gland. Sie verlassen das Land nie, und Sie können sie jederzeit exportieren oder löschen.
+      - q: Was passiert, wenn ich kündige?
+        a: Sie exportieren alles als Tabelle, danach werden Ihre Daten innert 30 Tagen gelöscht.
+      - q: Ersetzt Kestrel meine Buchhaltung?
+        a: Nein, es liest sie. Ihre Buchhaltungssoftware bleibt die Referenz; Kestrel macht daraus eine klare, tägliche Lektüre.
+  contact:
+    title: Eine Frage vor dem Test?
+    text: Schreiben Sie uns, ein Gründer antwortet noch am selben Tag.
+  cta:
+    title: Sehen Sie Ihre Zahlen morgen früh.
+    text: Vierzehn Tage testen, keine Karte, alles ist in einer Stunde angebunden.
+    button: Konto erstellen
+it:
+  hero:
+    kicker: Novità — connettore Bexio
+    title: I vostri numeri, aggiornati, senza foglio di calcolo.
+    text: Kestrel collega contabilità, cassa e negozio online e vi mostra ogni mattina ciò che conta.
+    cta: Provare 14 giorni
+    cta2: Vedere come funziona
+    cta2_href: "#story"
+  proof:
+    items:
+      - {value: "1 h", label: Per collegare le vostre fonti, note: Senza sviluppatore}
+      - {value: "12", label: Connettori, note: Contabilità, cassa, e-commerce, banca}
+      - {value: "CH", label: Dati ospitati in Svizzera, note: Centro dati a Gland}
+      - {value: "0", label: Righe di codice da scrivere, note: Tutto si regola con il mouse}
+  story:
+    kicker: Come funziona
+    title: Dal collegamento al primo rapporto.
+    steps:
+      - label: Collegare
+        title: Collegate i vostri strumenti
+        text: Bexio, Abacus, SumUp, Shopify, la vostra banca — un clic per fonte, autorizzazione sicura, niente da installare.
+        visual: {kind: ui, url: app.kestrel.ch/fonti, title: Fonti collegate, badge: 4 attive, items: [Bexio — contabilità, SumUp — cassa, Shopify — negozio online, Raiffeisen — conto corrente], chips: [Abacus, Stripe, Lightspeed], bar: 80, bar_label: Prima sincronizzazione}
+      - label: Ordinare
+        title: Kestrel sistema i dati
+        text: Vendite, margini, incassi, scorte — tutto arriva in un unico modello, riconciliato ogni notte.
+        visual: {kind: chart, title: Margine per famiglia (esempio), badge: questa settimana, unit: " %", series: [{label: Vendite, value: 42}, {label: Servizi, value: 61, hot: true}, {label: Abbonamenti, value: 74}, {label: Vari, value: 18}]}
+      - label: Leggere
+        title: Un cruscotto per ruolo
+        text: Direzione, vendite, finanza — ogni ruolo vede i propri indicatori, su computer come su telefono.
+        visual: {kind: list, title: Un cruscotto per ruolo, items: [Direzione — liquidità e margine, Vendite — pipeline e preventivi, Finanza — crediti e scadenze]}
+      - label: Agire
+        title: Gli avvisi che contano
+        text: Liquidità sotto una soglia, cliente in ritardo, scorte critiche — ricevete un messaggio, non un rapporto di 40 pagine.
+        visual: {kind: calendar, month: Ottobre, label: "07:30 ogni mattina", days: [1, 2, 3, 6, 7, 8, 9, 10, 13, 14], first_weekday: 3, days_in_month: 31, caption: "Il riepilogo del mattino, nella vostra casella"}
+  services_title: Cosa ottenete
+  services_text: Un abbonamento, quattro mattoni.
+  services:
+    - title: Cruscotti
+      text: Viste pronte per direzione, vendite e finanza — modificabili senza formule.
+      detail: Filtri per periodo, sede e prodotto; esportazione PDF per il consiglio di amministrazione o la banca.
+      icon: chart
+    - title: Avvisi
+      text: Soglie che fissate voi, messaggi brevi per e-mail o Slack.
+      detail: Liquidità, crediti clienti, scorte, margine per prodotto — ogni avviso dice cosa guardare e dove.
+      icon: bolt
+    - title: Previsioni
+      text: Tre mesi di liquidità proiettata, a partire dalle vostre fatture e abitudini di pagamento.
+      detail: Il modello impara dai vostri ritardi di pagamento reali; regolate le ipotesi a mano se serve.
+      icon: clock
+    - title: Condivisione
+      text: Un link sicuro in sola lettura per il vostro fiduciario o la vostra banca, revocabile in ogni momento.
+      detail: Accesso per ruolo, registro delle consultazioni, dati mai esportati fuori dalla Svizzera.
+      icon: shield
+  about:
+    title: Perché Kestrel
+    text: Tre fondatori passati dalla finanza delle PMI, stanchi di ricostruire lo stesso foglio ogni lunedì. Kestrel è nato a Yverdon-les-Bains perché il titolare guardi i suoi numeri senza prepararli.
+    icon: sparkles
+  split:
+    - title: I vostri dati restano in Svizzera
+      text: Ospitati in un centro dati a Gland, cifrati a riposo, salvati ogni giorno. Potete esportare tutto e cancellare tutto, in ogni momento.
+      icon: lock
+    - title: Anche il vostro fiduciario
+      text: Un accesso in lettura per il vostro contabile evita lo scambio di file. Vede la stessa cosa che vedete voi, nello stesso momento.
+      icon: users
+  pricing:
+    title: Un prezzo per azienda, non per utente
+    text: Senza vincoli, disdicibile ogni mese.
+    items:
+      - name: Solo
+        price: CHF 49
+        unit: / mese
+        text: Per una ditta individuale o un primo dipendente.
+        features: [3 connettori, 1 cruscotto, Avvisi per e-mail]
+        cta: Provare
+      - name: Team
+        price: CHF 149
+        unit: / mese
+        text: Per una PMI da 2 a 30 persone.
+        features: [Connettori illimitati, Cruscotti per ruolo, Previsioni di liquidità, Accesso fiduciario]
+        featured: true
+        badge: Il più scelto
+        cta: Provare 14 giorni
+      - name: Gruppo
+        price: Su preventivo
+        text: Più società, più sedi.
+        features: [Consolidamento, Utenti illimitati, Accompagnamento all'avvio]
+        cta: Parliamone
+    note: Prezzi IVA esclusa. Prova gratuita di 14 giorni, senza carta.
+  faq:
+    title: Domande frequenti
+    items:
+      - q: Serve un informatico per l'avvio?
+        a: No. Ogni connettore si autorizza con un clic dal browser, e un primo cruscotto appare entro un'ora.
+      - q: Dove sono ospitati i dati?
+        a: In Svizzera, in un centro dati a Gland. Non lasciano mai il paese, e potete esportarli o cancellarli quando volete.
+      - q: Cosa succede se disdico?
+        a: Esportate tutto in formato foglio di calcolo, poi i vostri dati vengono cancellati entro 30 giorni.
+      - q: Kestrel sostituisce la mia contabilità?
+        a: No, la legge. Il vostro software contabile resta il riferimento; Kestrel ne fa una lettura chiara e quotidiana.
+  contact:
+    title: Una domanda prima di provare?
+    text: Scriveteci, un fondatore risponde in giornata.
+  cta:
+    title: Guardate i vostri numeri domattina.
+    text: Quattordici giorni di prova, nessuna carta, tutto si collega in un'ora.
+    button: Creare il mio account

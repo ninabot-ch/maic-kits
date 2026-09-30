@@ -1,0 +1,457 @@
+# ÉCHANTILLON du thème « studio » — contenu FICTIF (Nordwand, Zurich). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Studio de création — Zurich
+    title: Des marques qu'on reconnaît de loin.
+    text: Identité, typographie, film. Un studio de quatre personnes qui livre peu de projets et les livre entiers.
+    cta: Parler d'un projet
+    cta2: Voir le travail
+    cta2_href: "#services"
+  services_title: Ce qu'on fait
+  services:
+    - title: Identité visuelle
+      text: Logo, système typographique, couleurs, gabarits — un kit que votre équipe sait utiliser sans nous.
+      detail: Six semaines en moyenne, trois rendez-vous. Vous repartez avec les fichiers sources et un guide d'une page.
+      icon: palette
+      price: dès 9 000 CHF
+    - title: Film de marque
+      text: Un film court écrit, tourné et monté par le studio, pour votre site et vos réseaux.
+      detail: Scénario validé avant le tournage, une journée de plateau, deux versions (16:9 et vertical).
+      icon: camera
+      price: dès 12 000 CHF
+    - title: Site vitrine
+      text: Une page qui tient sur la promesse, sans gabarit acheté.
+      detail: Design et intégration par le studio, hébergement chez vous, aucune dépendance.
+      icon: cpu
+      price: dès 6 000 CHF
+    - title: Direction artistique
+      text: Un regard régulier sur vos campagnes, vos posts, vos supports.
+      detail: Deux demi-journées par mois, sans engagement annuel.
+      icon: sparkles
+      price: 1 800 CHF / mois
+  story:
+    kicker: Méthode
+    title: Un projet, quatre semaines, zéro surprise.
+    steps:
+      - label: Semaine 1
+        title: On écoute
+        text: Une demi-journée avec vous. On ressort avec trois mots, un public et une contrainte.
+        visual:
+          kind: list
+          title: Ce qu'on note
+          items: [Trois mots qui vous décrivent, Le public à qui l'on parle, La contrainte qu'on ne franchit pas]
+      - label: Semaine 2
+        title: On explore
+        text: Trois pistes, toutes défendables. Vous en gardez une — pas un mélange.
+        visual:
+          kind: chart
+          title: Trois pistes
+          badge: votre choix
+          series: [{label: Piste A, value: 3}, {label: Piste B, value: 5, hot: true}, {label: Piste C, value: 2}]
+      - label: Semaine 3
+        title: On construit
+        text: La piste devient système — typographie, couleurs, gabarits, animations.
+        visual:
+          kind: ui
+          url: nordwand.ch/kit
+          title: Kit de marque
+          badge: v1
+          items: [Logo et déclinaisons, Système typographique, Palette et contrastes, Gabarits réseaux]
+          bar: 65
+          bar_label: Livraison en cours
+      - label: Semaine 4
+        title: On livre
+        text: Fichiers sources, guide d'une page, et une heure pour former votre équipe.
+        visual:
+          kind: steps
+          title: Livraison
+          done: 3
+          items: [Fichiers sources, Guide d'une page, Formation d'une heure, Premier post publié]
+  proof:
+    items:
+      - {value: "4", label: Personnes, note: Toutes au même étage}
+      - {value: "6", label: Projets par an, note: Pas un de plus}
+      - {value: "4 sem.", label: Durée type d'une identité}
+  about:
+    title: Le studio
+    text: Nordwand est né dans un ancien atelier de Zurich-Ouest. Quatre personnes, un seul planning, aucun stagiaire non payé. On refuse plus de projets qu'on n'en accepte, pour finir ceux qu'on prend.
+    icon: palette
+  pricing:
+    title: Trois formats
+    text: Un prix connu avant de commencer.
+    items:
+      - name: Identité
+        price: 9 000 CHF
+        unit: dès
+        features: [Logo et système, Guide d'une page, Fichiers sources]
+        cta: Demander un devis
+      - name: Identité + film
+        price: 19 000 CHF
+        unit: dès
+        features: [Tout Identité, Film de 60 s, Version verticale, Deux relectures]
+        featured: true
+        badge: Le plus complet
+        cta: Parler du projet
+      - name: Direction artistique
+        price: 1 800 CHF
+        unit: / mois
+        features: [Deux demi-journées, Relecture des supports, Sans engagement]
+        cta: Réserver un mois
+  faq:
+    title: Questions
+    items:
+      - q: Travaillez-vous avec des petites structures ?
+        a: Oui, la plupart de nos clients ont moins de vingt personnes. Le format Identité est pensé pour eux.
+      - q: Combien de propositions de logo ?
+        a: Trois pistes, puis une seule développée. Un mélange de deux pistes donne toujours un logo faible.
+      - q: Gardez-vous les droits ?
+        a: Non. Les fichiers sources et les droits d'usage sont à vous dès le paiement final.
+  contact:
+    title: Un projet en tête ?
+    text: Décrivez-le en cinq lignes, on vous dit sous 48 h si on peut le prendre et quand.
+  cta:
+    title: On commence par une demi-journée.
+    text: Sans engagement, à Zurich ou en visio.
+    button: Proposer une date
+en:
+  hero:
+    kicker: Design studio — Zurich
+    title: Brands you recognise from afar.
+    text: Identity, typography, film. A studio of four that takes on few projects and delivers them whole.
+    cta: Talk about a project
+    cta2: See the work
+    cta2_href: "#services"
+  services_title: What we do
+  services:
+    - title: Visual identity
+      text: Logo, type system, colours, templates — a kit your team can use without us.
+      detail: Six weeks on average, three meetings. You leave with source files and a one-page guide.
+      icon: palette
+      price: from CHF 9,000
+    - title: Brand film
+      text: A short film written, shot and edited by the studio, for your site and your channels.
+      detail: Script approved before the shoot, one day on set, two versions (16:9 and vertical).
+      icon: camera
+      price: from CHF 12,000
+    - title: Website
+      text: One page that holds the promise, no bought template.
+      detail: Design and build by the studio, hosted with you, no dependency.
+      icon: cpu
+      price: from CHF 6,000
+    - title: Art direction
+      text: A regular eye on your campaigns, posts and materials.
+      detail: Two half-days a month, no annual commitment.
+      icon: sparkles
+      price: CHF 1,800 / month
+  story:
+    kicker: Method
+    title: One project, four weeks, no surprises.
+    steps:
+      - label: Week 1
+        title: We listen
+        text: Half a day with you. We leave with three words, an audience and one constraint.
+        visual:
+          kind: list
+          title: What we write down
+          items: [Three words that describe you, The audience we speak to, The line we do not cross]
+      - label: Week 2
+        title: We explore
+        text: Three directions, all defensible. You keep one — not a blend.
+        visual:
+          kind: chart
+          title: Three directions
+          badge: your choice
+          series: [{label: Route A, value: 3}, {label: Route B, value: 5, hot: true}, {label: Route C, value: 2}]
+      - label: Week 3
+        title: We build
+        text: The direction becomes a system — type, colours, templates, motion.
+        visual:
+          kind: ui
+          url: nordwand.ch/kit
+          title: Brand kit
+          badge: v1
+          items: [Logo and variants, Type system, Palette and contrast, Social templates]
+          bar: 65
+          bar_label: Delivery in progress
+      - label: Week 4
+        title: We deliver
+        text: Source files, a one-page guide, and an hour to train your team.
+        visual:
+          kind: steps
+          title: Delivery
+          done: 3
+          items: [Source files, One-page guide, One-hour training, First post published]
+  proof:
+    items:
+      - {value: "4", label: People, note: All on the same floor}
+      - {value: "6", label: Projects a year, note: Not one more}
+      - {value: "4 wks", label: Typical identity project}
+  about:
+    title: The studio
+    text: Nordwand was born in a former workshop in Zurich West. Four people, one schedule, no unpaid interns. We turn down more projects than we take, so we can finish the ones we take.
+    icon: palette
+  pricing:
+    title: Three formats
+    text: A price known before we start.
+    items:
+      - name: Identity
+        price: CHF 9,000
+        unit: from
+        features: [Logo and system, One-page guide, Source files]
+        cta: Ask for a quote
+      - name: Identity + film
+        price: CHF 19,000
+        unit: from
+        features: [Everything in Identity, 60-second film, Vertical version, Two review rounds]
+        featured: true
+        badge: Most complete
+        cta: Talk about it
+      - name: Art direction
+        price: CHF 1,800
+        unit: / month
+        features: [Two half-days, Review of materials, No commitment]
+        cta: Book a month
+  faq:
+    title: Questions
+    items:
+      - q: Do you work with small teams?
+        a: Yes, most of our clients have fewer than twenty people. The Identity format is designed for them.
+      - q: How many logo proposals?
+        a: Three directions, then one developed. A blend of two directions always gives a weak logo.
+      - q: Do you keep the rights?
+        a: No. Source files and usage rights are yours on final payment.
+  contact:
+    title: A project in mind?
+    text: Describe it in five lines; within 48 hours we tell you whether we can take it, and when.
+  cta:
+    title: We start with half a day.
+    text: No commitment, in Zurich or by video.
+    button: Suggest a date
+de:
+  hero:
+    kicker: Designstudio — Zürich
+    title: Marken, die man von weitem erkennt.
+    text: Identität, Typografie, Film. Ein Studio zu viert, das wenige Projekte annimmt und sie ganz liefert.
+    cta: Über ein Projekt sprechen
+    cta2: Arbeiten ansehen
+    cta2_href: "#services"
+  services_title: Was wir machen
+  services:
+    - title: Visuelle Identität
+      text: Logo, Schriftsystem, Farben, Vorlagen — ein Kit, das Ihr Team ohne uns nutzen kann.
+      detail: Sechs Wochen im Schnitt, drei Termine. Sie gehen mit den Quelldateien und einem einseitigen Leitfaden.
+      icon: palette
+      price: ab CHF 9'000
+    - title: Markenfilm
+      text: Ein Kurzfilm, vom Studio geschrieben, gedreht und geschnitten, für Website und Kanäle.
+      detail: Drehbuch vor dem Dreh freigegeben, ein Drehtag, zwei Fassungen (16:9 und vertikal).
+      icon: camera
+      price: ab CHF 12'000
+    - title: Website
+      text: Eine Seite, die das Versprechen hält, ohne gekaufte Vorlage.
+      detail: Design und Umsetzung durch das Studio, Hosting bei Ihnen, keine Abhängigkeit.
+      icon: cpu
+      price: ab CHF 6'000
+    - title: Art Direction
+      text: Ein regelmässiger Blick auf Ihre Kampagnen, Posts und Unterlagen.
+      detail: Zwei halbe Tage pro Monat, ohne Jahresbindung.
+      icon: sparkles
+      price: CHF 1'800 / Monat
+  story:
+    kicker: Methode
+    title: Ein Projekt, vier Wochen, keine Überraschung.
+    steps:
+      - label: Woche 1
+        title: Wir hören zu
+        text: Ein halber Tag mit Ihnen. Wir gehen mit drei Wörtern, einem Publikum und einer Grenze.
+        visual:
+          kind: list
+          title: Was wir notieren
+          items: ["Drei Wörter, die Sie beschreiben", "Das Publikum, das wir ansprechen", "Die Grenze, die wir nicht überschreiten"]
+      - label: Woche 2
+        title: Wir erkunden
+        text: Drei Richtungen, alle vertretbar. Sie behalten eine — keine Mischung.
+        visual:
+          kind: chart
+          title: Drei Richtungen
+          badge: Ihre Wahl
+          series: [{label: Weg A, value: 3}, {label: Weg B, value: 5, hot: true}, {label: Weg C, value: 2}]
+      - label: Woche 3
+        title: Wir bauen
+        text: Die Richtung wird zum System — Schrift, Farben, Vorlagen, Bewegung.
+        visual:
+          kind: ui
+          url: nordwand.ch/kit
+          title: Marken-Kit
+          badge: v1
+          items: [Logo und Varianten, Schriftsystem, Palette und Kontraste, Social-Vorlagen]
+          bar: 65
+          bar_label: Lieferung läuft
+      - label: Woche 4
+        title: Wir liefern
+        text: Quelldateien, ein einseitiger Leitfaden und eine Stunde Schulung für Ihr Team.
+        visual:
+          kind: steps
+          title: Lieferung
+          done: 3
+          items: [Quelldateien, Einseitiger Leitfaden, Eine Stunde Schulung, Erster Post veröffentlicht]
+  proof:
+    items:
+      - {value: "4", label: Personen, note: Alle auf demselben Stock}
+      - {value: "6", label: Projekte pro Jahr, note: Keines mehr}
+      - {value: "4 Wo.", label: Typische Dauer einer Identität}
+  about:
+    title: Das Studio
+    text: Nordwand entstand in einer ehemaligen Werkstatt in Zürich-West. Vier Personen, ein Kalender, keine unbezahlten Praktika. Wir lehnen mehr Projekte ab, als wir annehmen — um die angenommenen fertig zu machen.
+    icon: palette
+  pricing:
+    title: Drei Formate
+    text: Ein Preis, der vor dem Start feststeht.
+    items:
+      - name: Identität
+        price: CHF 9'000
+        unit: ab
+        features: [Logo und System, Einseitiger Leitfaden, Quelldateien]
+        cta: Offerte anfragen
+      - name: Identität + Film
+        price: CHF 19'000
+        unit: ab
+        features: [Alles aus Identität, 60-Sekunden-Film, Vertikale Fassung, Zwei Korrekturrunden]
+        featured: true
+        badge: Am vollständigsten
+        cta: Über das Projekt sprechen
+      - name: Art Direction
+        price: CHF 1'800
+        unit: / Monat
+        features: [Zwei halbe Tage, Durchsicht der Unterlagen, Ohne Bindung]
+        cta: Einen Monat buchen
+  faq:
+    title: Fragen
+    items:
+      - q: Arbeiten Sie mit kleinen Strukturen?
+        a: Ja, die meisten unserer Kunden haben weniger als zwanzig Personen. Das Format Identität ist für sie gedacht.
+      - q: Wie viele Logovorschläge?
+        a: Drei Richtungen, dann eine ausgearbeitet. Eine Mischung aus zwei Richtungen ergibt immer ein schwaches Logo.
+      - q: Behalten Sie die Rechte?
+        a: Nein. Quelldateien und Nutzungsrechte gehören Ihnen mit der Schlusszahlung.
+  contact:
+    title: Ein Projekt im Kopf?
+    text: Beschreiben Sie es in fünf Zeilen; innert 48 Stunden sagen wir Ihnen, ob und wann wir es übernehmen können.
+  cta:
+    title: Wir beginnen mit einem halben Tag.
+    text: Ohne Bindung, in Zürich oder per Video.
+    button: Termin vorschlagen
+it:
+  hero:
+    kicker: Studio di design — Zurigo
+    title: Marchi che si riconoscono da lontano.
+    text: Identità, tipografia, film. Uno studio di quattro persone che accetta pochi progetti e li consegna interi.
+    cta: Parlare di un progetto
+    cta2: Vedere i lavori
+    cta2_href: "#services"
+  services_title: Cosa facciamo
+  services:
+    - title: Identità visiva
+      text: Logo, sistema tipografico, colori, modelli — un kit che il vostro team sa usare senza di noi.
+      detail: Sei settimane in media, tre incontri. Ripartite con i file sorgente e una guida di una pagina.
+      icon: palette
+      price: da CHF 9'000
+    - title: Film di marca
+      text: Un cortometraggio scritto, girato e montato dallo studio, per il sito e i social.
+      detail: Sceneggiatura approvata prima delle riprese, una giornata di set, due versioni (16:9 e verticale).
+      icon: camera
+      price: da CHF 12'000
+    - title: Sito vetrina
+      text: Una pagina che mantiene la promessa, senza modello comprato.
+      detail: Design e integrazione dello studio, hosting da voi, nessuna dipendenza.
+      icon: cpu
+      price: da CHF 6'000
+    - title: Direzione artistica
+      text: Uno sguardo regolare su campagne, post e materiali.
+      detail: Due mezze giornate al mese, senza impegno annuale.
+      icon: sparkles
+      price: CHF 1'800 / mese
+  story:
+    kicker: Metodo
+    title: Un progetto, quattro settimane, zero sorprese.
+    steps:
+      - label: Settimana 1
+        title: Ascoltiamo
+        text: Mezza giornata con voi. Ne usciamo con tre parole, un pubblico e un limite.
+        visual:
+          kind: list
+          title: Cosa annotiamo
+          items: [Tre parole che vi descrivono, Il pubblico a cui parliamo, Il limite che non superiamo]
+      - label: Settimana 2
+        title: Esploriamo
+        text: Tre piste, tutte difendibili. Ne tenete una — non un miscuglio.
+        visual:
+          kind: chart
+          title: Tre piste
+          badge: la vostra scelta
+          series: [{label: Pista A, value: 3}, {label: Pista B, value: 5, hot: true}, {label: Pista C, value: 2}]
+      - label: Settimana 3
+        title: Costruiamo
+        text: La pista diventa sistema — tipografia, colori, modelli, animazioni.
+        visual:
+          kind: ui
+          url: nordwand.ch/kit
+          title: Kit di marca
+          badge: v1
+          items: [Logo e declinazioni, Sistema tipografico, Palette e contrasti, Modelli social]
+          bar: 65
+          bar_label: Consegna in corso
+      - label: Settimana 4
+        title: Consegniamo
+        text: File sorgente, guida di una pagina e un'ora per formare il vostro team.
+        visual:
+          kind: steps
+          title: Consegna
+          done: 3
+          items: [File sorgente, Guida di una pagina, Un'ora di formazione, Primo post pubblicato]
+  proof:
+    items:
+      - {value: "4", label: Persone, note: Tutte allo stesso piano}
+      - {value: "6", label: Progetti all'anno, note: Non uno di più}
+      - {value: "4 sett.", label: Durata tipica di un'identità}
+  about:
+    title: Lo studio
+    text: Nordwand è nato in un ex laboratorio di Zurigo Ovest. Quattro persone, un solo calendario, nessuno stagista non pagato. Rifiutiamo più progetti di quanti ne accettiamo, per finire quelli che prendiamo.
+    icon: palette
+  pricing:
+    title: Tre formati
+    text: Un prezzo noto prima di cominciare.
+    items:
+      - name: Identità
+        price: CHF 9'000
+        unit: da
+        features: [Logo e sistema, Guida di una pagina, File sorgente]
+        cta: Chiedere un preventivo
+      - name: Identità + film
+        price: CHF 19'000
+        unit: da
+        features: [Tutto di Identità, Film di 60 s, Versione verticale, Due riletture]
+        featured: true
+        badge: Il più completo
+        cta: Parlare del progetto
+      - name: Direzione artistica
+        price: CHF 1'800
+        unit: / mese
+        features: [Due mezze giornate, Rilettura dei materiali, Senza impegno]
+        cta: Prenotare un mese
+  faq:
+    title: Domande
+    items:
+      - q: Lavorate con piccole strutture?
+        a: Sì, la maggior parte dei nostri clienti ha meno di venti persone. Il formato Identità è pensato per loro.
+      - q: Quante proposte di logo?
+        a: Tre piste, poi una sola sviluppata. Un miscuglio di due piste dà sempre un logo debole.
+      - q: Tenete i diritti?
+        a: No. File sorgente e diritti d'uso sono vostri dal pagamento finale.
+  contact:
+    title: Un progetto in mente?
+    text: Descrivetelo in cinque righe, entro 48 ore vi diciamo se possiamo prenderlo e quando.
+  cta:
+    title: Si comincia con mezza giornata.
+    text: Senza impegno, a Zurigo o in video.
+    button: Proporre una data

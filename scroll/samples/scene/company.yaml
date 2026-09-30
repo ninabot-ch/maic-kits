@@ -1,0 +1,15 @@
+# ÉCHANTILLON du thème « scene » — compagnie FICTIVE (Collectif Tremplin n'existe pas), pour la démo et les captures.
+name: Collectif Tremplin
+slug: collectif-tremplin
+theme: scene
+tagline:
+  fr: Concerts, scène ouverte et ateliers, à Bienne.
+  en: Concerts, open stage and workshops, in Biel/Bienne.
+  de: Konzerte, offene Bühne und Workshops, in Biel.
+  it: Concerti, palco aperto e laboratori, a Bienne.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#FF2E88"
+contact: {email: salut@collectif-tremplin.myaicompany.io, phone: "", city: Bienne}
+legal: {responsible: Association Collectif Tremplin, address: "Bienne, Suisse", registered: true, ide: CHE-000.000.000}
+social: {}

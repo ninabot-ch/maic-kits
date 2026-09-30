@@ -3,7 +3,7 @@
 # (maic-kits/kit-<name>), which is what the platform forks for each company.
 # Maintainers only: needs FORGE_URL and FORGE_TOKEN in the environment.
 set -euo pipefail
-KIT="${1:?usage: publish-to-forge.sh <vitrine|boutique>}"
+KIT="${1:?usage: publish-to-forge.sh <vitrine|boutique|scroll>}"
 : "${FORGE_URL:?FORGE_URL (e.g. http://forge.example:3003)}"; : "${FORGE_TOKEN:?FORGE_TOKEN}"
 HERE="$(cd "$(dirname "$0")/.." && pwd)"; [ -d "$HERE/$KIT" ] || { echo "no kit $KIT"; exit 1; }
 T="$(mktemp -d)"; trap 'rm -rf "$T"' EXIT

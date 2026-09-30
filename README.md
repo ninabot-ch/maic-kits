@@ -17,6 +17,7 @@ approves.
 |---|---|---|
 | [`vitrine/`](vitrine) | home, contact, legal notice, privacy (Swiss FADP) | a service, a craft, a freelancer |
 | [`boutique/`](boutique) | vitrine + shop, product page, basket, thank-you, terms of sale | selling a few products, TWINT / card or pay-later |
+| [`scroll/`](scroll) | everything in `vitrine` + a scroll-driven home (video hero, sticky story, rail, proof, pricing, FAQ) in **10 themes** (`company.yaml → theme:`), FR/EN/DE/IT | any company that wants a modern, animated site — pick a theme, keep the same content contract |
 
 Both kits are **bilingual by design** (FR + EN, default language at the root, the other
 under `/en/` or `/fr/`, `hreflang` set), ship the legal pages Swiss law expects, and post
@@ -56,6 +57,7 @@ rebâtit à chaque push. Les agents proposent du contenu sur des branches, le cl
 
 - `vitrine/` : accueil, contact, mentions légales, confidentialité (LPD).
 - `boutique/` : vitrine + boutique, fiche produit, panier, merci, CGV.
+- `scroll/` : tout `vitrine` + une page d'accueil au défilement (hero vidéo optionnel, scène collante, rail, preuves, tarifs, FAQ) en **10 thèmes** (`company.yaml → theme:`), FR/EN/DE/IT.
 
 FR + EN obligatoires, pages légales suisses incluses, formulaires vers l'API de la plateforme.
 Contrat détaillé dans `docs/contract.md`, règles de contribution dans `CONTRIBUTING.md`.

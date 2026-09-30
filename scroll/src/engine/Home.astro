@@ -1,0 +1,47 @@
+---
+// La home : les sections dans l'ordre du thème (theme.sections), chacune présente seulement si sa clé de content.yaml l'est.
+import HeroMedia from './HeroMedia.astro';
+import Story from './Story.astro';
+import Rail from './Rail.astro';
+import Split from './Split.astro';
+import Proof from './Proof.astro';
+import Reviews from './Reviews.astro';
+import Pricing from './Pricing.astro';
+import Gallery from './Gallery.astro';
+import FAQ from './FAQ.astro';
+import CTA from './CTA.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { company, content, UI, reviews, reviewsAvg, tagline, shopEnabled, prefix as pfx, theme } from '../site.js';
+const { lang, gallery: galleryWanted } = Astro.props;   // `gallery` : marqueur du contrat Studio posé par index.astro
+const C = content(lang); const T = UI[lang] || UI.fr; const prefix = pfx(lang);
+const has = {
+  hero: true,
+  story: !!(C.story && C.story.steps && C.story.steps.length),
+  rail: !!(C.services && C.services.length),
+  split: !!((C.about && C.about.title) || (C.split && C.split.length)),
+  proof: !!(C.proof && C.proof.items && C.proof.items.length),
+  reviews: reviews.length > 0,
+  pricing: !!(C.pricing && C.pricing.items && C.pricing.items.length),
+  gallery: !!(C.gallery && C.gallery.items && C.gallery.items.length) || !!galleryWanted,
+  faq: !!(C.faq && C.faq.items && C.faq.items.length),
+  shop: shopEnabled && !!(C.shop && C.shop.title),
+  contact: !!(C.contact && C.contact.title),
+  cta: !!(C.cta && C.cta.title),
+};
+const CMP = { hero: HeroMedia, story: Story, rail: Rail, split: Split, proof: Proof, reviews: Reviews, pricing: Pricing, gallery: Gallery, faq: FAQ, cta: CTA };
+const order = (theme.sections || ['hero', 'story', 'rail', 'split', 'proof', 'gallery', 'pricing', 'reviews', 'faq', 'contact', 'cta']).filter(k => has[k]);
+const ALT = new Set(theme.alt || []);
+const props = { C, T, lang, theme, prefix, tagline: tagline(lang), company, reviews, reviewsAvg };
+---
+<div class="home" data-hero={theme.hero}>
+  {order.map((k, i) => {
+    const Cmp = CMP[k];
+    return (<>
+      {i === 1 ? <span id="next" aria-hidden="true"></span> : null}
+      {k === 'contact' ? <ContactForm lang={lang} title={C.contact.title} text={C.contact.text} />
+        : k === 'shop' ? <section id="shop" class={`shop-teaser sec${ALT.has(k) ? ' sec--alt' : ''}`} data-scroll="reveal" aria-labelledby="shop-title"><div class="wrap"><header class="sec__head"><h2 id="shop-title">{C.shop.title}</h2>{C.shop.text ? <p>{C.shop.text}</p> : null}</header><a class="btn" href={prefix + '/shop/'}>{C.shop.cta || T.nav_shop}</a></div></section>
+        : <Cmp {...props} alt={ALT.has(k)} />}
+    </>);
+  })}
+</div>
+<script>import './scroll.js';</script>

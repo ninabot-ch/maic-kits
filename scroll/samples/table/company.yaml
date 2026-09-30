@@ -1,0 +1,15 @@
+# ÉCHANTILLON du thème « table » — compagnie FICTIVE (Le Grenier n'existe pas), pour la démo et les captures.
+name: Le Grenier
+slug: le-grenier
+theme: table
+tagline:
+  fr: Cuisine du Valais, produits de la vallée, à Sion.
+  en: Valais cooking, produce from the valley, in Sion.
+  de: Walliser Küche, Produkte aus dem Tal, in Sitten.
+  it: Cucina vallesana, prodotti della valle, a Sion.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#C7791E"
+contact: {email: table@le-grenier.myaicompany.io, phone: "", city: Sion}
+legal: {responsible: Élise Bonvin, address: "Sion, Suisse", registered: false, ide: ""}
+social: {}

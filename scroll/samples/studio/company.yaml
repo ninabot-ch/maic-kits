@@ -1,0 +1,15 @@
+# ÉCHANTILLON du thème « studio » — compagnie FICTIVE (Nordwand n'existe pas), pour la démo et les captures.
+name: Nordwand
+slug: nordwand
+theme: studio
+tagline:
+  fr: Identités visuelles et films de marque, depuis Zurich.
+  en: Visual identities and brand films, from Zurich.
+  de: Visuelle Identitäten und Markenfilme, aus Zürich.
+  it: Identità visive e film di marca, da Zurigo.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#E8FF47"
+contact: {email: hello@nordwand.myaicompany.io, phone: "", city: Zurich}
+legal: {responsible: Nordwand GmbH, address: Zurich, Suisse, registered: true, ide: CHE-000.000.000}
+social: {}

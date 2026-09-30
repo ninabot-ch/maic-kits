@@ -1,0 +1,23 @@
+---
+import { icon } from './icons.js';
+const { C, T, alt, prefix } = Astro.props;
+const P = C.pricing || {}; const items = P.items || [];
+const href = h => (h || '/contact/').startsWith('#') || (h || '').startsWith('http') ? h : prefix + (h || '/contact/');
+---
+<section id="pricing" class={`pricing sec${alt ? ' sec--alt' : ''}`} data-scroll="reveal" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <header class="sec__head sec__head--center">{P.kicker ? <p class="kicker">{P.kicker}</p> : null}<h2 id="pricing-title">{P.title}</h2>{P.text ? <p>{P.text}</p> : null}</header>
+    <ul class="pricing__grid">
+      {items.map(it => (
+        <li class={`pricing__card${it.featured ? ' pricing__card--featured' : ''}`}>
+          {it.featured && it.badge ? <span class="pricing__badge">{it.badge}</span> : null}
+          <h3 class="pricing__name">{it.name}</h3>
+          <div class="pricing__price">{it.price}{it.unit ? <small>{it.unit}</small> : null}</div>
+          {it.text ? <p class="pricing__text">{it.text}</p> : null}
+          {it.features && it.features.length ? <ul class="pricing__features">{it.features.map(f => <li><Fragment set:html={icon('check')} /><span>{f}</span></li>)}</ul> : null}
+          <a class={`btn${it.featured ? '' : ' ghost'}`} href={href(it.href)}>{it.cta || T.pricing_cta}</a>
+        </li>))}
+    </ul>
+    {P.note ? <p class="pricing__note">{P.note}</p> : null}
+  </div>
+</section>

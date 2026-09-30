@@ -1,0 +1,32 @@
+# ÉCHANTILLON du thème « atelier » — compagnie FICTIVE (Rive & Fil n'existe pas), pour la démo et les captures.
+# Édité depuis le deck (Centrale) chez un vrai client, jamais à la main.
+name: Rive & Fil
+slug: rive-et-fil
+theme: atelier
+tagline:
+  fr: Reliure et papeterie à la main, à Vevey.
+  en: Hand bookbinding and stationery, in Vevey.
+  de: Buchbinderei und Papeterie von Hand, in Vevey.
+  it: Legatoria e cartoleria a mano, a Vevey.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#B5562F"
+contact:
+  email: bonjour@rive-et-fil.myaicompany.io
+  phone: ""
+  city: Vevey
+legal:
+  responsible: Claire Dubuis
+  address: Vevey, Suisse
+  registered: false
+  ide: ""
+social: {}
+shop:
+  currency: CHF
+  vat_registered: false
+  pickup: true
+  pickup_note: {fr: "Retrait à l'atelier, sur rendez-vous.", en: "Pickup at the workshop, by appointment.", de: "Abholung in der Werkstatt, nach Vereinbarung.", it: "Ritiro in bottega, su appuntamento."}
+  shipping_cents: 900
+  free_shipping_from_cents: 15000
+  delivery_days: 6
+  return_days: 14

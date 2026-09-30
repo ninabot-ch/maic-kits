@@ -1,0 +1,31 @@
+---
+// Galerie du client (Studio → site.images) avec visionneuse <dialog> native — reprise du kit vitrine.
+const { C, T, alt } = Astro.props;
+const G = C.gallery || {}; const items = G.items || [];
+---
+<section id="gallery" class={`gallery sec${alt ? ' sec--alt' : ''}`} data-scroll="reveal" aria-labelledby="gallery-title">
+  <div class="wrap">
+    <header class="sec__head"><h2 id="gallery-title">{G.title}</h2>{G.text ? <p>{G.text}</p> : null}</header>
+    <div class="gallery__grid">{items.map((g, i) => <figure><button type="button" class="shot" data-i={i} aria-label={g.alt || T.zoom}><img src={g.src} alt={g.alt || ''} loading="lazy" decoding="async" /></button>{g.alt ? <figcaption>{g.alt}</figcaption> : null}</figure>)}</div>
+    <dialog class="lightbox" id="lb" aria-label={G.title}>
+      <button class="lb-x" id="lb-x" aria-label={T.close}>×</button>
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label={T.prev}>‹</button>
+      <img id="lb-img" src="" alt="" />
+      <button class="lb-nav lb-next" id="lb-next" aria-label={T.next}>›</button>
+      <p class="lb-cap" id="lb-cap"></p>
+    </dialog>
+    <script is:inline define:vars={{ items }}>
+      (function () {
+        var lb = document.getElementById('lb'), img = document.getElementById('lb-img'), cap = document.getElementById('lb-cap'), i = 0;
+        if (!lb || !lb.showModal) return;
+        function show(n) { i = (n + items.length) % items.length; img.src = items[i].src; img.alt = items[i].alt || ''; cap.textContent = items[i].alt || ''; }
+        document.querySelectorAll('.gallery__grid .shot').forEach(function (b) { b.addEventListener('click', function () { show(+b.dataset.i); lb.showModal(); }); });
+        document.getElementById('lb-x').addEventListener('click', function () { lb.close(); });
+        document.getElementById('lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(i - 1); });
+        document.getElementById('lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(i + 1); });
+        lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+        lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') show(i + 1); if (e.key === 'ArrowLeft') show(i - 1); });
+      })();
+    </script>
+  </div>
+</section>

@@ -1,0 +1,477 @@
+# ÉCHANTILLON du thème « table » — contenu FICTIF (Le Grenier, Sion). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Restaurant — vieille ville de Sion
+    title: La vallée dans l'assiette.
+    text: Une carte courte qui change avec les saisons, des vins de la région et une salle de trente couverts sous les poutres.
+    cta: Réserver une table
+    cta_href: /reserver/
+    cta2: Voir la carte
+    cta2_href: "#services"
+  about:
+    title: La maison
+    text: Un ancien grenier à grains du XVIIIe, trois marches sous la rue. Élise Bonvin y cuisine depuis six ans ce que les producteurs de la vallée lui apportent le matin — pas plus de huit plats à la carte, jamais les mêmes en février qu'en août.
+    quote: On n'écrit la carte qu'après avoir fait le marché.
+    icon: plate
+  split:
+    - title: Les producteurs
+      text: Le fromage vient de Bruson, les légumes de Saxon, la viande de Nendaz. On les nomme sur la carte, et ils viennent parfois manger.
+      icon: leaf
+  services_title: La carte, par moments
+  services:
+    - title: Midi
+      text: Deux entrées, deux plats, un dessert. Menu du jour en 45 minutes si vous le demandez.
+      detail: Du mardi au vendredi, 11 h 45 à 14 h. Menu du jour à 26 CHF, avec café.
+      icon: sun
+      price: 26 CHF
+    - title: Soir
+      text: La carte complète et le menu du Grenier en cinq services, accordés aux vins de la vallée.
+      detail: Du mardi au samedi, 18 h 30 à 22 h. Menu en cinq services 89 CHF, accord mets-vins 45 CHF.
+      icon: plate
+      price: dès 89 CHF
+    - title: Brunch du dimanche
+      text: Pain de la boulangerie d'à côté, fromages, œufs de Saxon, tartes maison.
+      detail: Un seul service à 11 h, sur réservation. 42 CHF, enfants jusqu'à 10 ans 18 CHF.
+      icon: coffee
+      price: 42 CHF
+    - title: Privatisation
+      text: La salle entière pour trente personnes, menu composé avec vous.
+      detail: Mariages, anniversaires, repas d'entreprise. Dès 20 personnes, sur devis.
+      icon: users
+      price: sur devis
+  story:
+    kicker: Une soirée au Grenier
+    title: De la réservation au café.
+    steps:
+      - label: 18 h 30
+        title: Vous arrivez
+        text: Trois marches, une porte basse, la chaleur de la cuisine ouverte. On vous installe sous les poutres.
+        visual:
+          kind: map
+          city: Sion
+          label: Rue des Châteaux, Sion
+      - label: 19 h
+        title: La carte du jour
+        text: Huit plats, écrits le matin même. Élise passe en salle vous dire ce qui est arrivé du marché.
+        visual:
+          kind: list
+          title: Ce soir
+          items: [Velouté de courge de Saxon, Filet de féra du Léman, Tarte aux abricots de Nendaz]
+      - label: 19 h 30
+        title: Les vins
+        text: Une trentaine de références, presque toutes du Valais. On vous conseille au verre, sans cérémonie.
+        visual:
+          kind: chart
+          title: Notre cave (exemple)
+          badge: références
+          series: [{label: Fendant, value: 8}, {label: Petite Arvine, value: 6, hot: true}, {label: Cornalin, value: 7}, {label: Humagne, value: 5}]
+      - label: 22 h
+        title: Le café
+        text: On ne vous presse pas. La salle se vide doucement, la cuisine range, vous finissez le dessert.
+        visual:
+          kind: quote
+          text: On ne compte pas les tables, on compte les gens qui reviennent.
+          author: Élise Bonvin
+  proof:
+    items:
+      - {value: "30", label: Couverts, note: Sous les poutres}
+      - {value: "8", label: Plats à la carte, note: Jamais plus}
+      - {value: "12", label: Producteurs de la vallée, note: Nommés sur la carte}
+  pricing:
+    title: Menus
+    text: Prix TTC, service compris.
+    items:
+      - name: Menu du jour
+        price: 26 CHF
+        unit: midi
+        features: [Entrée et plat, Café compris, Du mardi au vendredi]
+        cta: Réserver
+        href: /reserver/
+      - name: Menu du Grenier
+        price: 89 CHF
+        unit: cinq services
+        features: [Composé le matin même, Accord mets-vins +45 CHF, Végétarien sur demande]
+        featured: true
+        badge: Le soir
+        cta: Réserver une table
+        href: /reserver/
+      - name: Brunch
+        price: 42 CHF
+        unit: dimanche
+        features: [Un service à 11 h, Enfants 18 CHF, Sur réservation]
+        cta: Réserver
+        href: /reserver/
+  faq:
+    title: Bon à savoir
+    items:
+      - q: Faut-il réserver ?
+        a: Le soir et le dimanche, oui — trente couverts partent vite. Le midi, on vous trouve souvent une place.
+      - q: Avez-vous des plats végétariens ?
+        a: Toujours au moins deux à la carte, et le menu du Grenier existe en version végétarienne si vous le dites à la réservation.
+      - q: Les enfants sont-ils les bienvenus ?
+        a: Oui, avec chaises hautes et un plat du jour à leur taille. Le dimanche, le brunch est pensé pour eux.
+  contact:
+    title: Une question, un groupe, une allergie ?
+    text: Écrivez-nous, Élise ou Marc vous répond entre deux services.
+  cta:
+    title: Ce soir, sous les poutres ?
+    text: Trente couverts, du mardi au samedi.
+    button: Réserver une table
+    href: /reserver/
+en:
+  hero:
+    kicker: Restaurant — old town of Sion
+    title: The valley on your plate.
+    text: A short menu that changes with the seasons, wines from the region and a thirty-seat room under the beams.
+    cta: Book a table
+    cta_href: /reserver/
+    cta2: See the menu
+    cta2_href: "#services"
+  about:
+    title: The house
+    text: An 18th-century grain loft, three steps below the street. Élise Bonvin has cooked here for six years whatever the valley's producers bring in the morning — never more than eight dishes, never the same in February as in August.
+    quote: We only write the menu after going to the market.
+    icon: plate
+  split:
+    - title: The producers
+      text: The cheese comes from Bruson, the vegetables from Saxon, the meat from Nendaz. We name them on the menu, and sometimes they come to eat.
+      icon: leaf
+  services_title: The menu, by moments
+  services:
+    - title: Lunch
+      text: Two starters, two mains, one dessert. Lunch menu in 45 minutes if you ask.
+      detail: Tuesday to Friday, 11.45 am to 2 pm. Lunch menu CHF 26, with coffee.
+      icon: sun
+      price: CHF 26
+    - title: Dinner
+      text: The full menu and the five-course Grenier menu, paired with wines from the valley.
+      detail: Tuesday to Saturday, 6.30 pm to 10 pm. Five-course menu CHF 89, wine pairing CHF 45.
+      icon: plate
+      price: from CHF 89
+    - title: Sunday brunch
+      text: Bread from the bakery next door, cheeses, eggs from Saxon, homemade tarts.
+      detail: One sitting at 11 am, by reservation. CHF 42, children up to 10 CHF 18.
+      icon: coffee
+      price: CHF 42
+    - title: Private hire
+      text: The whole room for thirty people, menu composed with you.
+      detail: Weddings, birthdays, company dinners. From 20 people, on quote.
+      icon: users
+      price: on quote
+  story:
+    kicker: An evening at the Grenier
+    title: From the booking to the coffee.
+    steps:
+      - label: 6.30 pm
+        title: You arrive
+        text: Three steps, a low door, the warmth of the open kitchen. We seat you under the beams.
+        visual:
+          kind: map
+          city: Sion
+          label: Rue des Châteaux, Sion
+      - label: 7 pm
+        title: Today's menu
+        text: Eight dishes, written that morning. Élise comes to the room to tell you what arrived from the market.
+        visual:
+          kind: list
+          title: Tonight
+          items: [Saxon pumpkin velouté, Fillet of Lake Geneva féra, Nendaz apricot tart]
+      - label: 7.30 pm
+        title: The wines
+        text: Around thirty references, almost all from Valais. We advise by the glass, without ceremony.
+        visual:
+          kind: chart
+          title: Our cellar (example)
+          badge: references
+          series: [{label: Fendant, value: 8}, {label: Petite Arvine, value: 6, hot: true}, {label: Cornalin, value: 7}, {label: Humagne, value: 5}]
+      - label: 10 pm
+        title: The coffee
+        text: We do not rush you. The room empties slowly, the kitchen tidies up, you finish dessert.
+        visual:
+          kind: quote
+          text: We do not count tables, we count the people who come back.
+          author: Élise Bonvin
+  proof:
+    items:
+      - {value: "30", label: Seats, note: Under the beams}
+      - {value: "8", label: Dishes on the menu, note: Never more}
+      - {value: "12", label: Producers from the valley, note: Named on the menu}
+  pricing:
+    title: Menus
+    text: Prices incl. tax and service.
+    items:
+      - name: Lunch menu
+        price: CHF 26
+        unit: lunch
+        features: [Starter and main, Coffee included, Tuesday to Friday]
+        cta: Book
+        href: /reserver/
+      - name: Grenier menu
+        price: CHF 89
+        unit: five courses
+        features: [Composed that morning, Wine pairing +CHF 45, Vegetarian on request]
+        featured: true
+        badge: Evenings
+        cta: Book a table
+        href: /reserver/
+      - name: Brunch
+        price: CHF 42
+        unit: Sunday
+        features: [One sitting at 11 am, Children CHF 18, By reservation]
+        cta: Book
+        href: /reserver/
+  faq:
+    title: Good to know
+    items:
+      - q: Do I need to book?
+        a: Evenings and Sundays, yes — thirty seats go fast. At lunch we can often find you a place.
+      - q: Do you have vegetarian dishes?
+        a: Always at least two on the menu, and the Grenier menu exists in a vegetarian version if you say so when booking.
+      - q: Are children welcome?
+        a: Yes, with high chairs and a child-sized dish of the day. On Sundays, brunch is made for them.
+  contact:
+    title: A question, a group, an allergy?
+    text: Write to us; Élise or Marc answers between two services.
+  cta:
+    title: Tonight, under the beams?
+    text: Thirty seats, Tuesday to Saturday.
+    button: Book a table
+    href: /reserver/
+de:
+  hero:
+    kicker: Restaurant — Altstadt von Sitten
+    title: Das Tal auf dem Teller.
+    text: Eine kurze Karte, die mit den Jahreszeiten wechselt, Weine aus der Region und ein Saal mit dreissig Plätzen unter den Balken.
+    cta: Tisch reservieren
+    cta_href: /reserver/
+    cta2: Karte ansehen
+    cta2_href: "#services"
+  about:
+    title: Das Haus
+    text: Ein Kornspeicher aus dem 18. Jahrhundert, drei Stufen unter der Strasse. Élise Bonvin kocht hier seit sechs Jahren, was die Produzenten des Tals am Morgen bringen — nie mehr als acht Gerichte, im Februar nie dieselben wie im August.
+    quote: Die Karte schreiben wir erst nach dem Markt.
+    icon: plate
+  split:
+    - title: Die Produzenten
+      text: Der Käse kommt aus Bruson, das Gemüse aus Saxon, das Fleisch aus Nendaz. Wir nennen sie auf der Karte, und manchmal kommen sie zum Essen.
+      icon: leaf
+  services_title: Die Karte, nach Momenten
+  services:
+    - title: Mittag
+      text: Zwei Vorspeisen, zwei Hauptgänge, ein Dessert. Tagesmenü in 45 Minuten, wenn Sie es wünschen.
+      detail: Dienstag bis Freitag, 11.45 bis 14 Uhr. Tagesmenü CHF 26, mit Kaffee.
+      icon: sun
+      price: CHF 26
+    - title: Abend
+      text: Die ganze Karte und das Grenier-Menü in fünf Gängen, begleitet von Weinen aus dem Tal.
+      detail: Dienstag bis Samstag, 18.30 bis 22 Uhr. Fünf-Gang-Menü CHF 89, Weinbegleitung CHF 45.
+      icon: plate
+      price: ab CHF 89
+    - title: Sonntagsbrunch
+      text: Brot von der Bäckerei nebenan, Käse, Eier aus Saxon, hausgemachte Kuchen.
+      detail: Ein Service um 11 Uhr, auf Reservation. CHF 42, Kinder bis 10 Jahre CHF 18.
+      icon: coffee
+      price: CHF 42
+    - title: Privatanlass
+      text: Der ganze Saal für dreissig Personen, Menü mit Ihnen zusammengestellt.
+      detail: Hochzeiten, Geburtstage, Firmenessen. Ab 20 Personen, nach Offerte.
+      icon: users
+      price: nach Offerte
+  story:
+    kicker: Ein Abend im Grenier
+    title: Von der Reservation bis zum Kaffee.
+    steps:
+      - label: 18.30 Uhr
+        title: Sie kommen an
+        text: Drei Stufen, eine niedrige Tür, die Wärme der offenen Küche. Wir setzen Sie unter die Balken.
+        visual:
+          kind: map
+          city: Sion
+          label: Rue des Châteaux, Sitten
+      - label: 19 Uhr
+        title: Die Tageskarte
+        text: Acht Gerichte, am selben Morgen geschrieben. Élise kommt in den Saal und erzählt, was vom Markt gekommen ist.
+        visual:
+          kind: list
+          title: Heute Abend
+          items: [Kürbissuppe aus Saxon, Felchenfilet aus dem Genfersee, Aprikosenkuchen aus Nendaz]
+      - label: 19.30 Uhr
+        title: Die Weine
+        text: Rund dreissig Positionen, fast alle aus dem Wallis. Wir beraten glasweise, ohne Zeremonie.
+        visual:
+          kind: chart
+          title: Unser Keller (Beispiel)
+          badge: Positionen
+          series: [{label: Fendant, value: 8}, {label: Petite Arvine, value: 6, hot: true}, {label: Cornalin, value: 7}, {label: Humagne, value: 5}]
+      - label: 22 Uhr
+        title: Der Kaffee
+        text: Wir drängen Sie nicht. Der Saal leert sich langsam, die Küche räumt auf, Sie beenden das Dessert.
+        visual:
+          kind: quote
+          text: Wir zählen keine Tische, wir zählen die Menschen, die wiederkommen.
+          author: Élise Bonvin
+  proof:
+    items:
+      - {value: "30", label: Plätze, note: Unter den Balken}
+      - {value: "8", label: Gerichte auf der Karte, note: Nie mehr}
+      - {value: "12", label: Produzenten aus dem Tal, note: Auf der Karte genannt}
+  pricing:
+    title: Menüs
+    text: Preise inkl. MWST und Service.
+    items:
+      - name: Tagesmenü
+        price: CHF 26
+        unit: mittags
+        features: [Vorspeise und Hauptgang, Kaffee inbegriffen, Dienstag bis Freitag]
+        cta: Reservieren
+        href: /reserver/
+      - name: Grenier-Menü
+        price: CHF 89
+        unit: fünf Gänge
+        features: [Am selben Morgen zusammengestellt, Weinbegleitung +CHF 45, Vegetarisch auf Anfrage]
+        featured: true
+        badge: Abends
+        cta: Tisch reservieren
+        href: /reserver/
+      - name: Brunch
+        price: CHF 42
+        unit: sonntags
+        features: [Ein Service um 11 Uhr, Kinder CHF 18, Auf Reservation]
+        cta: Reservieren
+        href: /reserver/
+  faq:
+    title: Gut zu wissen
+    items:
+      - q: Muss man reservieren?
+        a: Abends und sonntags ja — dreissig Plätze sind schnell weg. Mittags finden wir oft einen Platz für Sie.
+      - q: Gibt es vegetarische Gerichte?
+        a: Immer mindestens zwei auf der Karte, und das Grenier-Menü gibt es vegetarisch, wenn Sie es bei der Reservation sagen.
+      - q: Sind Kinder willkommen?
+        a: Ja, mit Hochstühlen und einem Tagesgericht in ihrer Grösse. Sonntags ist der Brunch für sie gedacht.
+  contact:
+    title: Eine Frage, eine Gruppe, eine Allergie?
+    text: Schreiben Sie uns; Élise oder Marc antwortet zwischen zwei Services.
+  cta:
+    title: Heute Abend, unter den Balken?
+    text: Dreissig Plätze, Dienstag bis Samstag.
+    button: Tisch reservieren
+    href: /reserver/
+it:
+  hero:
+    kicker: Ristorante — città vecchia di Sion
+    title: La valle nel piatto.
+    text: Una carta breve che cambia con le stagioni, vini della regione e una sala di trenta coperti sotto le travi.
+    cta: Prenotare un tavolo
+    cta_href: /reserver/
+    cta2: Vedere la carta
+    cta2_href: "#services"
+  about:
+    title: La casa
+    text: Un antico granaio del XVIII secolo, tre gradini sotto la strada. Élise Bonvin vi cucina da sei anni ciò che i produttori della valle le portano al mattino — non più di otto piatti in carta, mai gli stessi a febbraio e ad agosto.
+    quote: La carta si scrive solo dopo aver fatto il mercato.
+    icon: plate
+  split:
+    - title: I produttori
+      text: Il formaggio viene da Bruson, le verdure da Saxon, la carne da Nendaz. Li nominiamo in carta, e a volte vengono a mangiare.
+      icon: leaf
+  services_title: La carta, per momenti
+  services:
+    - title: Mezzogiorno
+      text: Due antipasti, due piatti, un dessert. Menù del giorno in 45 minuti se lo chiedete.
+      detail: Dal martedì al venerdì, dalle 11.45 alle 14. Menù del giorno CHF 26, caffè compreso.
+      icon: sun
+      price: CHF 26
+    - title: Sera
+      text: La carta completa e il menù del Grenier in cinque portate, abbinato ai vini della valle.
+      detail: Dal martedì al sabato, dalle 18.30 alle 22. Menù in cinque portate CHF 89, abbinamento vini CHF 45.
+      icon: plate
+      price: da CHF 89
+    - title: Brunch della domenica
+      text: Pane della panetteria accanto, formaggi, uova di Saxon, crostate fatte in casa.
+      detail: Un solo servizio alle 11, su prenotazione. CHF 42, bambini fino a 10 anni CHF 18.
+      icon: coffee
+      price: CHF 42
+    - title: Privatizzazione
+      text: La sala intera per trenta persone, menù composto con voi.
+      detail: Matrimoni, compleanni, cene aziendali. Da 20 persone, su preventivo.
+      icon: users
+      price: su preventivo
+  story:
+    kicker: Una serata al Grenier
+    title: Dalla prenotazione al caffè.
+    steps:
+      - label: 18.30
+        title: Arrivate
+        text: Tre gradini, una porta bassa, il calore della cucina aperta. Vi sistemiamo sotto le travi.
+        visual:
+          kind: map
+          city: Sion
+          label: Rue des Châteaux, Sion
+      - label: 19.00
+        title: La carta del giorno
+        text: Otto piatti, scritti la mattina stessa. Élise passa in sala a dirvi cosa è arrivato dal mercato.
+        visual:
+          kind: list
+          title: Stasera
+          items: [Vellutata di zucca di Saxon, Filetto di coregone del Lemano, Crostata di albicocche di Nendaz]
+      - label: 19.30
+        title: I vini
+        text: Una trentina di etichette, quasi tutte del Vallese. Vi consigliamo al bicchiere, senza cerimonie.
+        visual:
+          kind: chart
+          title: La nostra cantina (esempio)
+          badge: etichette
+          series: [{label: Fendant, value: 8}, {label: Petite Arvine, value: 6, hot: true}, {label: Cornalin, value: 7}, {label: Humagne, value: 5}]
+      - label: 22.00
+        title: Il caffè
+        text: Non vi mettiamo fretta. La sala si svuota piano, la cucina riordina, voi finite il dessert.
+        visual:
+          kind: quote
+          text: Non contiamo i tavoli, contiamo le persone che tornano.
+          author: Élise Bonvin
+  proof:
+    items:
+      - {value: "30", label: Coperti, note: Sotto le travi}
+      - {value: "8", label: Piatti in carta, note: Mai di più}
+      - {value: "12", label: Produttori della valle, note: Nominati in carta}
+  pricing:
+    title: Menù
+    text: Prezzi IVA e servizio compresi.
+    items:
+      - name: Menù del giorno
+        price: CHF 26
+        unit: a mezzogiorno
+        features: [Antipasto e piatto, Caffè compreso, Dal martedì al venerdì]
+        cta: Prenotare
+        href: /reserver/
+      - name: Menù del Grenier
+        price: CHF 89
+        unit: cinque portate
+        features: [Composto la mattina stessa, Abbinamento vini +CHF 45, Vegetariano su richiesta]
+        featured: true
+        badge: La sera
+        cta: Prenotare un tavolo
+        href: /reserver/
+      - name: Brunch
+        price: CHF 42
+        unit: domenica
+        features: [Un servizio alle 11, Bambini CHF 18, Su prenotazione]
+        cta: Prenotare
+        href: /reserver/
+  faq:
+    title: Buono a sapersi
+    items:
+      - q: Bisogna prenotare?
+        a: La sera e la domenica, sì — trenta coperti vanno via in fretta. A mezzogiorno spesso vi troviamo un posto.
+      - q: Avete piatti vegetariani?
+        a: Sempre almeno due in carta, e il menù del Grenier esiste in versione vegetariana se lo dite alla prenotazione.
+      - q: I bambini sono benvenuti?
+        a: Sì, con seggioloni e un piatto del giorno a loro misura. La domenica il brunch è pensato per loro.
+  contact:
+    title: Una domanda, un gruppo, un'allergia?
+    text: Scriveteci, Élise o Marc vi risponde tra due servizi.
+  cta:
+    title: Stasera, sotto le travi?
+    text: Trenta coperti, dal martedì al sabato.
+    button: Prenotare un tavolo
+    href: /reserver/

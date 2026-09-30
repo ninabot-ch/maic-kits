@@ -1,0 +1,42 @@
+---
+// Story — N temps collants : le cadre visuel (image | pictogramme | chiffre) change par temps, un rail de progression suit.
+// Le temps 01 est l'état de repos (classes is-active servies) : sans JS la section est complète et lisible.
+import { visual } from './visuals.js';
+import { words } from '../site.js';
+const { C, T, alt, company } = Astro.props;
+const S = C.story || {}; const steps = S.steps || []; const n = steps.length;
+const pad = i => String(i + 1).padStart(2, '0');
+---
+<section id="story" class={`story${alt ? ' sec--alt' : ''}`} data-scroll="pin" data-steps={n} data-step="0" aria-labelledby="story-title">
+  <div class="wrap">
+    <header class="sec__head">
+      {S.kicker ? <p class="kicker">{S.kicker}</p> : null}
+      <h2 id="story-title" class="reveal-title">{words(S.title || '').map((w, i) => <><span class="w" style={`--i:${i}`}>{w}</span>{' '}</>)}</h2>
+      {S.text ? <p>{S.text}</p> : null}
+    </header>
+  </div>
+  <div class="wrap story__grid">
+    <div class="story__stage">
+      <ol class="story__rail" aria-label={T.story_rail}>
+        <span class="story__fill" aria-hidden="true"></span>
+        {steps.map((s, i) => <li data-i={i} class={i === 0 ? 'is-active' : ''} aria-current={i === 0 ? 'step' : undefined}>{pad(i)}</li>)}
+      </ol>
+      <div class="story__frame">
+        {steps.map((s, i) => { const V = s.visual || {}; return (
+          <figure class={`story__visual${i === 0 ? ' is-active' : ''}`} data-i={i} aria-hidden={i !== 0}>
+            {!V.image ? <span class="story__bg" aria-hidden="true">{pad(i)}</span> : null}
+            <Fragment set:html={visual(V, s, { company }, i)} />
+            {V.caption ? <figcaption>{V.caption}</figcaption> : null}
+          </figure>); })}
+      </div>
+    </div>
+    <ol class="story__steps">
+      {steps.map((s, i) => (
+        <li class={`story__step${i === 0 ? ' is-active' : ''}`} data-i={i}>
+          <p class="story__label"><span>{pad(i)}</span>{s.label ? <span>{s.label}</span> : null}</p>
+          <h3>{s.title}</h3>
+          <p>{s.text}</p>
+        </li>))}
+    </ol>
+  </div>
+</section>

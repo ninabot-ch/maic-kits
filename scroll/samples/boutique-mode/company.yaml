@@ -1,0 +1,16 @@
+# ÉCHANTILLON du thème « boutique-mode » — compagnie FICTIVE (Maison Salomé n'existe pas), pour la démo et les captures.
+name: Maison Salomé
+slug: maison-salome
+theme: boutique-mode
+tagline:
+  fr: Couture sur mesure et pièces en série courte, à Genève.
+  en: Made-to-measure and short-run pieces, in Geneva.
+  de: Massschneiderei und Kleinserien, in Genf.
+  it: Sartoria su misura e capi in serie limitata, a Ginevra.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#141210"
+contact: {email: atelier@maison-salome.myaicompany.io, phone: "", city: Genève}
+legal: {responsible: Salomé Girard, address: "Genève, Suisse", registered: false, ide: ""}
+social: {}
+shop: {currency: CHF, vat_registered: false, pickup: true, pickup_note: {fr: "Retrait à l'atelier, sur rendez-vous.", en: "Pickup at the atelier, by appointment.", de: "Abholung im Atelier, nach Vereinbarung.", it: "Ritiro in atelier, su appuntamento."}, shipping_cents: 1200, free_shipping_from_cents: 25000, delivery_days: 4, return_days: 14}

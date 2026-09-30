@@ -1,0 +1,14 @@
+# Thème « scene » — événementiel, musique, associations : néon, contrastes forts, typo affiche, mot à mot.
+label: {fr: Scène, en: Stage, de: Bühne, it: Palco}
+mood: dark
+fonts:
+  display: {family: "Bebas Neue", fallback: "Impact, 'Arial Narrow', sans-serif", files: [{file: bebasneue-400.woff2, weight: 400}]}
+  text: {family: Rubik, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: rubik-400.woff2, weight: 400}, {file: rubik-600.woff2, weight: 600}]}
+colors: {bg: "#07060B", bg-2: "#0F0C18", ink: "#FFFFFF", muted: "#B7B3C9", line: "#2A2540", panel: "#120F1C", accent: "#FF2E88", accent-ink: "#FFFFFF", hero-a: "#FF2E88", hero-b: "#21F0C9", hero-ink: "#FFFFFF"}
+radius: {card: 12px, btn: 999px}
+shadow: "0 0 0 1px rgba(255,255,255,.04)"
+hero: type
+motion: letters
+sections: [hero, rail, story, proof, split, pricing, faq, contact, cta]
+alt: [proof]
+variants: {rail: pinned, proof: cards}

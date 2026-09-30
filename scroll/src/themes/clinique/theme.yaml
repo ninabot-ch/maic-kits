@@ -1,0 +1,14 @@
+# Thème « clinique » — santé, bien-être : clair, vert doux, formes rondes, zoom lent.
+label: {fr: Clinique, en: Clinic, de: Praxis, it: Studio medico}
+mood: light
+fonts:
+  display: {family: Outfit, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: outfit-600.woff2, weight: 600}]}
+  text: {family: "DM Sans", fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: dmsans-400.woff2, weight: 400}, {file: dmsans-600.woff2, weight: 600}]}
+colors: {bg: "#F4F8F6", bg-2: "#E9F2EE", ink: "#16302B", muted: "#5C726C", line: "#D6E3DD", panel: "#FFFFFF", accent: "#2F8F7A", accent-ink: "#FFFFFF", hero-a: "#D3EAE1", hero-b: "#9FD3C1", hero-ink: "#16302B"}
+radius: {card: 24px, btn: 999px}
+shadow: "0 20px 50px -30px rgba(22,48,43,.25)"
+hero: editorial
+motion: zoom
+sections: [hero, proof, rail, story, split, pricing, reviews, faq, contact, cta]
+alt: [story]
+variants: {rail: grid, proof: cards}

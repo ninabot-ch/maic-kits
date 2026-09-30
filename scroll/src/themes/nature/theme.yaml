@@ -1,0 +1,14 @@
+# Thème « nature » — agri, outdoor, tourisme : vert et terre, arrondis généreux, flottement organique.
+label: {fr: Nature, en: Nature, de: Natur, it: Natura}
+mood: light
+fonts:
+  display: {family: Lora, fallback: "Georgia, 'Times New Roman', serif", files: [{file: lora-600.woff2, weight: 600}]}
+  text: {family: Nunito, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: nunito-400.woff2, weight: 400}, {file: nunito-700.woff2, weight: 700}]}
+colors: {bg: "#F5F3EA", bg-2: "#EAE9DB", ink: "#22301F", muted: "#5F6B57", line: "#D9DAC8", panel: "#FFFFFF", accent: "#4E8A3E", accent-ink: "#FFFFFF", hero-a: "#1F3A1C", hero-b: "#6E9E4E", hero-ink: "#F5F3EA"}
+radius: {card: 28px, btn: 999px}
+shadow: "0 24px 50px -32px rgba(34,48,31,.35)"
+hero: full
+motion: float
+sections: [hero, split, rail, story, proof, pricing, gallery, reviews, faq, contact, cta]
+alt: [proof]
+variants: {rail: pinned, proof: cards}

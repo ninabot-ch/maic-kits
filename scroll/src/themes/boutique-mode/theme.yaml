@@ -1,0 +1,14 @@
+# Thème « boutique-mode » — mode, beauté : éditorial beige/noir, serif italique, hairlines, rideau.
+label: {fr: Boutique mode, en: Fashion boutique, de: Modeboutique, it: Boutique moda}
+mood: light
+fonts:
+  display: {family: "Cormorant Garamond", fallback: "Georgia, 'Times New Roman', serif", files: [{file: cormorant-600.woff2, weight: 600}, {file: cormorant-italic-500.woff2, weight: 500, style: italic}]}
+  text: {family: Jost, fallback: "Futura, 'Century Gothic', system-ui, sans-serif", files: [{file: jost-400.woff2, weight: 400}]}
+colors: {bg: "#F3EEE6", bg-2: "#EAE3D8", ink: "#141210", muted: "#6F675E", line: "#D9CFC1", panel: "#FAF7F2", accent: "#141210", accent-ink: "#F3EEE6", hero-a: "#E6DCCB", hero-b: "#C9B79C", hero-ink: "#141210"}
+radius: {card: 0px, btn: 0px}
+shadow: "none"
+hero: editorial
+motion: curtain
+sections: [hero, split, story, gallery, rail, proof, pricing, reviews, faq, contact, cta]
+alt: [story]
+variants: {rail: grid, proof: band}

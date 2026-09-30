@@ -1,0 +1,13 @@
+---
+import { icon } from './icons.js';
+const { C, alt } = Astro.props;
+const F = C.faq || {}; const items = F.items || [];
+---
+<section id="faq" class={`faq sec${alt ? ' sec--alt' : ''}`} data-scroll="reveal" aria-labelledby="faq-title">
+  <div class="wrap">
+    <header class="sec__head sec__head--center"><h2 id="faq-title">{F.title}</h2>{F.text ? <p>{F.text}</p> : null}</header>
+    <div class="faq__list">
+      {items.map(it => <details class="faq__item"><summary>{it.q}<span class="faq__plus" set:html={icon('cross')}></span></summary><p>{it.a}</p></details>)}
+    </div>
+  </div>
+</section>

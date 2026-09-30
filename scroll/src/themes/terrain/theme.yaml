@@ -1,0 +1,14 @@
+# Thème « terrain » — bâtiment, artisans techniques : béton gris, orange sécurité, condensée, rideau vertical.
+label: {fr: Terrain, en: Site, de: Baustelle, it: Cantiere}
+mood: light
+fonts:
+  display: {family: "Barlow Condensed", fallback: "'Arial Narrow', Impact, sans-serif", files: [{file: barlowcondensed-700.woff2, weight: 700}]}
+  text: {family: Barlow, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: barlow-400.woff2, weight: 400}, {file: barlow-600.woff2, weight: 600}]}
+colors: {bg: "#ECECEA", bg-2: "#DEDEDB", ink: "#1C1D1F", muted: "#55585D", line: "#C6C8C7", panel: "#F7F7F5", accent: "#F05A1A", accent-ink: "#FFFFFF", hero-a: "#2A2C2E", hero-b: "#3C3F42", hero-ink: "#1C1D1F"}
+radius: {card: 2px, btn: 2px}
+shadow: "none"
+hero: type
+motion: curtain
+sections: [hero, rail, proof, story, split, pricing, faq, contact, cta]
+alt: [proof]
+variants: {rail: pinned, proof: band}

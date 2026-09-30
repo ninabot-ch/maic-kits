@@ -1,0 +1,521 @@
+# ÉCHANTILLON du thème « nature » — contenu FICTIF (Domaine des Crêts, Bulle). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Ferme bio — Gruyère, 1 050 m
+    title: Ce qui pousse ici arrive chez vous le jeudi.
+    text: Légumes, œufs, fromage d'alpage et pain au levain, cultivés et livrés par la famille Pasquier, dans la Gruyère.
+    cta: Commander un panier
+    cta_href: /shop/
+    cta2: Visiter la ferme
+    cta2_href: "#about"
+  about:
+    title: La ferme
+    text: Douze hectares au-dessus de Bulle, vingt vaches, un jardin d'un hectare et un four à pain. La famille Pasquier y cultive en bio depuis 2011 et livre ses paniers dans toute la Gruyère le jeudi.
+    quote: On ne vend pas ce qu'on ne mangerait pas nous-mêmes.
+    icon: leaf
+  split:
+    - title: Le gîte
+      text: Un appartement de quatre lits dans l'ancien grenier, vue sur le Moléson, petit-déjeuner de la ferme. Ouvert de mai à octobre.
+      icon: home
+      cta: Réserver le gîte
+      href: /reserver/
+  services_title: Ce que la ferme propose
+  services:
+    - title: Paniers de saison
+      text: Six à dix légumes du jardin, chaque jeudi, en abonnement ou à la carte.
+      detail: Petit panier 28 CHF, grand panier 45 CHF. Livraison à Bulle et alentours, ou retrait à la ferme le samedi.
+      icon: leaf
+      price: dès 28 CHF
+    - title: Fromage et œufs
+      text: Gruyère d'alpage de nos vaches, tommes, œufs de plein air.
+      detail: Au magasin de la ferme et dans les paniers. Le Gruyère est affiné chez nous, dix mois minimum.
+      icon: sun
+      price: au poids
+    - title: Pain au levain
+      text: Cuit au four à bois le jeudi et le samedi, farine du canton.
+      detail: Pain de campagne, seigle, épeautre. À commander la veille.
+      icon: coffee
+      price: 6 à 9 CHF
+    - title: Visites et gîte
+      text: Visite de la ferme pour les écoles et les familles, gîte de quatre lits.
+      detail: Visite d'une heure et demie, avec traite ou fabrication du pain selon la saison.
+      icon: home
+      price: dès 8 CHF / pers.
+  story:
+    kicker: Une année à la ferme
+    title: Quatre saisons, quatre paniers.
+    steps:
+      - label: Printemps
+        title: Les semis
+        text: Le jardin se réveille. Radis, épinards, salades et les premières fèves — les paniers sont verts et croquants.
+        visual:
+          kind: list
+          title: Le panier d'avril
+          items: [Radis et épinards, Salades du tunnel, Rhubarbe et fèves]
+      - label: Été
+        title: L'abondance
+        text: Tomates, courgettes, haricots, baies. Les paniers débordent, le four tourne deux fois par semaine.
+        visual:
+          kind: chart
+          title: Le jardin, en légumes par semaine (exemple)
+          badge: variétés
+          series: [{label: Avril, value: 6}, {label: Juin, value: 9}, {label: Août, value: 12, hot: true}, {label: Oct., value: 8}]
+      - label: Automne
+        title: Les racines
+        text: Courges, betteraves, poireaux, pommes du verger. Le Gruyère d'été sort de la cave.
+        visual:
+          kind: calendar
+          month: Octobre
+          label: Jeudis de livraison
+          days: [2, 9, 16, 23, 30]
+          first_weekday: 3
+          days_in_month: 31
+      - label: Hiver
+        title: Le repos
+        text: Choux, carottes de garde, conserves de l'été. La ferme ralentit, les vaches rentrent, le gîte ferme.
+        visual:
+          kind: map
+          city: Bulle
+          label: Les Crêts, au-dessus de Bulle
+  proof:
+    items:
+      - {value: "12 ha", label: En bio, note: Depuis 2011}
+      - {value: "20", label: Vaches, note: Race Fribourgeoise}
+      - {value: "1 050 m", label: D'altitude, note: Vue sur le Moléson}
+  pricing:
+    title: Les abonnements
+    text: Sans engagement, suspendables pendant vos vacances.
+    items:
+      - name: Petit panier
+        price: 28 CHF
+        unit: / semaine
+        features: [6 légumes de saison, Livraison le jeudi, Recettes incluses]
+        cta: S'abonner
+        href: /shop/
+      - name: Grand panier
+        price: 45 CHF
+        unit: / semaine
+        features: [10 légumes de saison, 6 œufs, Un pain au levain, Livraison le jeudi]
+        featured: true
+        badge: Pour une famille
+        cta: S'abonner
+        href: /shop/
+      - name: Gîte
+        price: 140 CHF
+        unit: / nuit
+        features: [4 lits, Petit-déjeuner de la ferme, De mai à octobre]
+        cta: Réserver
+        href: /reserver/
+  faq:
+    title: Questions fréquentes
+    items:
+      - q: Peut-on choisir le contenu du panier ?
+        a: Le panier suit le jardin, mais vous pouvez exclure jusqu'à deux légumes que vous n'aimez pas.
+      - q: Livrez-vous en dehors de Bulle ?
+        a: Le jeudi, dans un rayon de quinze kilomètres. Au-delà, retrait à la ferme le samedi matin.
+      - q: Les visites sont-elles adaptées aux enfants ?
+        a: Oui, dès quatre ans. Les enfants nourrissent les poules et, selon la saison, pétrissent leur pain.
+  contact:
+    title: Une question sur les paniers ou le gîte ?
+    text: Écrivez-nous, on répond entre deux traites.
+  cta:
+    title: Un panier jeudi prochain ?
+    text: Commandez avant mardi soir, on cueille mercredi.
+    button: Commander un panier
+    href: /shop/
+  shop:
+    title: Le magasin de la ferme
+    text: Paniers, fromage, œufs et pain — à retirer le samedi ou livrés le jeudi.
+    cta: Voir le magasin
+    add: Ajouter au panier
+    soldout: Épuisé cette semaine
+en:
+  hero:
+    kicker: Organic farm — Gruyère, 1,050 m
+    title: What grows here reaches you on Thursday.
+    text: Vegetables, eggs, alpine cheese and sourdough bread, grown and delivered by the Pasquier family, in the Gruyère.
+    cta: Order a basket
+    cta_href: /shop/
+    cta2: Visit the farm
+    cta2_href: "#about"
+  about:
+    title: The farm
+    text: Twelve hectares above Bulle, twenty cows, a one-hectare garden and a bread oven. The Pasquier family has farmed organically here since 2011 and delivers its baskets across the Gruyère on Thursdays.
+    quote: We do not sell what we would not eat ourselves.
+    icon: leaf
+  split:
+    - title: The guesthouse
+      text: A four-bed apartment in the old loft, view of the Moléson, farm breakfast. Open May to October.
+      icon: home
+      cta: Book the guesthouse
+      href: /reserver/
+  services_title: What the farm offers
+  services:
+    - title: Seasonal baskets
+      text: Six to ten vegetables from the garden, every Thursday, by subscription or one-off.
+      detail: Small basket CHF 28, large basket CHF 45. Delivery in and around Bulle, or pickup at the farm on Saturday.
+      icon: leaf
+      price: from CHF 28
+    - title: Cheese and eggs
+      text: Alpine Gruyère from our cows, tommes, free-range eggs.
+      detail: At the farm shop and in the baskets. The Gruyère is matured here, ten months minimum.
+      icon: sun
+      price: by weight
+    - title: Sourdough bread
+      text: Baked in the wood oven on Thursday and Saturday, flour from the canton.
+      detail: Country loaf, rye, spelt. Order the day before.
+      icon: coffee
+      price: CHF 6 to 9
+    - title: Visits and guesthouse
+      text: Farm visits for schools and families, four-bed guesthouse.
+      detail: A ninety-minute visit, with milking or bread making depending on the season.
+      icon: home
+      price: from CHF 8 / pers.
+  story:
+    kicker: A year at the farm
+    title: Four seasons, four baskets.
+    steps:
+      - label: Spring
+        title: Sowing
+        text: The garden wakes up. Radishes, spinach, lettuces and the first broad beans — the baskets are green and crisp.
+        visual:
+          kind: list
+          title: The April basket
+          items: [Radishes and spinach, Lettuces from the tunnel, Rhubarb and broad beans]
+      - label: Summer
+        title: Abundance
+        text: Tomatoes, courgettes, beans, berries. The baskets overflow, the oven runs twice a week.
+        visual:
+          kind: chart
+          title: The garden, vegetables per week (example)
+          badge: varieties
+          series: [{label: April, value: 6}, {label: June, value: 9}, {label: August, value: 12, hot: true}, {label: Oct., value: 8}]
+      - label: Autumn
+        title: Roots
+        text: Squash, beetroot, leeks, orchard apples. The summer Gruyère comes out of the cellar.
+        visual:
+          kind: calendar
+          month: October
+          label: Delivery Thursdays
+          days: [2, 9, 16, 23, 30]
+          first_weekday: 3
+          days_in_month: 31
+      - label: Winter
+        title: Rest
+        text: Cabbages, storage carrots, summer preserves. The farm slows down, the cows come in, the guesthouse closes.
+        visual:
+          kind: map
+          city: Bulle
+          label: Les Crêts, above Bulle
+  proof:
+    items:
+      - {value: "12 ha", label: Organic, note: Since 2011}
+      - {value: "20", label: Cows, note: Fribourg breed}
+      - {value: "1,050 m", label: Altitude, note: View of the Moléson}
+  pricing:
+    title: Subscriptions
+    text: No commitment, can be paused during your holidays.
+    items:
+      - name: Small basket
+        price: CHF 28
+        unit: / week
+        features: [6 seasonal vegetables, Thursday delivery, Recipes included]
+        cta: Subscribe
+        href: /shop/
+      - name: Large basket
+        price: CHF 45
+        unit: / week
+        features: [10 seasonal vegetables, 6 eggs, One sourdough loaf, Thursday delivery]
+        featured: true
+        badge: For a family
+        cta: Subscribe
+        href: /shop/
+      - name: Guesthouse
+        price: CHF 140
+        unit: / night
+        features: [4 beds, Farm breakfast, May to October]
+        cta: Book
+        href: /reserver/
+  faq:
+    title: Frequently asked questions
+    items:
+      - q: Can I choose what goes in the basket?
+        a: The basket follows the garden, but you can exclude up to two vegetables you do not like.
+      - q: Do you deliver outside Bulle?
+        a: On Thursdays, within fifteen kilometres. Beyond that, pickup at the farm on Saturday morning.
+      - q: Are visits suitable for children?
+        a: Yes, from age four. Children feed the hens and, depending on the season, knead their own bread.
+  contact:
+    title: A question about the baskets or the guesthouse?
+    text: Write to us; we answer between two milkings.
+  cta:
+    title: A basket next Thursday?
+    text: Order by Tuesday evening; we pick on Wednesday.
+    button: Order a basket
+    href: /shop/
+  shop:
+    title: The farm shop
+    text: Baskets, cheese, eggs and bread — collected on Saturday or delivered on Thursday.
+    cta: See the shop
+    add: Add to basket
+    soldout: Sold out this week
+de:
+  hero:
+    kicker: Biohof — Greyerzerland, 1'050 m
+    title: Was hier wächst, kommt am Donnerstag zu Ihnen.
+    text: Gemüse, Eier, Alpkäse und Sauerteigbrot, angebaut und geliefert von der Familie Pasquier, im Greyerzerland.
+    cta: Korb bestellen
+    cta_href: /shop/
+    cta2: Den Hof besuchen
+    cta2_href: "#about"
+  about:
+    title: Der Hof
+    text: Zwölf Hektaren oberhalb von Bulle, zwanzig Kühe, ein Garten von einer Hektare und ein Brotofen. Die Familie Pasquier wirtschaftet hier seit 2011 biologisch und liefert ihre Körbe am Donnerstag im ganzen Greyerzerland.
+    quote: Wir verkaufen nichts, was wir nicht selbst essen würden.
+    icon: leaf
+  split:
+    - title: Die Ferienwohnung
+      text: Eine Wohnung mit vier Betten im alten Speicher, Blick auf den Moléson, Frühstück vom Hof. Offen von Mai bis Oktober.
+      icon: home
+      cta: Ferienwohnung buchen
+      href: /reserver/
+  services_title: Was der Hof bietet
+  services:
+    - title: Saisonkörbe
+      text: Sechs bis zehn Gemüse aus dem Garten, jeden Donnerstag, im Abo oder einzeln.
+      detail: Kleiner Korb CHF 28, grosser Korb CHF 45. Lieferung in Bulle und Umgebung oder Abholung auf dem Hof am Samstag.
+      icon: leaf
+      price: ab CHF 28
+    - title: Käse und Eier
+      text: Alp-Gruyère von unseren Kühen, Tommes, Freilandeier.
+      detail: Im Hofladen und in den Körben. Der Gruyère reift bei uns, mindestens zehn Monate.
+      icon: sun
+      price: nach Gewicht
+    - title: Sauerteigbrot
+      text: Am Donnerstag und Samstag im Holzofen gebacken, Mehl aus dem Kanton.
+      detail: Landbrot, Roggen, Dinkel. Am Vortag zu bestellen.
+      icon: coffee
+      price: CHF 6 bis 9
+    - title: Besuche und Ferienwohnung
+      text: Hofbesuch für Schulen und Familien, Ferienwohnung mit vier Betten.
+      detail: Anderthalb Stunden Besuch, je nach Saison mit Melken oder Brotbacken.
+      icon: home
+      price: ab CHF 8 / Pers.
+  story:
+    kicker: Ein Jahr auf dem Hof
+    title: Vier Jahreszeiten, vier Körbe.
+    steps:
+      - label: Frühling
+        title: Die Aussaat
+        text: Der Garten erwacht. Radieschen, Spinat, Salate und die ersten Saubohnen — die Körbe sind grün und knackig.
+        visual:
+          kind: list
+          title: Der Aprilkorb
+          items: [Radieschen und Spinat, Salate aus dem Tunnel, Rhabarber und Saubohnen]
+      - label: Sommer
+        title: Die Fülle
+        text: Tomaten, Zucchetti, Bohnen, Beeren. Die Körbe quellen über, der Ofen läuft zweimal pro Woche.
+        visual:
+          kind: chart
+          title: Der Garten, Gemüse pro Woche (Beispiel)
+          badge: Sorten
+          series: [{label: April, value: 6}, {label: Juni, value: 9}, {label: August, value: 12, hot: true}, {label: Okt., value: 8}]
+      - label: Herbst
+        title: Die Wurzeln
+        text: Kürbisse, Randen, Lauch, Äpfel aus dem Obstgarten. Der Sommer-Gruyère kommt aus dem Keller.
+        visual:
+          kind: calendar
+          month: Oktober
+          label: Lieferdonnerstage
+          days: [2, 9, 16, 23, 30]
+          first_weekday: 3
+          days_in_month: 31
+      - label: Winter
+        title: Die Ruhe
+        text: Kohl, Lagerrüebli, Eingemachtes vom Sommer. Der Hof wird langsamer, die Kühe kommen rein, die Ferienwohnung schliesst.
+        visual:
+          kind: map
+          city: Bulle
+          label: Les Crêts, oberhalb von Bulle
+  proof:
+    items:
+      - {value: "12 ha", label: Biologisch, note: Seit 2011}
+      - {value: "20", label: Kühe, note: Freiburger Rasse}
+      - {value: "1'050 m", label: Höhe, note: Blick auf den Moléson}
+  pricing:
+    title: Die Abos
+    text: Ohne Bindung, während Ihrer Ferien pausierbar.
+    items:
+      - name: Kleiner Korb
+        price: CHF 28
+        unit: / Woche
+        features: [6 Saisongemüse, Lieferung am Donnerstag, Rezepte inbegriffen]
+        cta: Abonnieren
+        href: /shop/
+      - name: Grosser Korb
+        price: CHF 45
+        unit: / Woche
+        features: [10 Saisongemüse, 6 Eier, Ein Sauerteigbrot, Lieferung am Donnerstag]
+        featured: true
+        badge: Für eine Familie
+        cta: Abonnieren
+        href: /shop/
+      - name: Ferienwohnung
+        price: CHF 140
+        unit: / Nacht
+        features: [4 Betten, Frühstück vom Hof, Mai bis Oktober]
+        cta: Buchen
+        href: /reserver/
+  faq:
+    title: Häufige Fragen
+    items:
+      - q: Kann man den Inhalt des Korbs wählen?
+        a: Der Korb folgt dem Garten, aber Sie können bis zu zwei Gemüse ausschliessen, die Sie nicht mögen.
+      - q: Liefern Sie ausserhalb von Bulle?
+        a: Am Donnerstag im Umkreis von fünfzehn Kilometern. Darüber hinaus Abholung auf dem Hof am Samstagvormittag.
+      - q: Sind die Besuche für Kinder geeignet?
+        a: Ja, ab vier Jahren. Die Kinder füttern die Hühner und kneten je nach Saison ihr eigenes Brot.
+  contact:
+    title: Eine Frage zu den Körben oder zur Ferienwohnung?
+    text: Schreiben Sie uns; wir antworten zwischen zwei Melkzeiten.
+  cta:
+    title: Ein Korb am nächsten Donnerstag?
+    text: Bis Dienstagabend bestellen, wir ernten am Mittwoch.
+    button: Korb bestellen
+    href: /shop/
+  shop:
+    title: Der Hofladen
+    text: Körbe, Käse, Eier und Brot — am Samstag abholen oder am Donnerstag geliefert.
+    cta: Zum Hofladen
+    add: In den Warenkorb
+    soldout: Diese Woche ausverkauft
+it:
+  hero:
+    kicker: Fattoria bio — Gruyère, 1'050 m
+    title: Ciò che cresce qui arriva da voi il giovedì.
+    text: Verdure, uova, formaggio d'alpe e pane a lievito madre, coltivati e consegnati dalla famiglia Pasquier, nella Gruyère.
+    cta: Ordinare una cesta
+    cta_href: /shop/
+    cta2: Visitare la fattoria
+    cta2_href: "#about"
+  about:
+    title: La fattoria
+    text: Dodici ettari sopra Bulle, venti mucche, un orto di un ettaro e un forno per il pane. La famiglia Pasquier coltiva in bio dal 2011 e consegna le sue ceste in tutta la Gruyère il giovedì.
+    quote: Non vendiamo ciò che non mangeremmo noi stessi.
+    icon: leaf
+  split:
+    - title: L'alloggio
+      text: Un appartamento di quattro letti nel vecchio granaio, vista sul Moléson, colazione della fattoria. Aperto da maggio a ottobre.
+      icon: home
+      cta: Prenotare l'alloggio
+      href: /reserver/
+  services_title: Cosa offre la fattoria
+  services:
+    - title: Ceste di stagione
+      text: Da sei a dieci verdure dell'orto, ogni giovedì, in abbonamento o singolarmente.
+      detail: Cesta piccola CHF 28, cesta grande CHF 45. Consegna a Bulle e dintorni, o ritiro in fattoria il sabato.
+      icon: leaf
+      price: da CHF 28
+    - title: Formaggio e uova
+      text: Gruyère d'alpe delle nostre mucche, tome, uova all'aperto.
+      detail: Nello spaccio e nelle ceste. Il Gruyère è stagionato da noi, dieci mesi minimo.
+      icon: sun
+      price: a peso
+    - title: Pane a lievito madre
+      text: Cotto nel forno a legna il giovedì e il sabato, farina del cantone.
+      detail: Pane di campagna, segale, farro. Da ordinare il giorno prima.
+      icon: coffee
+      price: da CHF 6 a 9
+    - title: Visite e alloggio
+      text: Visita della fattoria per scuole e famiglie, alloggio di quattro letti.
+      detail: Visita di un'ora e mezza, con mungitura o preparazione del pane secondo la stagione.
+      icon: home
+      price: da CHF 8 / pers.
+  story:
+    kicker: Un anno in fattoria
+    title: Quattro stagioni, quattro ceste.
+    steps:
+      - label: Primavera
+        title: Le semine
+        text: L'orto si sveglia. Ravanelli, spinaci, insalate e le prime fave — le ceste sono verdi e croccanti.
+        visual:
+          kind: list
+          title: La cesta di aprile
+          items: [Ravanelli e spinaci, Insalate del tunnel, Rabarbaro e fave]
+      - label: Estate
+        title: L'abbondanza
+        text: Pomodori, zucchine, fagiolini, bacche. Le ceste traboccano, il forno gira due volte a settimana.
+        visual:
+          kind: chart
+          title: L'orto, verdure a settimana (esempio)
+          badge: varietà
+          series: [{label: Aprile, value: 6}, {label: Giugno, value: 9}, {label: Agosto, value: 12, hot: true}, {label: Ott., value: 8}]
+      - label: Autunno
+        title: Le radici
+        text: Zucche, barbabietole, porri, mele del frutteto. Il Gruyère d'estate esce dalla cantina.
+        visual:
+          kind: calendar
+          month: Ottobre
+          label: Giovedì di consegna
+          days: [2, 9, 16, 23, 30]
+          first_weekday: 3
+          days_in_month: 31
+      - label: Inverno
+        title: Il riposo
+        text: Cavoli, carote da conservazione, conserve dell'estate. La fattoria rallenta, le mucche rientrano, l'alloggio chiude.
+        visual:
+          kind: map
+          city: Bulle
+          label: Les Crêts, sopra Bulle
+  proof:
+    items:
+      - {value: "12 ha", label: In bio, note: Dal 2011}
+      - {value: "20", label: Mucche, note: Razza friburghese}
+      - {value: "1'050 m", label: Di altitudine, note: Vista sul Moléson}
+  pricing:
+    title: Gli abbonamenti
+    text: Senza impegno, sospendibili durante le vacanze.
+    items:
+      - name: Cesta piccola
+        price: CHF 28
+        unit: / settimana
+        features: [6 verdure di stagione, Consegna il giovedì, Ricette incluse]
+        cta: Abbonarsi
+        href: /shop/
+      - name: Cesta grande
+        price: CHF 45
+        unit: / settimana
+        features: [10 verdure di stagione, 6 uova, Un pane a lievito madre, Consegna il giovedì]
+        featured: true
+        badge: Per una famiglia
+        cta: Abbonarsi
+        href: /shop/
+      - name: Alloggio
+        price: CHF 140
+        unit: / notte
+        features: [4 letti, Colazione della fattoria, Da maggio a ottobre]
+        cta: Prenotare
+        href: /reserver/
+  faq:
+    title: Domande frequenti
+    items:
+      - q: Si può scegliere il contenuto della cesta?
+        a: La cesta segue l'orto, ma potete escludere fino a due verdure che non vi piacciono.
+      - q: Consegnate fuori Bulle?
+        a: Il giovedì, in un raggio di quindici chilometri. Oltre, ritiro in fattoria il sabato mattina.
+      - q: Le visite sono adatte ai bambini?
+        a: Sì, dai quattro anni. I bambini danno da mangiare alle galline e, secondo la stagione, impastano il loro pane.
+  contact:
+    title: Una domanda sulle ceste o sull'alloggio?
+    text: Scriveteci, rispondiamo tra due mungiture.
+  cta:
+    title: Una cesta giovedì prossimo?
+    text: Ordinate entro martedì sera, raccogliamo mercoledì.
+    button: Ordinare una cesta
+    href: /shop/
+  shop:
+    title: Lo spaccio della fattoria
+    text: Ceste, formaggio, uova e pane — da ritirare il sabato o consegnati il giovedì.
+    cta: Vedere lo spaccio
+    add: Aggiungere al carrello
+    soldout: Esaurito questa settimana

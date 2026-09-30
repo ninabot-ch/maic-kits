@@ -1,0 +1,51 @@
+---
+// Rail — les services en cartes. Variante `pinned` (thème) : sur desktop la section est haute, son contenu reste collé et
+// la piste se translate en X avec la progression ; en dessous de 1024 px et sans JS : grille / piste défilable au doigt.
+// Le détail de chaque service est un <details> natif (clavier, sans JS).
+import { icon } from './icons.js';
+import { words } from '../site.js';
+const { C, T, theme, alt, prefix } = Astro.props;
+const items = C.services || []; const variant = (theme.variants && theme.variants.rail) || 'pinned';
+const pad = i => String(i + 1).padStart(2, '0');
+---
+<section id="services" class={`rail${alt ? ' sec--alt' : ''}`} data-scroll={variant === 'pinned' ? 'pin' : 'reveal'} data-rail data-variant={variant} aria-labelledby="services-title">
+  <div class="rail__pin">
+    <div class="wrap">
+      <header class="sec__head">
+        {C.services_kicker ? <p class="kicker">{C.services_kicker}</p> : null}
+        <h2 id="services-title" class="reveal-title">{words(C.services_title || T.nav_services).map((w, i) => <><span class="w" style={`--i:${i}`}>{w}</span>{' '}</>)}</h2>
+        {C.services_text ? <p>{C.services_text}</p> : null}
+      </header>
+    </div>
+    <div class="rail__viewport">
+      <ul class="rail__track">
+        {items.map((s, i) => (
+          <li class="rail__card">
+            {s.detail ? (
+              <details>
+                <summary>
+                  <div class="rail__body">
+                    <span class="rail__idx">{pad(i)}</span>
+                    <span class="rail__ico" set:html={icon(s.icon || 'sparkles')}></span>
+                    <h3>{s.title}</h3>
+                    <p>{s.text}</p>
+                    {s.price ? <div class="rail__price">{s.price}</div> : null}
+                    <span class="rail__more"><span class="more">{T.rail_more}</span><span class="less">{T.rail_less}</span><Fragment set:html={icon('chevron')} /></span>
+                  </div>
+                </summary>
+                <div class="rail__detail"><p>{s.detail}</p></div>
+              </details>
+            ) : (
+              <div class="rail__body">
+                <span class="rail__idx">{pad(i)}</span>
+                <span class="rail__ico" set:html={icon(s.icon || 'sparkles')}></span>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+                {s.price ? <div class="rail__price">{s.price}</div> : null}
+              </div>
+            )}
+          </li>))}
+      </ul>
+    </div>
+  </div>
+</section>

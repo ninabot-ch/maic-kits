@@ -1,0 +1,13 @@
+---
+// Avis PUBLIÉS par la compagnie (catalog.json → reviews, capacité « Avis »), jamais content.yaml.
+const { T, reviews, reviewsAvg, alt } = Astro.props;
+const list = (reviews || []).slice(0, 6);
+---
+<section id="avis" class={`reviews sec${alt ? ' sec--alt' : ''}`} data-scroll="reveal" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <header class="sec__head"><h2 id="reviews-title">{T.rev_wall}{reviewsAvg && reviewsAvg.moyenne ? <span class="reviews__avg">{reviewsAvg.moyenne} {T.rev_of} · {reviewsAvg.n}</span> : null}</h2></header>
+    <ul class="reviews__grid">
+      {list.map(r => <li class="reviews__card"><div class="reviews__stars" aria-label={`${r.note} ${T.rev_of}`}>{'★'.repeat(r.note)}<span>{'★'.repeat(5 - r.note)}</span></div>{r.texte ? <blockquote>{r.texte}</blockquote> : null}<footer>{r.nom}{r.reponse ? ` — ${r.reponse}` : ''}</footer></li>)}
+    </ul>
+  </div>
+</section>

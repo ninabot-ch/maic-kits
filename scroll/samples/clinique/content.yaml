@@ -1,0 +1,473 @@
+# ÉCHANTILLON du thème « clinique » — contenu FICTIF (Praxis Bellerive, Neuchâtel). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    title: Bouger sans douleur, et durablement.
+    text: Physiothérapie, rééducation après opération et prévention pour les sportifs, dans un cabinet calme au bord du lac.
+    cta: Prendre rendez-vous
+    cta2: Nos soins
+    cta2_href: "#services"
+  proof:
+    items:
+      - {value: "45 min", label: Par séance, note: Jamais deux patients à la fois}
+      - {value: "48 h", label: Pour un premier rendez-vous}
+      - {value: "3", label: Physiothérapeutes, note: Diplômés HES}
+  services_title: Nos soins
+  services_text: Reconnus par les assurances de base, sur prescription médicale.
+  services:
+    - title: Rééducation
+      text: Après une opération, une fracture ou une entorse — retrouver l'amplitude, puis la force.
+      detail: Bilan initial de 60 minutes, programme écrit, exercices à faire chez soi entre les séances.
+      icon: cross
+    - title: Dos et nuque
+      text: Lombalgies, cervicalgies, postures de bureau — comprendre la cause avant de traiter.
+      detail: Thérapie manuelle, renforcement ciblé et conseils d'aménagement du poste de travail.
+      icon: heart
+    - title: Sport
+      text: Préparation, récupération, retour au terrain après blessure.
+      detail: Tests fonctionnels, plan de reprise progressif, coordination avec votre entraîneur si vous le souhaitez.
+      icon: bike
+    - title: Pelvi-périnéologie
+      text: Avant et après la grossesse, et à tout âge.
+      detail: Prise en charge par une physiothérapeute spécialisée, en toute discrétion.
+      icon: drop
+  story:
+    kicker: Votre parcours
+    title: Du premier appel à la dernière séance.
+    steps:
+      - label: Jour 1
+        title: Le bilan
+        text: Une heure pour comprendre votre douleur, vos habitudes et votre objectif. Vous repartez avec un premier exercice.
+        visual:
+          kind: ui
+          url: bellerive.ch/bilan
+          title: Bilan initial
+          badge: 60 min
+          items: [Histoire de la douleur, Tests de mobilité, Objectif écrit ensemble]
+          chips: [Genou, Post-opératoire, Course à pied]
+      - label: Semaines 1 à 3
+        title: Le programme
+        text: Deux séances par semaine, des exercices courts à la maison, et une progression visible.
+        visual:
+          kind: chart
+          title: Amplitude du genou (exemple)
+          badge: degrés
+          type: line
+          unit: "°"
+          series: [{label: Sem. 1, value: 70}, {label: Sem. 2, value: 85}, {label: Sem. 3, value: 100}, {label: Sem. 4, value: 115}]
+      - label: Semaine 4
+        title: Le point
+        text: On mesure ce qui a changé et on ajuste. Souvent, c'est le moment de reprendre le sport doucement.
+        visual:
+          kind: steps
+          title: Retour au terrain
+          done: 2
+          items: [Marche sans douleur, Escaliers et vélo, Course légère, Reprise complète]
+      - label: Après
+        title: L'autonomie
+        text: Vous partez avec un programme d'entretien de dix minutes. On reste joignables.
+        visual:
+          kind: calendar
+          month: Programme d'entretien
+          label: 10 min
+          days: [2, 4, 7, 9, 11, 14, 16, 18, 21, 23, 25, 28]
+          first_weekday: 2
+  about:
+    title: Le cabinet
+    text: Trois physiothérapeutes, deux salles lumineuses et une salle d'exercices, au rez-de-chaussée d'un immeuble calme près du port. Lena Vuille a ouvert le cabinet après dix ans en hôpital.
+    icon: home
+  pricing:
+    title: Tarifs
+    text: Les séances sur prescription sont remboursées par l'assurance de base (LAMal). Sans prescription, tarif privé.
+    items:
+      - name: Séance sur prescription
+        price: LAMal
+        text: Facturée directement à votre assurance.
+        features: [45 minutes, Programme écrit, Suivi entre les séances]
+        cta: Prendre rendez-vous
+        href: /reserver/
+      - name: Séance privée
+        price: 120 CHF
+        unit: / 45 min
+        text: Sans prescription médicale.
+        features: [Bilan compris, Exercices à domicile, Paiement sur place]
+        featured: true
+        badge: Sans ordonnance
+        cta: Réserver
+        href: /reserver/
+      - name: Bilan sportif
+        price: 180 CHF
+        unit: / 90 min
+        text: Tests fonctionnels et plan de reprise.
+        features: [Rapport écrit, Plan sur 8 semaines, Échange avec l'entraîneur]
+        cta: Demander un bilan
+  faq:
+    title: Questions fréquentes
+    items:
+      - q: Faut-il une ordonnance ?
+        a: Pour être remboursé par l'assurance de base, oui. Sans ordonnance, vous pouvez venir en séance privée.
+      - q: Combien de séances ?
+        a: Une ordonnance en prévoit neuf. Beaucoup de patients n'en utilisent que six ; on ne prolonge jamais sans raison.
+      - q: Y a-t-il des places de parc ?
+        a: Deux places devant le cabinet, réservées aux patients, et le parking du port à trois minutes.
+  contact:
+    title: Une question avant de venir ?
+    text: Écrivez-nous, on répond le jour même pendant les heures d'ouverture.
+  cta:
+    title: Un premier rendez-vous sous 48 heures.
+    text: Du lundi au vendredi, de 7 h à 19 h.
+    button: Prendre rendez-vous
+    href: /reserver/
+en:
+  hero:
+    title: Move without pain, for good.
+    text: Physiotherapy, post-operative rehabilitation and prevention for athletes, in a quiet practice by the lake.
+    cta: Book an appointment
+    cta2: Our treatments
+    cta2_href: "#services"
+  proof:
+    items:
+      - {value: "45 min", label: Per session, note: Never two patients at once}
+      - {value: "48 h", label: For a first appointment}
+      - {value: "3", label: Physiotherapists, note: HES graduates}
+  services_title: Our treatments
+  services_text: Covered by basic insurance, on medical prescription.
+  services:
+    - title: Rehabilitation
+      text: After surgery, a fracture or a sprain — regain range, then strength.
+      detail: 60-minute initial assessment, written programme, exercises to do at home between sessions.
+      icon: cross
+    - title: Back and neck
+      text: Low back pain, neck pain, desk postures — understand the cause before treating.
+      detail: Manual therapy, targeted strengthening and advice on your workstation.
+      icon: heart
+    - title: Sport
+      text: Preparation, recovery, return to play after injury.
+      detail: Functional tests, progressive return plan, coordination with your coach if you wish.
+      icon: bike
+    - title: Pelvic health
+      text: Before and after pregnancy, and at any age.
+      detail: Care by a specialised physiotherapist, in full discretion.
+      icon: drop
+  story:
+    kicker: Your path
+    title: From the first call to the last session.
+    steps:
+      - label: Day 1
+        title: The assessment
+        text: One hour to understand your pain, your habits and your goal. You leave with a first exercise.
+        visual:
+          kind: ui
+          url: bellerive.ch/assessment
+          title: Initial assessment
+          badge: 60 min
+          items: [History of the pain, Mobility tests, Goal written together]
+          chips: [Knee, Post-operative, Running]
+      - label: Weeks 1 to 3
+        title: The programme
+        text: Two sessions a week, short exercises at home, and visible progress.
+        visual:
+          kind: chart
+          title: Knee range (example)
+          badge: degrees
+          type: line
+          unit: "°"
+          series: [{label: Wk 1, value: 70}, {label: Wk 2, value: 85}, {label: Wk 3, value: 100}, {label: Wk 4, value: 115}]
+      - label: Week 4
+        title: The review
+        text: We measure what has changed and adjust. Often, this is when sport resumes gently.
+        visual:
+          kind: steps
+          title: Return to play
+          done: 2
+          items: [Walking without pain, Stairs and cycling, Light running, Full return]
+      - label: After
+        title: Independence
+        text: You leave with a ten-minute maintenance programme. We stay reachable.
+        visual:
+          kind: calendar
+          month: Maintenance programme
+          label: 10 min
+          days: [2, 4, 7, 9, 11, 14, 16, 18, 21, 23, 25, 28]
+          first_weekday: 2
+  about:
+    title: The practice
+    text: Three physiotherapists, two bright rooms and an exercise room, on the ground floor of a quiet building near the harbour. Lena Vuille opened the practice after ten years in hospital.
+    icon: home
+  pricing:
+    title: Fees
+    text: Prescribed sessions are covered by basic insurance (LAMal). Without a prescription, private rate.
+    items:
+      - name: Prescribed session
+        price: LAMal
+        text: Billed directly to your insurer.
+        features: [45 minutes, Written programme, Follow-up between sessions]
+        cta: Book an appointment
+        href: /reserver/
+      - name: Private session
+        price: CHF 120
+        unit: / 45 min
+        text: Without a medical prescription.
+        features: [Assessment included, Home exercises, Pay on site]
+        featured: true
+        badge: No prescription
+        cta: Book
+        href: /reserver/
+      - name: Sports assessment
+        price: CHF 180
+        unit: / 90 min
+        text: Functional tests and return plan.
+        features: [Written report, 8-week plan, Exchange with the coach]
+        cta: Ask for an assessment
+  faq:
+    title: Frequently asked questions
+    items:
+      - q: Do I need a prescription?
+        a: To be covered by basic insurance, yes. Without one, you can come for a private session.
+      - q: How many sessions?
+        a: A prescription provides nine. Many patients use only six; we never extend without reason.
+      - q: Is there parking?
+        a: Two spaces in front of the practice, reserved for patients, and the harbour car park three minutes away.
+  contact:
+    title: A question before coming?
+    text: Write to us; we answer the same day during opening hours.
+  cta:
+    title: A first appointment within 48 hours.
+    text: Monday to Friday, 7 am to 7 pm.
+    button: Book an appointment
+    href: /reserver/
+de:
+  hero:
+    title: Schmerzfrei bewegen, und zwar dauerhaft.
+    text: Physiotherapie, Rehabilitation nach Operationen und Prävention für Sportlerinnen und Sportler, in einer ruhigen Praxis am See.
+    cta: Termin vereinbaren
+    cta2: Unsere Behandlungen
+    cta2_href: "#services"
+  proof:
+    items:
+      - {value: "45 Min.", label: Pro Sitzung, note: Nie zwei Patienten gleichzeitig}
+      - {value: "48 h", label: Bis zum ersten Termin}
+      - {value: "3", label: Physiotherapeutinnen, note: Mit FH-Diplom}
+  services_title: Unsere Behandlungen
+  services_text: Von der Grundversicherung anerkannt, auf ärztliche Verordnung.
+  services:
+    - title: Rehabilitation
+      text: Nach einer Operation, einem Bruch oder einer Verstauchung — erst die Beweglichkeit, dann die Kraft zurückgewinnen.
+      detail: 60-minütige Erstuntersuchung, schriftliches Programm, Übungen für zu Hause zwischen den Sitzungen.
+      icon: cross
+    - title: Rücken und Nacken
+      text: Kreuzschmerzen, Nackenschmerzen, Bürohaltung — die Ursache verstehen, bevor behandelt wird.
+      detail: Manuelle Therapie, gezielte Kräftigung und Beratung zum Arbeitsplatz.
+      icon: heart
+    - title: Sport
+      text: Vorbereitung, Erholung, Rückkehr aufs Spielfeld nach einer Verletzung.
+      detail: Funktionstests, stufenweiser Wiedereinstieg, auf Wunsch Abstimmung mit Ihrem Trainer.
+      icon: bike
+    - title: Beckenboden
+      text: Vor und nach der Schwangerschaft, und in jedem Alter.
+      detail: Betreuung durch eine spezialisierte Physiotherapeutin, mit aller Diskretion.
+      icon: drop
+  story:
+    kicker: Ihr Weg
+    title: Vom ersten Anruf bis zur letzten Sitzung.
+    steps:
+      - label: Tag 1
+        title: Die Untersuchung
+        text: Eine Stunde, um Ihren Schmerz, Ihre Gewohnheiten und Ihr Ziel zu verstehen. Sie gehen mit einer ersten Übung.
+        visual:
+          kind: ui
+          url: bellerive.ch/untersuchung
+          title: Erstuntersuchung
+          badge: 60 Min.
+          items: [Geschichte des Schmerzes, Beweglichkeitstests, Gemeinsam formuliertes Ziel]
+          chips: [Knie, Postoperativ, Laufen]
+      - label: Woche 1 bis 3
+        title: Das Programm
+        text: Zwei Sitzungen pro Woche, kurze Übungen zu Hause und sichtbare Fortschritte.
+        visual:
+          kind: chart
+          title: Kniebeweglichkeit (Beispiel)
+          badge: Grad
+          type: line
+          unit: "°"
+          series: [{label: Wo. 1, value: 70}, {label: Wo. 2, value: 85}, {label: Wo. 3, value: 100}, {label: Wo. 4, value: 115}]
+      - label: Woche 4
+        title: Die Standortbestimmung
+        text: Wir messen, was sich verändert hat, und passen an. Oft ist das der Moment, den Sport sanft wieder aufzunehmen.
+        visual:
+          kind: steps
+          title: Zurück aufs Feld
+          done: 2
+          items: [Schmerzfrei gehen, Treppen und Velo, Leichtes Laufen, Vollständige Rückkehr]
+      - label: Danach
+        title: Die Selbstständigkeit
+        text: Sie gehen mit einem zehnminütigen Erhaltungsprogramm. Wir bleiben erreichbar.
+        visual:
+          kind: calendar
+          month: Erhaltungsprogramm
+          label: 10 Min.
+          days: [2, 4, 7, 9, 11, 14, 16, 18, 21, 23, 25, 28]
+          first_weekday: 2
+  about:
+    title: Die Praxis
+    text: Drei Physiotherapeutinnen, zwei helle Räume und ein Übungsraum, im Erdgeschoss eines ruhigen Hauses beim Hafen. Lena Vuille hat die Praxis nach zehn Jahren im Spital eröffnet.
+    icon: home
+  pricing:
+    title: Tarife
+    text: Verordnete Sitzungen übernimmt die Grundversicherung (KVG). Ohne Verordnung gilt der Privattarif.
+    items:
+      - name: Sitzung auf Verordnung
+        price: KVG
+        text: Direkt Ihrer Versicherung verrechnet.
+        features: [45 Minuten, Schriftliches Programm, Begleitung zwischen den Sitzungen]
+        cta: Termin vereinbaren
+        href: /reserver/
+      - name: Privatsitzung
+        price: CHF 120
+        unit: / 45 Min.
+        text: Ohne ärztliche Verordnung.
+        features: [Untersuchung inbegriffen, Übungen für zu Hause, Bezahlung vor Ort]
+        featured: true
+        badge: Ohne Rezept
+        cta: Buchen
+        href: /reserver/
+      - name: Sportcheck
+        price: CHF 180
+        unit: / 90 Min.
+        text: Funktionstests und Wiedereinstiegsplan.
+        features: [Schriftlicher Bericht, 8-Wochen-Plan, Austausch mit dem Trainer]
+        cta: Sportcheck anfragen
+  faq:
+    title: Häufige Fragen
+    items:
+      - q: Brauche ich eine Verordnung?
+        a: Für die Übernahme durch die Grundversicherung ja. Ohne Verordnung können Sie zur Privatsitzung kommen.
+      - q: Wie viele Sitzungen?
+        a: Eine Verordnung sieht neun vor. Viele Patientinnen und Patienten brauchen nur sechs; wir verlängern nie ohne Grund.
+      - q: Gibt es Parkplätze?
+        a: Zwei Plätze vor der Praxis, für Patienten reserviert, und das Hafenparking drei Minuten entfernt.
+  contact:
+    title: Eine Frage vor dem Besuch?
+    text: Schreiben Sie uns; wir antworten am selben Tag während der Öffnungszeiten.
+  cta:
+    title: Ein erster Termin innert 48 Stunden.
+    text: Montag bis Freitag, 7 bis 19 Uhr.
+    button: Termin vereinbaren
+    href: /reserver/
+it:
+  hero:
+    title: Muoversi senza dolore, e a lungo.
+    text: Fisioterapia, riabilitazione post-operatoria e prevenzione per gli sportivi, in uno studio tranquillo in riva al lago.
+    cta: Prendere appuntamento
+    cta2: Le nostre cure
+    cta2_href: "#services"
+  proof:
+    items:
+      - {value: "45 min", label: Per seduta, note: Mai due pazienti insieme}
+      - {value: "48 h", label: Per un primo appuntamento}
+      - {value: "3", label: Fisioterapiste, note: Diplomate SUP}
+  services_title: Le nostre cure
+  services_text: Riconosciute dall'assicurazione di base, su prescrizione medica.
+  services:
+    - title: Riabilitazione
+      text: Dopo un'operazione, una frattura o una distorsione — ritrovare l'ampiezza, poi la forza.
+      detail: Bilancio iniziale di 60 minuti, programma scritto, esercizi da fare a casa tra le sedute.
+      icon: cross
+    - title: Schiena e collo
+      text: Lombalgie, cervicalgie, posture da ufficio — capire la causa prima di trattare.
+      detail: Terapia manuale, rinforzo mirato e consigli per la postazione di lavoro.
+      icon: heart
+    - title: Sport
+      text: Preparazione, recupero, ritorno in campo dopo un infortunio.
+      detail: Test funzionali, piano di ripresa progressivo, coordinamento con il vostro allenatore se lo desiderate.
+      icon: bike
+    - title: Pavimento pelvico
+      text: Prima e dopo la gravidanza, e a ogni età.
+      detail: Presa in carico da una fisioterapista specializzata, con la massima discrezione.
+      icon: drop
+  story:
+    kicker: Il vostro percorso
+    title: Dalla prima chiamata all'ultima seduta.
+    steps:
+      - label: Giorno 1
+        title: Il bilancio
+        text: Un'ora per capire il vostro dolore, le vostre abitudini e il vostro obiettivo. Ripartite con un primo esercizio.
+        visual:
+          kind: ui
+          url: bellerive.ch/bilancio
+          title: Bilancio iniziale
+          badge: 60 min
+          items: [Storia del dolore, Test di mobilità, Obiettivo scritto insieme]
+          chips: [Ginocchio, Post-operatorio, Corsa]
+      - label: Settimane 1-3
+        title: Il programma
+        text: Due sedute a settimana, esercizi brevi a casa e un progresso visibile.
+        visual:
+          kind: chart
+          title: Ampiezza del ginocchio (esempio)
+          badge: gradi
+          type: line
+          unit: "°"
+          series: [{label: Sett. 1, value: 70}, {label: Sett. 2, value: 85}, {label: Sett. 3, value: 100}, {label: Sett. 4, value: 115}]
+      - label: Settimana 4
+        title: Il punto
+        text: Misuriamo cosa è cambiato e aggiustiamo. Spesso è il momento di riprendere lo sport con calma.
+        visual:
+          kind: steps
+          title: Ritorno in campo
+          done: 2
+          items: [Camminare senza dolore, Scale e bicicletta, Corsa leggera, Ripresa completa]
+      - label: Dopo
+        title: L'autonomia
+        text: Ripartite con un programma di mantenimento di dieci minuti. Restiamo raggiungibili.
+        visual:
+          kind: calendar
+          month: Programma di mantenimento
+          label: 10 min
+          days: [2, 4, 7, 9, 11, 14, 16, 18, 21, 23, 25, 28]
+          first_weekday: 2
+  about:
+    title: Lo studio
+    text: Tre fisioterapiste, due sale luminose e una sala esercizi, al pianterreno di un edificio tranquillo vicino al porto. Lena Vuille ha aperto lo studio dopo dieci anni in ospedale.
+    icon: home
+  pricing:
+    title: Tariffe
+    text: Le sedute su prescrizione sono rimborsate dall'assicurazione di base (LAMal). Senza prescrizione, tariffa privata.
+    items:
+      - name: Seduta su prescrizione
+        price: LAMal
+        text: Fatturata direttamente alla vostra assicurazione.
+        features: [45 minuti, Programma scritto, Seguito tra le sedute]
+        cta: Prendere appuntamento
+        href: /reserver/
+      - name: Seduta privata
+        price: CHF 120
+        unit: / 45 min
+        text: Senza prescrizione medica.
+        features: [Bilancio compreso, Esercizi a casa, Pagamento in loco]
+        featured: true
+        badge: Senza ricetta
+        cta: Prenotare
+        href: /reserver/
+      - name: Bilancio sportivo
+        price: CHF 180
+        unit: / 90 min
+        text: Test funzionali e piano di ripresa.
+        features: [Rapporto scritto, Piano su 8 settimane, Scambio con l'allenatore]
+        cta: Chiedere un bilancio
+  faq:
+    title: Domande frequenti
+    items:
+      - q: Serve una prescrizione?
+        a: Per il rimborso dell'assicurazione di base, sì. Senza prescrizione, potete venire in seduta privata.
+      - q: Quante sedute?
+        a: Una prescrizione ne prevede nove. Molti pazienti ne usano solo sei; non prolunghiamo mai senza motivo.
+      - q: Ci sono parcheggi?
+        a: Due posti davanti allo studio, riservati ai pazienti, e il parcheggio del porto a tre minuti.
+  contact:
+    title: Una domanda prima di venire?
+    text: Scriveteci, rispondiamo in giornata durante gli orari di apertura.
+  cta:
+    title: Un primo appuntamento entro 48 ore.
+    text: Dal lunedì al venerdì, dalle 7 alle 19.
+    button: Prendere appuntamento
+    href: /reserver/

@@ -1,0 +1,45 @@
+/* studio — noir, typo géante, jaune acide, filets durs */
+[data-theme="studio"] h1,[data-theme="studio"] h2,[data-theme="studio"] h3{font-weight:800;letter-spacing:-.04em;text-transform:uppercase}
+[data-theme="studio"] h2{font-size:clamp(2.2rem,5vw,4.2rem);line-height:.95}
+[data-theme="studio"] .kicker,[data-theme="studio"] .story__label,[data-theme="studio"] .rail__idx{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--c-accent);text-transform:uppercase;letter-spacing:.18em}
+[data-theme="studio"] .home .hero__art{background:var(--c-bg);background-image:repeating-linear-gradient(-45deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);opacity:1}
+[data-theme="studio"] .home .hero__initial{display:none}
+[data-theme="studio"] .home .hero__veil{background:radial-gradient(ellipse at 80% 20%,rgba(232,255,71,.16),transparent 55%)}
+[data-theme="studio"] .home .hero--type .hero__title{font-size:clamp(2.6rem,7.4vw,7.4rem);line-height:.88}
+[data-theme="studio"] .home .hero--type .hero__title .w:last-child{color:transparent;-webkit-text-stroke:2px var(--c-ink)}
+[data-theme="studio"] .home .hero__kicker{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--c-accent);opacity:1}
+[data-theme="studio"] .home .hero__lead{max-width:44ch;border-left:2px solid var(--c-accent);padding-left:18px}
+[data-theme="studio"] .home .hero__more{border-radius:0;border-color:var(--c-accent);color:var(--c-accent)}
+[data-theme="studio"] .btn{background:var(--c-accent);color:var(--c-accent-ink);text-transform:uppercase;letter-spacing:.06em;font-size:.88rem}
+[data-theme="studio"] .btn:hover{background:var(--c-ink);color:var(--c-bg)}
+[data-theme="studio"] .btn.ghost{background:transparent;color:var(--c-ink);border-color:var(--c-ink)}
+[data-theme="studio"] header.top .brand{text-transform:uppercase;font-weight:800;letter-spacing:-.03em}
+[data-theme="studio"] header.top .brand i{background:var(--c-accent);color:var(--c-bg);border-radius:0}
+[data-theme="studio"] header.top nav a{text-transform:uppercase;font-size:.78rem;letter-spacing:.12em;border-radius:0}
+/* rail : cartes carrées, index énorme, barre jaune au survol */
+[data-theme="studio"] .rail__card{background:transparent;border:1px solid var(--c-line);transition:background .25s}
+[data-theme="studio"] .rail__card:hover{background:var(--c-panel)}
+[data-theme="studio"] .rail__idx{font-family:var(--font-display);font-size:3.4rem;line-height:1;color:var(--c-line);letter-spacing:-.04em}
+[data-theme="studio"] .rail__ico{background:var(--c-accent);color:var(--c-bg);border-radius:0;width:40px;height:40px}
+[data-theme="studio"] .rail__ico .ico{width:20px;height:20px}
+/* story : cadre noir, filet jaune, chiffre en jaune */
+[data-theme="studio"] .story__frame{background:var(--c-panel);border:1px solid var(--c-line)}
+[data-theme="studio"] .story__visual .story__ico{background:var(--c-accent);color:var(--c-bg);border-radius:0;width:min(34%,140px)}
+[data-theme="studio"] .story__visual .story__num{color:var(--c-accent)}
+[data-theme="studio"] .story__bg{color:var(--c-ink);opacity:.06}
+[data-theme="studio"] .story__rail li{background:var(--c-bg);border-radius:0}
+[data-theme="studio"] .story__rail li.is-active{background:var(--c-accent);color:var(--c-bg);border-color:var(--c-accent)}
+[data-theme="studio"] .story__fill{background:var(--c-accent)}
+/* split / proof / pricing / faq / cta */
+[data-theme="studio"] .split__visual{background:var(--c-panel);border:1px solid var(--c-line);color:var(--c-accent)}
+[data-theme="studio"] .proof__value{color:var(--c-accent)}
+[data-theme="studio"] .pricing__card--featured{background:var(--c-accent);color:var(--c-bg);border-color:var(--c-accent)}
+[data-theme="studio"] .pricing__card--featured .pricing__text,[data-theme="studio"] .pricing__card--featured .pricing__price small{color:rgba(11,11,12,.7)}
+[data-theme="studio"] .pricing__card--featured .pricing__features li,[data-theme="studio"] .pricing__card--featured .pricing__features .ico{color:var(--c-bg)}
+[data-theme="studio"] .pricing__card--featured .btn{background:var(--c-bg);color:var(--c-ink)}
+[data-theme="studio"] .pricing__badge{background:var(--c-bg);color:var(--c-accent)}
+[data-theme="studio"] .faq__plus{border-radius:0;border-color:var(--c-ink);color:var(--c-accent)}
+[data-theme="studio"] .cta__box{background:var(--c-accent);color:var(--c-bg);border-radius:0}
+[data-theme="studio"] .cta__box h2{font-size:clamp(2.4rem,6vw,5rem)}
+[data-theme="studio"] .cta__box .btn{background:var(--c-bg);color:var(--c-ink)}
+[data-theme="studio"] input,[data-theme="studio"] textarea,[data-theme="studio"] select{background:var(--c-bg);border-radius:0}

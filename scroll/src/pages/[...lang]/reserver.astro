@@ -1,0 +1,71 @@
+---
+// Page de réservation — capacité « Agenda ». Les créneaux libres sont calculés par l'API (jamais ici) ; la page ne fait
+// qu'afficher et poser. Avec ?annuler=<jeton> : l'annulation par le client (lien reçu dans son e-mail).
+import Base from '../../layouts/Base.astro';
+import { content, LANGS, DEFAULT, UI, agenda } from '../../site.js';
+export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang); const T = UI[lang] || UI.fr;
+---
+<Base lang={lang} path="/reserver/" title={T.book_title} description={T.book_sub}>
+  <section class="page-hero"><h1>{T.book_title}</h1><p>{agenda.on ? T.book_sub : T.book_off}</p></section>
+  {agenda.on ? <section class="wrap" id="book">
+    {agenda.note ? <p class="note">{agenda.note}</p> : null}
+    <form id="book-form" class="join-form" novalidate>
+      <div class="row">
+        <label class="f"><span>{T.book_service}</span>
+          <select name="service" id="book-service" required>{agenda.services.map(s => <option value={s.id}>{s.name} · {s.minutes} {T.book_min}{s.price_cents ? ' · ' + (s.price_cents / 100).toFixed(2) + ' CHF' : ''}</option>)}</select></label>
+        <label class="f"><span>{T.book_day}</span><select name="date" id="book-date" required></select></label>
+        <label class="f"><span>{T.book_time}</span><select name="time" id="book-time" required></select></label>
+      </div>
+      <div class="row">
+        <label class="f"><span>{T.f_name}</span><input type="text" name="name" required maxlength="120"></label>
+        <label class="f"><span>{T.f_email}</span><input type="email" name="email" required maxlength="200"></label>
+        <label class="f"><span>{T.book_phone}</span><input type="tel" name="phone" maxlength="40"></label>
+      </div>
+      <label class="f wide"><span>{T.book_note}</span><input type="text" name="note" maxlength="600"></label>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <div class="row"><button class="btn big" type="submit" id="book-go">{T.book_send}</button><p class="note" id="book-note">{agenda.auto ? T.book_hint_auto : T.book_hint_pending}</p></div>
+    </form>
+    <div id="book-done" class="card" hidden></div>
+    <div id="book-cancel" class="card" hidden></div>
+    <script is:inline define:vars={{ T, lang }}>
+      (function () {
+        var q = new URLSearchParams(location.search), f = document.getElementById('book-form'), done = document.getElementById('book-done'), note = document.getElementById('book-note');
+        var svc = document.getElementById('book-service'), day = document.getElementById('book-date'), tim = document.getElementById('book-time'), DAYS = [];
+        function load() {
+          day.innerHTML = ''; tim.innerHTML = ''; note.textContent = T.book_loading;
+          fetch('/api/public/agenda?service=' + encodeURIComponent(svc.value)).then(function (r) { return r.json(); }).then(function (d) {
+            DAYS = d.days || []; note.textContent = DAYS.length ? '' : T.book_none;
+            DAYS.forEach(function (x) { var o = document.createElement('option'); o.value = x.date; o.textContent = x.date.split('-').reverse().join('.'); day.appendChild(o); });
+            times();
+          }).catch(function () { note.textContent = T.book_err; });
+        }
+        function times() { tim.innerHTML = ''; var x = DAYS.filter(function (y) { return y.date === day.value; })[0]; (x ? x.slots : []).forEach(function (h) { var o = document.createElement('option'); o.value = h; o.textContent = h; tim.appendChild(o); }); }
+        svc.addEventListener('change', load); day.addEventListener('change', times);
+        f.addEventListener('submit', function (e) {
+          e.preventDefault(); var go = document.getElementById('book-go'); go.disabled = true; note.textContent = T.sending;
+          fetch('/api/public/agenda/book', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ service: svc.value, date: day.value, time: tim.value, name: f.name.value, email: f.email.value, phone: f.phone.value, note: f.note.value, website: f.website.value, lang: lang }) })
+            .then(function (r) { return r.json().then(function (d) { return { st: r.status, d: d }; }); })
+            .then(function (x) {
+              if (x.st === 201 && x.d.ok) { f.hidden = true; done.hidden = false; done.innerHTML = '<h3>' + (x.d.status === 'confirmed' ? T.book_ok : T.book_pending) + '</h3><p>' + x.d.service + ' · ' + x.d.quand + '</p><p class="note">' + T.book_mail + '</p>'; }
+              else if (x.d && x.d.error === 'pris') { note.textContent = T.book_taken; load(); go.disabled = false; }
+              else { note.textContent = T.book_err; go.disabled = false; }
+            }).catch(function () { note.textContent = T.book_err; go.disabled = false; });
+        });
+        var tok = q.get('annuler');
+        if (tok) {
+          var c = document.getElementById('book-cancel'); f.hidden = true; c.hidden = false; c.innerHTML = '<p class="note">' + T.book_loading + '</p>';
+          fetch('/api/public/agenda/cancel?t=' + encodeURIComponent(tok)).then(function (r) { return r.json(); }).then(function (d) {
+            if (!d.ok) { c.innerHTML = '<p>' + T.book_cancel_gone + '</p>'; return; }
+            if (d.status === 'cancelled') { c.innerHTML = '<p>' + T.book_cancelled + '</p>'; return; }
+            c.innerHTML = '<h3>' + T.book_cancel_title + '</h3><p>' + d.service + ' · ' + d.quand + '</p><p><button class="btn" id="book-cancel-go">' + T.book_cancel_btn + '</button></p>';
+            document.getElementById('book-cancel-go').addEventListener('click', function () {
+              fetch('/api/public/agenda/cancel', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ t: tok }) }).then(function (r) { return r.json(); })
+                .then(function (d2) { c.innerHTML = '<p>' + (d2.ok ? T.book_cancelled : T.book_cancel_gone) + '</p>'; }).catch(function () { c.innerHTML = '<p>' + T.book_err + '</p>'; });
+            });
+          }).catch(function () { c.innerHTML = '<p>' + T.book_err + '</p>'; });
+        } else load();
+      })();
+    </script>
+  </section> : null}
+</Base>

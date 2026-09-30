@@ -1,0 +1,469 @@
+# ÉCHANTILLON du thème « terrain » — contenu FICTIF (Bächler Sanitaire, Thoune). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Dépannage 7j/7 — région de Thoune
+    title: Réparé aujourd'hui. Pas la semaine prochaine.
+    text: Fuite, chaudière en panne, salle de bain à refaire — quatre installateurs, deux camionnettes, et un devis écrit avant de commencer.
+    cta: Appeler un dépanneur
+    cta2: Nos interventions
+    cta2_href: "#services"
+  services_title: Nos interventions
+  services:
+    - title: Dépannage
+      text: Fuite, bouchon, chauffe-eau, chaudière — sur place en moins de deux heures dans la région.
+      detail: 7 jours sur 7, de 7 h à 22 h. Le déplacement est compris dans la première heure.
+      icon: wrench
+      price: 140 CHF / h
+    - title: Salles de bain
+      text: Rénovation complète, de la démolition au carrelage, avec un seul interlocuteur.
+      detail: Devis à prix ferme, planning à la semaine, chantier propre chaque soir.
+      icon: drop
+      price: dès 14 000 CHF
+    - title: Chauffage
+      text: Pompes à chaleur, remplacement de chaudière, entretien annuel.
+      detail: Étude gratuite pour le passage à la pompe à chaleur, aide aux demandes de subvention.
+      icon: sun
+      price: sur devis
+    - title: Entretien
+      text: Contrat annuel pour immeubles et PPE — chaudière, adoucisseur, détartrage.
+      detail: Une visite par an, rapport écrit, pièces d'usure comprises.
+      icon: shield
+      price: dès 320 CHF / an
+  proof:
+    items:
+      - {value: "2 h", label: Délai d'intervention, note: Région de Thoune}
+      - {value: "4", label: Installateurs, note: Avec CFC}
+      - {value: "7/7", label: Dépannage, note: De 7 h à 22 h}
+  story:
+    kicker: Comment ça se passe
+    title: Un chantier, quatre étapes.
+    steps:
+      - label: Jour 0
+        title: L'appel
+        text: Vous décrivez le problème, on vous dit qui vient et à quelle heure. Pour un chantier, on passe voir sous 48 h.
+        visual:
+          kind: map
+          city: Thun
+          label: Thoune et 30 km autour
+      - label: Jour 2
+        title: Le devis
+        text: "Prix ferme, poste par poste. Pas de « surprises en cours de route » : ce qui n'est pas écrit n'est pas facturé."
+        visual:
+          kind: ui
+          url: devis.baechler.ch/2026-118
+          title: Devis salle de bain
+          badge: prix ferme
+          items: [Démolition et évacuation, Sanitaire et raccordements, Carrelage sol et murs, Meuble et robinetterie]
+          bar: 100
+          bar_label: Total garanti
+      - label: Semaines 1 à 3
+        title: Le chantier
+        text: Un planning à la semaine, affiché sur la porte. Le chantier est rangé chaque soir, l'eau remise avant de partir.
+        visual:
+          kind: steps
+          title: Planning
+          done: 2
+          items: [Démolition, Plomberie et électricité, Carrelage, Pose des appareils]
+      - label: Fin
+        title: La réception
+        text: On fait le tour ensemble, on teste tout, vous signez. Garantie de deux ans sur la main-d'œuvre.
+        visual:
+          kind: stat
+          value: "2 ans"
+          label: Garantie main-d'œuvre
+          sub: Sur tous nos chantiers
+  about:
+    title: L'entreprise
+    text: Fondée par Urs Bächler, installateur sanitaire depuis vingt ans, l'entreprise emploie quatre monteurs de la région et forme un apprenti chaque année. Le dépôt est à Steffisburg, les camionnettes partent à 7 h.
+    icon: truck
+  split:
+    - title: Un devis écrit, toujours
+      text: Même pour un dépannage, vous recevez le tarif horaire et le forfait déplacement avant qu'on touche à quoi que ce soit. Sur un chantier, le prix est ferme.
+      icon: paper
+  pricing:
+    title: Tarifs
+    text: Prix TTC, déplacement compris dans la région.
+    items:
+      - name: Dépannage
+        price: 140 CHF
+        unit: / heure
+        features: [Sur place en 2 h, 7 jours sur 7, Déplacement compris]
+        cta: Appeler
+      - name: Entretien annuel
+        price: 320 CHF
+        unit: / an
+        features: [Chaudière ou pompe à chaleur, Rapport écrit, Pièces d'usure comprises]
+        featured: true
+        badge: Immeubles et PPE
+        cta: Demander un contrat
+      - name: Rénovation
+        price: Prix ferme
+        features: [Devis poste par poste, Planning affiché, Garantie 2 ans]
+        cta: Demander une visite
+  faq:
+    title: Questions fréquentes
+    items:
+      - q: Intervenez-vous le week-end ?
+        a: Oui, samedi et dimanche de 7 h à 22 h, au même tarif horaire. Le déplacement reste compris.
+      - q: Faites-vous les demandes de subvention ?
+        a: Pour une pompe à chaleur, oui — on prépare le dossier cantonal avec vous, c'est compris dans l'étude.
+      - q: Combien de temps pour une salle de bain ?
+        a: Trois semaines en général, pour une pièce de taille courante. Le planning est fixé dans le devis.
+  contact:
+    title: Décrivez le problème
+    text: Une photo aide. On vous rappelle dans l'heure pendant les horaires d'ouverture.
+  cta:
+    title: Une fuite, une panne, un projet ?
+    text: Quatre installateurs, deux camionnettes, sur place en deux heures.
+    button: Appeler un dépanneur
+en:
+  hero:
+    kicker: 7-day emergency service — Thun area
+    title: Fixed today. Not next week.
+    text: A leak, a dead boiler, a bathroom to redo — four fitters, two vans, and a written quote before we start.
+    cta: Call a plumber
+    cta2: Our services
+    cta2_href: "#services"
+  services_title: Our services
+  services:
+    - title: Emergency
+      text: Leak, blockage, water heater, boiler — on site in under two hours in the area.
+      detail: 7 days a week, 7 am to 10 pm. Travel is included in the first hour.
+      icon: wrench
+      price: CHF 140 / h
+    - title: Bathrooms
+      text: Full renovation, from demolition to tiling, with a single contact.
+      detail: Fixed-price quote, weekly schedule, clean site every evening.
+      icon: drop
+      price: from CHF 14,000
+    - title: Heating
+      text: Heat pumps, boiler replacement, annual service.
+      detail: Free study for switching to a heat pump, help with subsidy applications.
+      icon: sun
+      price: on quote
+    - title: Maintenance
+      text: Annual contract for buildings and condominiums — boiler, softener, descaling.
+      detail: One visit a year, written report, wear parts included.
+      icon: shield
+      price: from CHF 320 / year
+  proof:
+    items:
+      - {value: "2 h", label: Response time, note: Thun area}
+      - {value: "4", label: Fitters, note: Certified}
+      - {value: "7/7", label: Emergency service, note: 7 am to 10 pm}
+  story:
+    kicker: How it goes
+    title: One job, four steps.
+    steps:
+      - label: Day 0
+        title: The call
+        text: You describe the problem, we tell you who is coming and when. For a project, we visit within 48 hours.
+        visual:
+          kind: map
+          city: Thun
+          label: Thun and 30 km around
+      - label: Day 2
+        title: The quote
+        text: Fixed price, item by item. No surprises along the way — what is not written is not billed.
+        visual:
+          kind: ui
+          url: quote.baechler.ch/2026-118
+          title: Bathroom quote
+          badge: fixed price
+          items: [Demolition and disposal, Plumbing and connections, Floor and wall tiling, Vanity and taps]
+          bar: 100
+          bar_label: Guaranteed total
+      - label: Weeks 1 to 3
+        title: The work
+        text: A weekly schedule, posted on the door. The site is tidied every evening, water back on before we leave.
+        visual:
+          kind: steps
+          title: Schedule
+          done: 2
+          items: [Demolition, Plumbing and electrics, Tiling, Fitting the fixtures]
+      - label: End
+        title: Handover
+        text: We walk through together, test everything, you sign. Two-year warranty on labour.
+        visual:
+          kind: stat
+          value: "2 yrs"
+          label: Labour warranty
+          sub: On all our jobs
+  about:
+    title: The company
+    text: Founded by Urs Bächler, a plumber for twenty years, the company employs four fitters from the area and trains an apprentice every year. The depot is in Steffisburg; the vans leave at 7 am.
+    icon: truck
+  split:
+    - title: A written quote, always
+      text: Even for an emergency, you get the hourly rate and the call-out fee before we touch anything. On a project, the price is fixed.
+      icon: paper
+  pricing:
+    title: Rates
+    text: Prices incl. tax, travel included in the area.
+    items:
+      - name: Emergency
+        price: CHF 140
+        unit: / hour
+        features: [On site in 2 h, 7 days a week, Travel included]
+        cta: Call
+      - name: Annual maintenance
+        price: CHF 320
+        unit: / year
+        features: [Boiler or heat pump, Written report, Wear parts included]
+        featured: true
+        badge: Buildings and condos
+        cta: Ask for a contract
+      - name: Renovation
+        price: Fixed price
+        features: [Item-by-item quote, Posted schedule, 2-year warranty]
+        cta: Ask for a visit
+  faq:
+    title: Frequently asked questions
+    items:
+      - q: Do you work at weekends?
+        a: Yes, Saturday and Sunday from 7 am to 10 pm, at the same hourly rate. Travel stays included.
+      - q: Do you handle subsidy applications?
+        a: For a heat pump, yes — we prepare the cantonal file with you; it is part of the study.
+      - q: How long for a bathroom?
+        a: Three weeks in general, for a standard-sized room. The schedule is set in the quote.
+  contact:
+    title: Describe the problem
+    text: A photo helps. We call you back within the hour during opening hours.
+  cta:
+    title: A leak, a breakdown, a project?
+    text: Four fitters, two vans, on site in two hours.
+    button: Call a plumber
+de:
+  hero:
+    kicker: Notdienst 7 Tage die Woche — Region Thun
+    title: Heute repariert. Nicht nächste Woche.
+    text: Leck, Heizung ausgefallen, Badezimmer zu erneuern — vier Monteure, zwei Lieferwagen und eine schriftliche Offerte, bevor es losgeht.
+    cta: Notdienst rufen
+    cta2: Unsere Arbeiten
+    cta2_href: "#services"
+  services_title: Unsere Arbeiten
+  services:
+    - title: Notdienst
+      text: Leck, Verstopfung, Boiler, Heizung — in der Region in weniger als zwei Stunden vor Ort.
+      detail: 7 Tage die Woche, 7 bis 22 Uhr. Die Anfahrt ist in der ersten Stunde inbegriffen.
+      icon: wrench
+      price: CHF 140 / h
+    - title: Badezimmer
+      text: Komplettsanierung, vom Abbruch bis zu den Plättli, mit einem einzigen Ansprechpartner.
+      detail: Festpreisofferte, Wochenplanung, jeden Abend aufgeräumte Baustelle.
+      icon: drop
+      price: ab CHF 14'000
+    - title: Heizung
+      text: Wärmepumpen, Heizkesselersatz, jährlicher Service.
+      detail: Kostenlose Studie für den Wechsel zur Wärmepumpe, Hilfe bei Fördergesuchen.
+      icon: sun
+      price: nach Offerte
+    - title: Unterhalt
+      text: Jahresvertrag für Liegenschaften und Stockwerkeigentum — Heizung, Enthärter, Entkalkung.
+      detail: Ein Besuch pro Jahr, schriftlicher Bericht, Verschleissteile inbegriffen.
+      icon: shield
+      price: ab CHF 320 / Jahr
+  proof:
+    items:
+      - {value: "2 h", label: Reaktionszeit, note: Region Thun}
+      - {value: "4", label: Monteure, note: Mit EFZ}
+      - {value: "7/7", label: Notdienst, note: 7 bis 22 Uhr}
+  story:
+    kicker: So läuft es ab
+    title: Eine Baustelle, vier Schritte.
+    steps:
+      - label: Tag 0
+        title: Der Anruf
+        text: Sie beschreiben das Problem, wir sagen Ihnen, wer kommt und wann. Für ein Projekt kommen wir innert 48 Stunden vorbei.
+        visual:
+          kind: map
+          city: Thun
+          label: Thun und 30 km Umkreis
+      - label: Tag 2
+        title: Die Offerte
+        text: Festpreis, Position für Position. Keine Überraschungen unterwegs — was nicht geschrieben steht, wird nicht verrechnet.
+        visual:
+          kind: ui
+          url: offerte.baechler.ch/2026-118
+          title: Offerte Badezimmer
+          badge: Festpreis
+          items: [Abbruch und Entsorgung, Sanitär und Anschlüsse, Plättli Boden und Wände, Möbel und Armaturen]
+          bar: 100
+          bar_label: Garantierter Gesamtbetrag
+      - label: Woche 1 bis 3
+        title: Die Baustelle
+        text: Ein Wochenplan, an der Tür angeschlagen. Die Baustelle wird jeden Abend aufgeräumt, das Wasser vor dem Gehen wieder angestellt.
+        visual:
+          kind: steps
+          title: Planung
+          done: 2
+          items: [Abbruch, Sanitär und Elektro, Plättli, Montage der Apparate]
+      - label: Ende
+        title: Die Abnahme
+        text: Wir gehen gemeinsam durch, testen alles, Sie unterschreiben. Zwei Jahre Garantie auf die Arbeit.
+        visual:
+          kind: stat
+          value: "2 Jahre"
+          label: Garantie auf die Arbeit
+          sub: Auf allen unseren Baustellen
+  about:
+    title: Das Unternehmen
+    text: Gegründet von Urs Bächler, seit zwanzig Jahren Sanitärinstallateur, beschäftigt das Unternehmen vier Monteure aus der Region und bildet jedes Jahr einen Lernenden aus. Das Depot ist in Steffisburg, die Lieferwagen fahren um 7 Uhr los.
+    icon: truck
+  split:
+    - title: Eine schriftliche Offerte, immer
+      text: Auch bei einem Notfall erhalten Sie den Stundenansatz und die Anfahrtspauschale, bevor wir etwas anfassen. Bei einer Baustelle ist der Preis fest.
+      icon: paper
+  pricing:
+    title: Tarife
+    text: Preise inkl. MWST, Anfahrt in der Region inbegriffen.
+    items:
+      - name: Notdienst
+        price: CHF 140
+        unit: / Stunde
+        features: [In 2 h vor Ort, 7 Tage die Woche, Anfahrt inbegriffen]
+        cta: Anrufen
+      - name: Jahresunterhalt
+        price: CHF 320
+        unit: / Jahr
+        features: [Heizung oder Wärmepumpe, Schriftlicher Bericht, Verschleissteile inbegriffen]
+        featured: true
+        badge: Liegenschaften und STWE
+        cta: Vertrag anfragen
+      - name: Sanierung
+        price: Festpreis
+        features: [Offerte Position für Position, Angeschlagener Plan, 2 Jahre Garantie]
+        cta: Besichtigung anfragen
+  faq:
+    title: Häufige Fragen
+    items:
+      - q: Arbeiten Sie am Wochenende?
+        a: Ja, Samstag und Sonntag von 7 bis 22 Uhr, zum gleichen Stundenansatz. Die Anfahrt bleibt inbegriffen.
+      - q: Stellen Sie die Fördergesuche?
+        a: Für eine Wärmepumpe ja — wir bereiten das kantonale Dossier mit Ihnen vor, das gehört zur Studie.
+      - q: Wie lange dauert ein Badezimmer?
+        a: In der Regel drei Wochen, für einen Raum üblicher Grösse. Der Plan wird in der Offerte festgelegt.
+  contact:
+    title: Beschreiben Sie das Problem
+    text: Ein Foto hilft. Wir rufen Sie während der Öffnungszeiten innert einer Stunde zurück.
+  cta:
+    title: Ein Leck, eine Panne, ein Projekt?
+    text: Vier Monteure, zwei Lieferwagen, in zwei Stunden vor Ort.
+    button: Notdienst rufen
+it:
+  hero:
+    kicker: Pronto intervento 7 giorni su 7 — regione di Thun
+    title: Riparato oggi. Non la settimana prossima.
+    text: Una perdita, una caldaia guasta, un bagno da rifare — quattro installatori, due furgoni e un preventivo scritto prima di cominciare.
+    cta: Chiamare un tecnico
+    cta2: I nostri interventi
+    cta2_href: "#services"
+  services_title: I nostri interventi
+  services:
+    - title: Pronto intervento
+      text: Perdita, intasamento, scaldabagno, caldaia — sul posto in meno di due ore nella regione.
+      detail: 7 giorni su 7, dalle 7 alle 22. La trasferta è compresa nella prima ora.
+      icon: wrench
+      price: CHF 140 / h
+    - title: Bagni
+      text: Ristrutturazione completa, dalla demolizione alle piastrelle, con un solo interlocutore.
+      detail: Preventivo a prezzo fisso, programma settimanale, cantiere pulito ogni sera.
+      icon: drop
+      price: da CHF 14'000
+    - title: Riscaldamento
+      text: Pompe di calore, sostituzione della caldaia, manutenzione annuale.
+      detail: Studio gratuito per il passaggio alla pompa di calore, aiuto per le domande di sussidio.
+      icon: sun
+      price: su preventivo
+    - title: Manutenzione
+      text: Contratto annuale per stabili e PPP — caldaia, addolcitore, decalcificazione.
+      detail: Una visita all'anno, rapporto scritto, pezzi d'usura compresi.
+      icon: shield
+      price: da CHF 320 / anno
+  proof:
+    items:
+      - {value: "2 h", label: Tempo di intervento, note: Regione di Thun}
+      - {value: "4", label: Installatori, note: Con AFC}
+      - {value: "7/7", label: Pronto intervento, note: Dalle 7 alle 22}
+  story:
+    kicker: Come funziona
+    title: Un cantiere, quattro tappe.
+    steps:
+      - label: Giorno 0
+        title: La chiamata
+        text: Descrivete il problema, vi diciamo chi viene e a che ora. Per un cantiere, passiamo a vedere entro 48 ore.
+        visual:
+          kind: map
+          city: Thun
+          label: Thun e 30 km intorno
+      - label: Giorno 2
+        title: Il preventivo
+        text: Prezzo fisso, voce per voce. Nessuna sorpresa strada facendo — ciò che non è scritto non viene fatturato.
+        visual:
+          kind: ui
+          url: preventivo.baechler.ch/2026-118
+          title: Preventivo bagno
+          badge: prezzo fisso
+          items: [Demolizione e smaltimento, Sanitari e allacciamenti, Piastrelle pavimento e pareti, Mobile e rubinetteria]
+          bar: 100
+          bar_label: Totale garantito
+      - label: Settimane 1-3
+        title: Il cantiere
+        text: Un programma settimanale, affisso sulla porta. Il cantiere viene riordinato ogni sera, l'acqua riaperta prima di andare via.
+        visual:
+          kind: steps
+          title: Programma
+          done: 2
+          items: [Demolizione, Idraulica ed elettricità, Piastrelle, Posa degli apparecchi]
+      - label: Fine
+        title: La consegna
+        text: Facciamo il giro insieme, testiamo tutto, firmate. Garanzia di due anni sulla manodopera.
+        visual:
+          kind: stat
+          value: "2 anni"
+          label: Garanzia manodopera
+          sub: Su tutti i nostri cantieri
+  about:
+    title: L'azienda
+    text: Fondata da Urs Bächler, installatore sanitario da vent'anni, l'azienda impiega quattro montatori della regione e forma un apprendista ogni anno. Il deposito è a Steffisburg, i furgoni partono alle 7.
+    icon: truck
+  split:
+    - title: Un preventivo scritto, sempre
+      text: Anche per un pronto intervento, ricevete la tariffa oraria e il forfait di trasferta prima che tocchiamo qualsiasi cosa. In cantiere, il prezzo è fisso.
+      icon: paper
+  pricing:
+    title: Tariffe
+    text: Prezzi IVA compresa, trasferta compresa nella regione.
+    items:
+      - name: Pronto intervento
+        price: CHF 140
+        unit: / ora
+        features: [Sul posto in 2 h, 7 giorni su 7, Trasferta compresa]
+        cta: Chiamare
+      - name: Manutenzione annuale
+        price: CHF 320
+        unit: / anno
+        features: [Caldaia o pompa di calore, Rapporto scritto, Pezzi d'usura compresi]
+        featured: true
+        badge: Stabili e PPP
+        cta: Chiedere un contratto
+      - name: Ristrutturazione
+        price: Prezzo fisso
+        features: [Preventivo voce per voce, Programma affisso, Garanzia 2 anni]
+        cta: Chiedere una visita
+  faq:
+    title: Domande frequenti
+    items:
+      - q: Intervenite nel fine settimana?
+        a: Sì, sabato e domenica dalle 7 alle 22, alla stessa tariffa oraria. La trasferta resta compresa.
+      - q: Vi occupate delle domande di sussidio?
+        a: Per una pompa di calore, sì — prepariamo il dossier cantonale con voi, è compreso nello studio.
+      - q: Quanto tempo per un bagno?
+        a: Tre settimane in genere, per una stanza di dimensioni comuni. Il programma è fissato nel preventivo.
+  contact:
+    title: Descrivete il problema
+    text: Una foto aiuta. Vi richiamiamo entro un'ora durante gli orari di apertura.
+  cta:
+    title: Una perdita, un guasto, un progetto?
+    text: Quattro installatori, due furgoni, sul posto in due ore.
+    button: Chiamare un tecnico

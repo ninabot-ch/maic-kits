@@ -1,0 +1,15 @@
+# ÉCHANTILLON du thème « clinique » — compagnie FICTIVE (Praxis Bellerive n'existe pas), pour la démo et les captures.
+name: Praxis Bellerive
+slug: praxis-bellerive
+theme: clinique
+tagline:
+  fr: Physiothérapie et rééducation, à Neuchâtel.
+  en: Physiotherapy and rehabilitation, in Neuchâtel.
+  de: Physiotherapie und Rehabilitation, in Neuenburg.
+  it: Fisioterapia e riabilitazione, a Neuchâtel.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#2F8F7A"
+contact: {email: accueil@praxis-bellerive.myaicompany.io, phone: "", city: Neuchâtel}
+legal: {responsible: Lena Vuille, address: "Neuchâtel, Suisse", registered: false, ide: ""}
+social: {}

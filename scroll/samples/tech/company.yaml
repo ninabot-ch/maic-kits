@@ -1,0 +1,22 @@
+# ÉCHANTILLON du thème « tech » — compagnie FICTIVE (Kestrel n'existe pas), pour la démo et les captures.
+name: Kestrel
+slug: kestrel
+theme: tech
+tagline:
+  fr: Le tableau de bord des PME suisses, prêt en une heure.
+  en: The dashboard for Swiss SMEs, ready in an hour.
+  de: Das Dashboard für Schweizer KMU, in einer Stunde bereit.
+  it: Il cruscotto delle PMI svizzere, pronto in un'ora.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#8B5CF6"
+contact:
+  email: hello@kestrel.myaicompany.io
+  phone: ""
+  city: Yverdon-les-Bains
+legal:
+  responsible: Kestrel Sàrl
+  address: Yverdon-les-Bains, Suisse
+  registered: true
+  ide: CHE-000.000.000
+social: {}

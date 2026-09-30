@@ -1,0 +1,15 @@
+# ÉCHANTILLON du thème « cabinet » — compagnie FICTIVE (Morand & Keller n'existe pas), pour la démo et les captures.
+name: Morand & Keller
+slug: morand-keller
+theme: cabinet
+tagline:
+  fr: Fiduciaire et conseil aux PME, à Lausanne.
+  en: Accounting and advisory for SMEs, in Lausanne.
+  de: Treuhand und Beratung für KMU, in Lausanne.
+  it: Fiduciaria e consulenza per PMI, a Losanna.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#C9A45C"
+contact: {email: contact@morand-keller.myaicompany.io, phone: "", city: Lausanne}
+legal: {responsible: Morand & Keller Sàrl, address: "Lausanne, Suisse", registered: true, ide: CHE-000.000.000}
+social: {}

@@ -1,0 +1,14 @@
+# Thème « studio » — création, design, agences : noir, typo géante, jaune acide, apparition mot à mot.
+label: {fr: Studio, en: Studio, de: Studio, it: Studio}
+mood: dark
+fonts:
+  display: {family: Syne, fallback: "Impact, 'Arial Black', sans-serif", files: [{file: syne-800.woff2, weight: 800}]}
+  text: {family: Inter, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: inter-400.woff2, weight: 400}, {file: inter-500.woff2, weight: 500}]}
+colors: {bg: "#0B0B0C", bg-2: "#131315", ink: "#F4F4F2", muted: "#9A9A96", line: "#26262A", panel: "#141416", accent: "#E8FF47", accent-ink: "#0B0B0C", hero-a: "#0B0B0C", hero-b: "#1C1C20", hero-ink: "#F4F4F2"}
+radius: {card: 4px, btn: 4px}
+shadow: "none"
+hero: type
+motion: letters
+sections: [hero, rail, story, proof, split, pricing, faq, contact, cta]
+alt: [proof]
+variants: {rail: pinned, proof: band}

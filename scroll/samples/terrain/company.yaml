@@ -1,0 +1,15 @@
+# ÉCHANTILLON du thème « terrain » — compagnie FICTIVE (Bächler Sanitaire n'existe pas), pour la démo et les captures.
+name: Bächler Sanitaire
+slug: baechler-sanitaire
+theme: terrain
+tagline:
+  fr: Sanitaire, chauffage et dépannage 7j/7, région de Thoune.
+  en: Plumbing, heating and 7-day emergency service, Thun area.
+  de: Sanitär, Heizung und Notdienst 7 Tage die Woche, Region Thun.
+  it: Sanitari, riscaldamento e pronto intervento 7 giorni su 7, regione di Thun.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#F05A1A"
+contact: {email: info@baechler-sanitaire.myaicompany.io, phone: "", city: Thoune}
+legal: {responsible: Bächler Sanitaire Sàrl, address: "Thoune, Suisse", registered: true, ide: CHE-000.000.000}
+social: {}

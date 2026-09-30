@@ -1,0 +1,477 @@
+# ÉCHANTILLON du thème « scene » — contenu FICTIF (Collectif Tremplin, Bienne). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Association — Bienne, quartier de la gare
+    title: La scène de ceux qui n'en ont pas encore.
+    text: Une salle de 180 places, un bar, une scène ouverte chaque jeudi et des ateliers pour monter sur scène sans trac.
+    cta: Voir le programme
+    cta_href: "#services"
+    cta2: Devenir membre
+    cta2_href: "#pricing"
+  services_title: Ce qui se passe ici
+  services:
+    - title: Concerts
+      text: Deux à trois soirs par semaine, des groupes de la région et d'ailleurs, à prix libre ou petit prix.
+      detail: Portes à 20 h, concert à 21 h. Bar avec bières locales, entrée libre pour les membres.
+      icon: music
+      price: 0 à 25 CHF
+    - title: Scène ouverte
+      text: Le jeudi, dix minutes par personne, inscription à la porte. Chanson, rap, poésie, tout.
+      detail: Sono et ingénieur son fournis. Les cinq premiers inscrits passent en premier.
+      icon: mic
+      price: libre
+    - title: Ateliers
+      text: Chant, présence scénique, mixage — six semaines pour oser la scène.
+      detail: Groupes de huit, le mardi soir. Restitution sur la grande scène à la fin.
+      icon: sparkles
+      price: 180 CHF
+    - title: Location
+      text: La salle pour vos événements, avec ou sans technicien.
+      detail: Dès 250 CHF la soirée pour les associations, sur devis pour les entreprises.
+      icon: ticket
+      price: dès 250 CHF
+  story:
+    kicker: Une soirée type
+    title: De la porte au rappel.
+    steps:
+      - label: 20 h
+        title: Les portes
+        text: Le bar ouvre, la salle se remplit. Membres à l'entrée libre, les autres à prix libre.
+        visual:
+          kind: ui
+          url: tremplin.ch/ce-soir
+          title: Ce soir
+          badge: portes 20 h
+          items: [Première partie — scène ouverte, Groupe invité — 21 h 30, Bar et billetterie à l'entrée]
+          chips: [Prix libre, Membres gratuit, 180 places]
+      - label: 20 h 30
+        title: La scène ouverte
+        text: Cinq artistes, dix minutes chacun. C'est là qu'on a vu passer la moitié des groupes de la ville.
+        visual:
+          kind: list
+          title: Ordre de passage
+          items: [Inscription à la porte, Dix minutes chacun, Sono et ingé son fournis]
+      - label: 21 h 30
+        title: Le concert
+        text: Le groupe invité. Une heure et quart, la salle debout, le son réglé par un bénévole qui sait ce qu'il fait.
+        visual:
+          kind: chart
+          title: Soirées par style (exemple)
+          badge: cette saison
+          series: [{label: Rock, value: 12}, {label: Rap, value: 9, hot: true}, {label: Électro, value: 7}, {label: Chanson, value: 6}]
+      - label: 23 h
+        title: Le rappel
+        text: Deux morceaux de plus, puis le bar jusqu'à minuit. Les bénévoles rangent, les groupes repartent avec la caisse du soir.
+        visual:
+          kind: stat
+          value: "100 %"
+          label: De la recette aux artistes
+          sub: Le bar paie la salle
+  proof:
+    items:
+      - {value: "180", label: Places, note: Debout}
+      - {value: "3", label: Soirs par semaine, note: Jeudi à samedi}
+      - {value: "40", label: Bénévoles, note: Son, bar, porte}
+  about:
+    title: Le collectif
+    text: "Né en 2018 dans un ancien dépôt près de la gare de Bienne, Tremplin est une association de quarante bénévoles. Pas de programmateur : le comité choisit, la scène ouverte décide du reste. Toute la recette des concerts va aux artistes."
+    icon: users
+  split:
+    - title: Bilingue, comme la ville
+      text: Les annonces se font en français et en allemand, les ateliers dans les deux langues. Personne ne se demande dans quelle langue chanter.
+      icon: mic
+  pricing:
+    title: Devenir membre
+    text: L'adhésion finance la salle. Elle donne l'entrée libre aux concerts.
+    items:
+      - name: Membre
+        price: 60 CHF
+        unit: / an
+        features: [Entrée libre aux concerts, Bière à 4 CHF, Newsletter du jeudi]
+        cta: Adhérer
+      - name: Membre + atelier
+        price: 200 CHF
+        unit: / an
+        features: [Tout Membre, Un atelier de six semaines, Restitution sur scène]
+        featured: true
+        badge: Pour monter sur scène
+        cta: Adhérer
+      - name: Soutien
+        price: 300 CHF
+        unit: / an
+        features: [Tout Membre, Deux invitations par soir, Nom sur le mur du bar]
+        cta: Soutenir
+  faq:
+    title: Questions
+    items:
+      - q: Faut-il être membre pour venir ?
+        a: Non. Les concerts sont ouverts à tous, à prix libre. L'adhésion donne l'entrée libre et soutient la salle.
+      - q: Comment jouer chez vous ?
+        a: Passez à la scène ouverte un jeudi, ou écrivez-nous avec deux morceaux. Le comité écoute tout.
+      - q: La salle est-elle accessible ?
+        a: Oui, de plain-pied, avec toilettes adaptées. Prévenez-nous pour une place réservée devant la scène.
+  contact:
+    title: Jouer, aider, louer ?
+    text: Écrivez-nous, un membre du comité répond dans la semaine.
+  cta:
+    title: Jeudi, dix minutes sont à vous.
+    text: Scène ouverte chaque jeudi, inscription à la porte dès 20 h.
+    button: Voir le programme
+    href: "#services"
+en:
+  hero:
+    kicker: Association — Biel/Bienne, station district
+    title: The stage for those who do not have one yet.
+    text: A 180-seat venue, a bar, an open stage every Thursday and workshops to get on stage without stage fright.
+    cta: See the programme
+    cta_href: "#services"
+    cta2: Become a member
+    cta2_href: "#pricing"
+  services_title: What happens here
+  services:
+    - title: Concerts
+      text: Two to three nights a week, bands from the region and beyond, pay what you want or low price.
+      detail: Doors at 8 pm, concert at 9 pm. Bar with local beers, free entry for members.
+      icon: music
+      price: CHF 0 to 25
+    - title: Open stage
+      text: Thursdays, ten minutes per person, sign up at the door. Song, rap, poetry, anything.
+      detail: PA and sound engineer provided. The first five to sign up go first.
+      icon: mic
+      price: pay what you want
+    - title: Workshops
+      text: Singing, stage presence, mixing — six weeks to dare the stage.
+      detail: Groups of eight, Tuesday evenings. Final show on the main stage.
+      icon: sparkles
+      price: CHF 180
+    - title: Hire
+      text: The venue for your events, with or without a technician.
+      detail: From CHF 250 an evening for associations, on quote for companies.
+      icon: ticket
+      price: from CHF 250
+  story:
+    kicker: A typical night
+    title: From the door to the encore.
+    steps:
+      - label: 8 pm
+        title: Doors
+        text: The bar opens, the room fills. Members get in free, everyone else pays what they want.
+        visual:
+          kind: ui
+          url: tremplin.ch/tonight
+          title: Tonight
+          badge: doors 8 pm
+          items: [Opening act — open stage, Guest band — 9.30 pm, Bar and tickets at the door]
+          chips: [Pay what you want, Members free, 180 places]
+      - label: 8.30 pm
+        title: Open stage
+        text: Five artists, ten minutes each. This is where half the bands in town were first seen.
+        visual:
+          kind: list
+          title: Running order
+          items: [Sign up at the door, Ten minutes each, PA and engineer provided]
+      - label: 9.30 pm
+        title: The concert
+        text: The guest band. An hour and a quarter, the room standing, sound set by a volunteer who knows what they are doing.
+        visual:
+          kind: chart
+          title: Nights by style (example)
+          badge: this season
+          series: [{label: Rock, value: 12}, {label: Rap, value: 9, hot: true}, {label: Electro, value: 7}, {label: Song, value: 6}]
+      - label: 11 pm
+        title: The encore
+        text: Two more songs, then the bar until midnight. Volunteers tidy up, the bands leave with the night's takings.
+        visual:
+          kind: stat
+          value: "100 %"
+          label: Of the takings to the artists
+          sub: The bar pays for the venue
+  proof:
+    items:
+      - {value: "180", label: Places, note: Standing}
+      - {value: "3", label: Nights a week, note: Thursday to Saturday}
+      - {value: "40", label: Volunteers, note: Sound, bar, door}
+  about:
+    title: The collective
+    text: Born in 2018 in a former depot near Biel station, Tremplin is an association of forty volunteers. No booker — the committee chooses, the open stage decides the rest. All concert takings go to the artists.
+    icon: users
+  split:
+    - title: Bilingual, like the town
+      text: Announcements are in French and German, workshops in both languages. Nobody wonders which language to sing in.
+      icon: mic
+  pricing:
+    title: Become a member
+    text: Membership funds the venue. It gives free entry to concerts.
+    items:
+      - name: Member
+        price: CHF 60
+        unit: / year
+        features: [Free entry to concerts, Beer at CHF 4, Thursday newsletter]
+        cta: Join
+      - name: Member + workshop
+        price: CHF 200
+        unit: / year
+        features: [Everything in Member, One six-week workshop, Final show on stage]
+        featured: true
+        badge: To get on stage
+        cta: Join
+      - name: Supporter
+        price: CHF 300
+        unit: / year
+        features: [Everything in Member, Two guest passes per night, Name on the bar wall]
+        cta: Support
+  faq:
+    title: Questions
+    items:
+      - q: Do I need to be a member to come?
+        a: No. Concerts are open to all, pay what you want. Membership gives free entry and supports the venue.
+      - q: How do I play at your venue?
+        a: Come to the open stage on a Thursday, or write to us with two tracks. The committee listens to everything.
+      - q: Is the venue accessible?
+        a: Yes, step-free, with accessible toilets. Let us know for a reserved spot in front of the stage.
+  contact:
+    title: Play, help, hire?
+    text: Write to us; a committee member answers within the week.
+  cta:
+    title: Thursday, ten minutes are yours.
+    text: Open stage every Thursday, sign up at the door from 8 pm.
+    button: See the programme
+    href: "#services"
+de:
+  hero:
+    kicker: Verein — Biel, Bahnhofquartier
+    title: Die Bühne für die, die noch keine haben.
+    text: Ein Saal mit 180 Plätzen, eine Bar, jeden Donnerstag eine offene Bühne und Workshops, um ohne Bühnenangst aufzutreten.
+    cta: Programm ansehen
+    cta_href: "#services"
+    cta2: Mitglied werden
+    cta2_href: "#pricing"
+  services_title: Was hier passiert
+  services:
+    - title: Konzerte
+      text: Zwei bis drei Abende pro Woche, Bands aus der Region und von weiter her, Kollekte oder kleiner Preis.
+      detail: Türöffnung 20 Uhr, Konzert 21 Uhr. Bar mit lokalen Bieren, freier Eintritt für Mitglieder.
+      icon: music
+      price: CHF 0 bis 25
+    - title: Offene Bühne
+      text: Donnerstags, zehn Minuten pro Person, Anmeldung an der Tür. Chanson, Rap, Poesie, alles.
+      detail: Anlage und Tontechnik gestellt. Die ersten fünf Angemeldeten treten zuerst auf.
+      icon: mic
+      price: Kollekte
+    - title: Workshops
+      text: Gesang, Bühnenpräsenz, Mischen — sechs Wochen, um sich auf die Bühne zu wagen.
+      detail: Gruppen von acht, Dienstagabend. Abschluss auf der grossen Bühne.
+      icon: sparkles
+      price: CHF 180
+    - title: Vermietung
+      text: Der Saal für Ihre Anlässe, mit oder ohne Techniker.
+      detail: Ab CHF 250 pro Abend für Vereine, nach Offerte für Unternehmen.
+      icon: ticket
+      price: ab CHF 250
+  story:
+    kicker: Ein typischer Abend
+    title: Von der Tür bis zur Zugabe.
+    steps:
+      - label: 20 Uhr
+        title: Die Türen
+        text: Die Bar öffnet, der Saal füllt sich. Mitglieder kommen gratis rein, alle anderen zahlen, was sie wollen.
+        visual:
+          kind: ui
+          url: tremplin.ch/heute-abend
+          title: Heute Abend
+          badge: Türen 20 Uhr
+          items: [Vorprogramm — offene Bühne, Gastband — 21.30 Uhr, Bar und Kasse am Eingang]
+          chips: [Kollekte, Mitglieder gratis, 180 Plätze]
+      - label: 20.30 Uhr
+        title: Die offene Bühne
+        text: Fünf Acts, je zehn Minuten. Hier hat man die Hälfte der Bands der Stadt zum ersten Mal gesehen.
+        visual:
+          kind: list
+          title: Reihenfolge
+          items: [Anmeldung an der Tür, Zehn Minuten pro Act, Anlage und Tontechnik gestellt]
+      - label: 21.30 Uhr
+        title: Das Konzert
+        text: Die Gastband. Eineinviertel Stunden, der Saal steht, den Ton macht ein Freiwilliger, der es kann.
+        visual:
+          kind: chart
+          title: Abende nach Stil (Beispiel)
+          badge: diese Saison
+          series: [{label: Rock, value: 12}, {label: Rap, value: 9, hot: true}, {label: Elektro, value: 7}, {label: Chanson, value: 6}]
+      - label: 23 Uhr
+        title: Die Zugabe
+        text: Zwei Stücke mehr, dann die Bar bis Mitternacht. Die Freiwilligen räumen auf, die Bands gehen mit der Kasse des Abends.
+        visual:
+          kind: stat
+          value: "100 %"
+          label: Der Einnahmen an die Künstler
+          sub: Die Bar zahlt den Saal
+  proof:
+    items:
+      - {value: "180", label: Plätze, note: Stehend}
+      - {value: "3", label: Abende pro Woche, note: Donnerstag bis Samstag}
+      - {value: "40", label: Freiwillige, note: Ton, Bar, Tür}
+  about:
+    title: Das Kollektiv
+    text: 2018 in einem ehemaligen Depot beim Bahnhof Biel entstanden, ist Tremplin ein Verein von vierzig Freiwilligen. Kein Booker — das Komitee wählt aus, die offene Bühne entscheidet den Rest. Alle Konzerteinnahmen gehen an die Künstlerinnen und Künstler.
+    icon: users
+  split:
+    - title: Zweisprachig, wie die Stadt
+      text: Die Ansagen sind auf Französisch und Deutsch, die Workshops in beiden Sprachen. Niemand fragt sich, in welcher Sprache er singen soll.
+      icon: mic
+  pricing:
+    title: Mitglied werden
+    text: Die Mitgliedschaft finanziert den Saal. Sie gibt freien Eintritt zu den Konzerten.
+    items:
+      - name: Mitglied
+        price: CHF 60
+        unit: / Jahr
+        features: [Freier Eintritt zu den Konzerten, Bier für CHF 4, Donnerstags-Newsletter]
+        cta: Beitreten
+      - name: Mitglied + Workshop
+        price: CHF 200
+        unit: / Jahr
+        features: [Alles aus Mitglied, Ein sechswöchiger Workshop, Abschluss auf der Bühne]
+        featured: true
+        badge: Um aufzutreten
+        cta: Beitreten
+      - name: Gönner
+        price: CHF 300
+        unit: / Jahr
+        features: [Alles aus Mitglied, Zwei Einladungen pro Abend, Name an der Barwand]
+        cta: Unterstützen
+  faq:
+    title: Fragen
+    items:
+      - q: Muss man Mitglied sein, um zu kommen?
+        a: Nein. Die Konzerte stehen allen offen, mit Kollekte. Die Mitgliedschaft gibt freien Eintritt und unterstützt den Saal.
+      - q: Wie kann ich bei euch spielen?
+        a: Kommt an einem Donnerstag zur offenen Bühne oder schreibt uns mit zwei Stücken. Das Komitee hört alles an.
+      - q: Ist der Saal barrierefrei?
+        a: Ja, ebenerdig, mit angepassten Toiletten. Sagt uns Bescheid für einen reservierten Platz vor der Bühne.
+  contact:
+    title: Spielen, helfen, mieten?
+    text: Schreibt uns; ein Komiteemitglied antwortet innerhalb der Woche.
+  cta:
+    title: Donnerstag gehören zehn Minuten dir.
+    text: Offene Bühne jeden Donnerstag, Anmeldung an der Tür ab 20 Uhr.
+    button: Programm ansehen
+    href: "#services"
+it:
+  hero:
+    kicker: Associazione — Bienne, quartiere della stazione
+    title: Il palco di chi non ce l'ha ancora.
+    text: Una sala da 180 posti, un bar, un palco aperto ogni giovedì e laboratori per salire sul palco senza paura.
+    cta: Vedere il programma
+    cta_href: "#services"
+    cta2: Diventare membro
+    cta2_href: "#pricing"
+  services_title: Cosa succede qui
+  services:
+    - title: Concerti
+      text: Due o tre sere a settimana, gruppi della regione e non solo, a offerta libera o a piccolo prezzo.
+      detail: Porte alle 20, concerto alle 21. Bar con birre locali, ingresso libero per i membri.
+      icon: music
+      price: da CHF 0 a 25
+    - title: Palco aperto
+      text: Il giovedì, dieci minuti a persona, iscrizione all'ingresso. Canzone, rap, poesia, tutto.
+      detail: Impianto e tecnico del suono forniti. I primi cinque iscritti passano per primi.
+      icon: mic
+      price: offerta libera
+    - title: Laboratori
+      text: Canto, presenza scenica, missaggio — sei settimane per osare il palco.
+      detail: Gruppi di otto, il martedì sera. Restituzione sul palco grande alla fine.
+      icon: sparkles
+      price: CHF 180
+    - title: Affitto
+      text: La sala per i vostri eventi, con o senza tecnico.
+      detail: Da CHF 250 a serata per le associazioni, su preventivo per le aziende.
+      icon: ticket
+      price: da CHF 250
+  story:
+    kicker: Una serata tipo
+    title: Dalla porta al bis.
+    steps:
+      - label: Ore 20
+        title: Le porte
+        text: Il bar apre, la sala si riempie. Membri a ingresso libero, gli altri a offerta libera.
+        visual:
+          kind: ui
+          url: tremplin.ch/stasera
+          title: Stasera
+          badge: porte ore 20
+          items: [Apertura — palco aperto, Gruppo ospite — ore 21.30, Bar e biglietteria all'ingresso]
+          chips: [Offerta libera, Membri gratis, 180 posti]
+      - label: Ore 20.30
+        title: Il palco aperto
+        text: Cinque artisti, dieci minuti ciascuno. È qui che si è vista passare metà dei gruppi della città.
+        visual:
+          kind: list
+          title: Ordine di passaggio
+          items: [Iscrizione all'ingresso, Dieci minuti ciascuno, Impianto e tecnico forniti]
+      - label: Ore 21.30
+        title: Il concerto
+        text: Il gruppo ospite. Un'ora e un quarto, la sala in piedi, il suono regolato da un volontario che sa il fatto suo.
+        visual:
+          kind: chart
+          title: Serate per stile (esempio)
+          badge: questa stagione
+          series: [{label: Rock, value: 12}, {label: Rap, value: 9, hot: true}, {label: Elettro, value: 7}, {label: Canzone, value: 6}]
+      - label: Ore 23
+        title: Il bis
+        text: Due pezzi in più, poi il bar fino a mezzanotte. I volontari riordinano, i gruppi ripartono con l'incasso della sera.
+        visual:
+          kind: stat
+          value: "100 %"
+          label: Dell'incasso agli artisti
+          sub: Il bar paga la sala
+  proof:
+    items:
+      - {value: "180", label: Posti, note: In piedi}
+      - {value: "3", label: Sere a settimana, note: Da giovedì a sabato}
+      - {value: "40", label: Volontari, note: Suono, bar, porta}
+  about:
+    title: Il collettivo
+    text: Nato nel 2018 in un ex deposito vicino alla stazione di Bienne, Tremplin è un'associazione di quaranta volontari. Nessun programmatore — il comitato sceglie, il palco aperto decide il resto. Tutto l'incasso dei concerti va agli artisti.
+    icon: users
+  split:
+    - title: Bilingue, come la città
+      text: Gli annunci sono in francese e in tedesco, i laboratori in entrambe le lingue. Nessuno si chiede in quale lingua cantare.
+      icon: mic
+  pricing:
+    title: Diventare membro
+    text: L'adesione finanzia la sala. Dà l'ingresso libero ai concerti.
+    items:
+      - name: Membro
+        price: CHF 60
+        unit: / anno
+        features: [Ingresso libero ai concerti, Birra a CHF 4, Newsletter del giovedì]
+        cta: Aderire
+      - name: Membro + laboratorio
+        price: CHF 200
+        unit: / anno
+        features: [Tutto di Membro, Un laboratorio di sei settimane, Restituzione sul palco]
+        featured: true
+        badge: Per salire sul palco
+        cta: Aderire
+      - name: Sostenitore
+        price: CHF 300
+        unit: / anno
+        features: [Tutto di Membro, Due inviti a serata, Nome sul muro del bar]
+        cta: Sostenere
+  faq:
+    title: Domande
+    items:
+      - q: Bisogna essere membri per venire?
+        a: No. I concerti sono aperti a tutti, a offerta libera. L'adesione dà l'ingresso libero e sostiene la sala.
+      - q: Come suonare da voi?
+        a: Passate al palco aperto un giovedì, o scriveteci con due brani. Il comitato ascolta tutto.
+      - q: La sala è accessibile?
+        a: Sì, senza gradini, con servizi adattati. Avvisateci per un posto riservato davanti al palco.
+  contact:
+    title: Suonare, aiutare, affittare?
+    text: Scriveteci, un membro del comitato risponde entro la settimana.
+  cta:
+    title: Giovedì, dieci minuti sono vostri.
+    text: Palco aperto ogni giovedì, iscrizione all'ingresso dalle 20.
+    button: Vedere il programma
+    href: "#services"

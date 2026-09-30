@@ -1,0 +1,489 @@
+# ÉCHANTILLON du thème « cabinet » — contenu FICTIF (Morand & Keller, Lausanne). Aucun chiffre ci-dessous ne décrit une vraie entreprise.
+fr:
+  hero:
+    kicker: Fiduciaire — Lausanne
+    title: Des comptes clairs, des décisions sereines.
+    text: Comptabilité, fiscalité, salaires et conseil pour les indépendants et les PME de Suisse romande. Deux associés, une équipe de six, des réponses en 24 heures.
+    cta: Demander un entretien
+    cta2: Nos prestations
+    cta2_href: "#services"
+  about:
+    title: Le cabinet
+    text: Fondé par Sophie Morand et Thomas Keller, tous deux experts-comptables diplômés, le cabinet accompagne une centaine de mandats, du restaurant familial à la start-up en levée de fonds. Nous ne facturons pas à la minute et nous répondons au téléphone.
+    quote: Un bon fiduciaire vous appelle avant l'échéance, pas après.
+    icon: scale
+  split:
+    - title: Un interlocuteur, pas un guichet
+      text: Chaque mandat a un responsable attitré qui connaît votre dossier. Il vous appelle quand quelque chose bouge — TVA, impôt, AVS — pas seulement quand vous le sollicitez.
+      icon: users
+  services_title: Nos prestations
+  services:
+    - title: Comptabilité
+      text: Tenue, bouclement, comptes annuels, TVA — sur votre outil ou le nôtre.
+      detail: Bexio, Abacus ou Banana. Bouclement livré dans les 60 jours après la clôture, rapport commenté en une page.
+      icon: chart
+      price: dès 290 CHF / mois
+    - title: Fiscalité
+      text: Déclarations des personnes physiques et morales, optimisation légale, représentation devant l'administration.
+      detail: Simulation avant la fin de l'année pour décider des amortissements, du salaire et du dividende.
+      icon: scale
+      price: dès 450 CHF
+    - title: Salaires
+      text: Fiches, décomptes AVS, LPP, impôt à la source, certificats de salaire.
+      detail: Dès le premier employé. Nous gérons les annonces aux caisses et les contrôles.
+      icon: briefcase
+      price: dès 18 CHF / fiche
+    - title: Conseil
+      text: Création de société, transmission, budget, financement bancaire.
+      detail: Un entretien de cadrage offert ; ensuite au forfait, annoncé à l'avance.
+      icon: key
+      price: sur devis
+  story:
+    kicker: Une année avec nous
+    title: Quatre rendez-vous, aucune mauvaise surprise.
+    steps:
+      - label: Janvier
+        title: Le bouclement
+        text: Vos comptes de l'année précédente sont bouclés et commentés en une page. Vous savez où vous en êtes avant le printemps.
+        visual:
+          kind: ui
+          url: espace.morand-keller.ch
+          title: Comptes annuels
+          badge: bouclés
+          items: [Bilan et compte de résultat, Rapport commenté en une page, Décompte TVA du 4e trimestre]
+          bar: 100
+          bar_label: Livré le 28 février
+      - label: Avril
+        title: Les impôts
+        text: Déclarations déposées, acomptes ajustés. Une simulation vous dit ce que la prochaine année coûtera.
+        visual:
+          kind: chart
+          title: Charge fiscale simulée (exemple)
+          badge: kCHF
+          series: [{label: Actuel, value: 42}, {label: Option A, value: 36, hot: true}, {label: Option B, value: 39}]
+      - label: Septembre
+        title: Le point de mi-parcours
+        text: Un entretien d'une heure sur les chiffres à date, la trésorerie et les décisions à prendre avant décembre.
+        visual:
+          kind: list
+          title: À l'ordre du jour
+          items: [Chiffre d'affaires à date, Trésorerie à trois mois, Investissements avant la clôture]
+      - label: Décembre
+        title: Les arbitrages
+        text: Salaire ou dividende, amortissements, provisions — on décide ensemble, chiffres à l'appui.
+        visual:
+          kind: steps
+          title: Avant le 31 décembre
+          done: 2
+          items: [Fixer le salaire de l'associé, Passer les amortissements, Décider du dividende, Signer les comptes]
+  proof:
+    items:
+      - {value: "24 h", label: Délai de réponse, note: Jours ouvrables}
+      - {value: "2", label: Experts-comptables diplômés}
+      - {value: "60 j", label: Pour un bouclement, note: Après la clôture}
+  pricing:
+    title: Honoraires
+    text: Des forfaits mensuels, sans facturation à la minute.
+    items:
+      - name: Indépendant
+        price: 290 CHF
+        unit: / mois
+        text: Raison individuelle, sans salarié.
+        features: [Comptabilité et TVA, Déclaration d'impôt, Un point par an]
+        cta: Demander un entretien
+      - name: PME
+        price: 690 CHF
+        unit: / mois
+        text: Sàrl ou SA jusqu'à dix salariés.
+        features: [Comptabilité et bouclement, Salaires compris, Fiscalité et simulation, Deux points par an]
+        featured: true
+        badge: Le plus courant
+        cta: Demander un entretien
+      - name: Sur mesure
+        price: Sur devis
+        text: Groupes, holdings, activité internationale.
+        features: [Consolidation, TVA multi-pays, Responsable dédié]
+        cta: Nous parler
+    note: Prix hors TVA. Le premier entretien est offert.
+  faq:
+    title: Questions fréquentes
+    items:
+      - q: Puis-je garder mon logiciel comptable ?
+        a: Oui. Nous travaillons sur Bexio, Abacus et Banana ; si vous préférez, nous tenons les comptes sur le nôtre.
+      - q: Que se passe-t-il en cas de contrôle ?
+        a: Nous vous représentons et préparons le dossier. C'est compris dans le forfait, sans supplément.
+      - q: Changer de fiduciaire en cours d'année, c'est possible ?
+        a: Oui, à tout moment. Nous récupérons les pièces auprès de votre ancien mandataire.
+  contact:
+    title: Parlons de votre situation
+    text: Un premier entretien d'une heure, offert, à Lausanne ou en visio.
+  cta:
+    title: Le premier entretien est offert.
+    text: Une heure pour comprendre votre situation et vous dire ce que nous ferions.
+    button: Demander un entretien
+en:
+  hero:
+    kicker: Accounting firm — Lausanne
+    title: Clear accounts, calm decisions.
+    text: Accounting, tax, payroll and advisory for the self-employed and SMEs of French-speaking Switzerland. Two partners, a team of six, answers within 24 hours.
+    cta: Request a meeting
+    cta2: Our services
+    cta2_href: "#services"
+  about:
+    title: The firm
+    text: Founded by Sophie Morand and Thomas Keller, both certified public accountants, the firm looks after around a hundred mandates, from the family restaurant to the fundraising start-up. We do not bill by the minute and we answer the phone.
+    quote: A good accountant calls you before the deadline, not after.
+    icon: scale
+  split:
+    - title: One contact, not a counter
+      text: Every mandate has a dedicated manager who knows your file. They call you when something moves — VAT, tax, social security — not only when you ask.
+      icon: users
+  services_title: Our services
+  services:
+    - title: Accounting
+      text: Bookkeeping, year-end closing, annual accounts, VAT — on your software or ours.
+      detail: Bexio, Abacus or Banana. Closing delivered within 60 days of year-end, one-page commented report.
+      icon: chart
+      price: from CHF 290 / month
+    - title: Tax
+      text: Individual and corporate returns, legal optimisation, representation before the authorities.
+      detail: Simulation before year-end to decide on depreciation, salary and dividend.
+      icon: scale
+      price: from CHF 450
+    - title: Payroll
+      text: Payslips, AVS and LPP statements, withholding tax, salary certificates.
+      detail: From the first employee. We handle the fund notifications and audits.
+      icon: briefcase
+      price: from CHF 18 / payslip
+    - title: Advisory
+      text: Company formation, succession, budgeting, bank financing.
+      detail: A scoping meeting is free; then a flat fee, announced in advance.
+      icon: key
+      price: on quote
+  story:
+    kicker: A year with us
+    title: Four meetings, no bad surprises.
+    steps:
+      - label: January
+        title: The closing
+        text: Last year's accounts are closed and commented on one page. You know where you stand before spring.
+        visual:
+          kind: ui
+          url: portal.morand-keller.ch
+          title: Annual accounts
+          badge: closed
+          items: [Balance sheet and P&L, One-page commented report, Q4 VAT return]
+          bar: 100
+          bar_label: Delivered on 28 February
+      - label: April
+        title: Taxes
+        text: Returns filed, instalments adjusted. A simulation tells you what next year will cost.
+        visual:
+          kind: chart
+          title: Simulated tax burden (example)
+          badge: kCHF
+          series: [{label: Current, value: 42}, {label: Option A, value: 36, hot: true}, {label: Option B, value: 39}]
+      - label: September
+        title: The mid-year review
+        text: A one-hour meeting on year-to-date figures, cash and the decisions to make before December.
+        visual:
+          kind: list
+          title: On the agenda
+          items: [Year-to-date revenue, Three-month cash, Investments before closing]
+      - label: December
+        title: The trade-offs
+        text: Salary or dividend, depreciation, provisions — we decide together, with the numbers.
+        visual:
+          kind: steps
+          title: Before 31 December
+          done: 2
+          items: [Set the partner's salary, Book depreciation, Decide the dividend, Sign the accounts]
+  proof:
+    items:
+      - {value: "24 h", label: Response time, note: Working days}
+      - {value: "2", label: Certified public accountants}
+      - {value: "60 d", label: For a closing, note: After year-end}
+  pricing:
+    title: Fees
+    text: Monthly flat fees, no billing by the minute.
+    items:
+      - name: Self-employed
+        price: CHF 290
+        unit: / month
+        text: Sole proprietorship, no employees.
+        features: [Accounting and VAT, Tax return, One review a year]
+        cta: Request a meeting
+      - name: SME
+        price: CHF 690
+        unit: / month
+        text: Sàrl or SA with up to ten employees.
+        features: [Accounting and closing, Payroll included, Tax and simulation, Two reviews a year]
+        featured: true
+        badge: Most common
+        cta: Request a meeting
+      - name: Bespoke
+        price: On quote
+        text: Groups, holdings, international activity.
+        features: [Consolidation, Multi-country VAT, Dedicated manager]
+        cta: Talk to us
+    note: Prices excl. VAT. The first meeting is free.
+  faq:
+    title: Frequently asked questions
+    items:
+      - q: Can I keep my accounting software?
+        a: Yes. We work on Bexio, Abacus and Banana; if you prefer, we keep the books on ours.
+      - q: What happens in case of an audit?
+        a: We represent you and prepare the file. It is included in the flat fee, no extra.
+      - q: Can I switch firms mid-year?
+        a: Yes, at any time. We collect the documents from your previous accountant.
+  contact:
+    title: Let's talk about your situation
+    text: A first one-hour meeting, free, in Lausanne or by video.
+  cta:
+    title: The first meeting is free.
+    text: One hour to understand your situation and tell you what we would do.
+    button: Request a meeting
+de:
+  hero:
+    kicker: Treuhand — Lausanne
+    title: Klare Zahlen, ruhige Entscheidungen.
+    text: Buchhaltung, Steuern, Löhne und Beratung für Selbstständige und KMU der Westschweiz. Zwei Partner, ein Team von sechs, Antworten innert 24 Stunden.
+    cta: Gespräch anfragen
+    cta2: Unsere Leistungen
+    cta2_href: "#services"
+  about:
+    title: Die Kanzlei
+    text: Gegründet von Sophie Morand und Thomas Keller, beide diplomierte Wirtschaftsprüfer, betreut die Kanzlei rund hundert Mandate, vom Familienrestaurant bis zum Start-up in der Finanzierungsrunde. Wir rechnen nicht nach Minuten ab, und wir gehen ans Telefon.
+    quote: Ein guter Treuhänder ruft vor der Frist an, nicht danach.
+    icon: scale
+  split:
+    - title: Ein Ansprechpartner, kein Schalter
+      text: Jedes Mandat hat eine feste Betreuung, die Ihr Dossier kennt. Sie ruft an, wenn sich etwas bewegt — MWST, Steuern, AHV — nicht nur, wenn Sie fragen.
+      icon: users
+  services_title: Unsere Leistungen
+  services:
+    - title: Buchhaltung
+      text: Führung, Abschluss, Jahresrechnung, MWST — auf Ihrer Software oder unserer.
+      detail: Bexio, Abacus oder Banana. Abschluss innert 60 Tagen nach Jahresende, kommentierter Einseiter.
+      icon: chart
+      price: ab CHF 290 / Monat
+    - title: Steuern
+      text: Erklärungen für natürliche und juristische Personen, legale Optimierung, Vertretung gegenüber der Verwaltung.
+      detail: Simulation vor Jahresende, um Abschreibungen, Lohn und Dividende zu entscheiden.
+      icon: scale
+      price: ab CHF 450
+    - title: Löhne
+      text: Lohnabrechnungen, AHV- und BVG-Abrechnungen, Quellensteuer, Lohnausweise.
+      detail: Ab dem ersten Angestellten. Wir übernehmen die Meldungen an die Kassen und die Kontrollen.
+      icon: briefcase
+      price: ab CHF 18 / Abrechnung
+    - title: Beratung
+      text: Firmengründung, Nachfolge, Budget, Bankfinanzierung.
+      detail: Ein Erstgespräch ist kostenlos; danach zum Pauschalpreis, im Voraus angekündigt.
+      icon: key
+      price: nach Offerte
+  story:
+    kicker: Ein Jahr mit uns
+    title: Vier Termine, keine bösen Überraschungen.
+    steps:
+      - label: Januar
+        title: Der Abschluss
+        text: Die Zahlen des Vorjahres sind abgeschlossen und auf einer Seite kommentiert. Sie wissen vor dem Frühling, wo Sie stehen.
+        visual:
+          kind: ui
+          url: portal.morand-keller.ch
+          title: Jahresrechnung
+          badge: abgeschlossen
+          items: [Bilanz und Erfolgsrechnung, Kommentierter Einseiter, MWST-Abrechnung 4. Quartal]
+          bar: 100
+          bar_label: Geliefert am 28. Februar
+      - label: April
+        title: Die Steuern
+        text: Erklärungen eingereicht, Akontozahlungen angepasst. Eine Simulation zeigt, was das nächste Jahr kostet.
+        visual:
+          kind: chart
+          title: Simulierte Steuerlast (Beispiel)
+          badge: kCHF
+          series: [{label: Aktuell, value: 42}, {label: Option A, value: 36, hot: true}, {label: Option B, value: 39}]
+      - label: September
+        title: Die Zwischenbilanz
+        text: Ein einstündiges Gespräch über die Zahlen bis heute, die Liquidität und die Entscheidungen vor Dezember.
+        visual:
+          kind: list
+          title: Auf der Traktandenliste
+          items: [Umsatz bis heute, Liquidität auf drei Monate, Investitionen vor dem Abschluss]
+      - label: Dezember
+        title: Die Weichenstellung
+        text: Lohn oder Dividende, Abschreibungen, Rückstellungen — wir entscheiden gemeinsam, mit Zahlen.
+        visual:
+          kind: steps
+          title: Vor dem 31. Dezember
+          done: 2
+          items: [Lohn des Partners festlegen, Abschreibungen buchen, Dividende entscheiden, Jahresrechnung unterzeichnen]
+  proof:
+    items:
+      - {value: "24 h", label: Antwortzeit, note: Werktage}
+      - {value: "2", label: Diplomierte Wirtschaftsprüfer}
+      - {value: "60 T.", label: Für einen Abschluss, note: Nach Jahresende}
+  pricing:
+    title: Honorare
+    text: Monatspauschalen, keine Abrechnung nach Minuten.
+    items:
+      - name: Selbstständig
+        price: CHF 290
+        unit: / Monat
+        text: Einzelfirma, ohne Angestellte.
+        features: [Buchhaltung und MWST, Steuererklärung, Ein Gespräch pro Jahr]
+        cta: Gespräch anfragen
+      - name: KMU
+        price: CHF 690
+        unit: / Monat
+        text: GmbH oder AG bis zehn Angestellte.
+        features: [Buchhaltung und Abschluss, Löhne inbegriffen, Steuern und Simulation, Zwei Gespräche pro Jahr]
+        featured: true
+        badge: Am häufigsten
+        cta: Gespräch anfragen
+      - name: Nach Mass
+        price: Nach Offerte
+        text: Gruppen, Holdings, internationale Tätigkeit.
+        features: [Konsolidierung, MWST in mehreren Ländern, Feste Betreuung]
+        cta: Mit uns sprechen
+    note: Preise exkl. MWST. Das Erstgespräch ist kostenlos.
+  faq:
+    title: Häufige Fragen
+    items:
+      - q: Kann ich meine Buchhaltungssoftware behalten?
+        a: Ja. Wir arbeiten mit Bexio, Abacus und Banana; auf Wunsch führen wir die Bücher auf unserer Software.
+      - q: Was passiert bei einer Kontrolle?
+        a: Wir vertreten Sie und bereiten das Dossier vor. Das ist in der Pauschale inbegriffen, ohne Zuschlag.
+      - q: Kann ich den Treuhänder im laufenden Jahr wechseln?
+        a: Ja, jederzeit. Wir holen die Unterlagen bei Ihrem bisherigen Mandatsträger ab.
+  contact:
+    title: Sprechen wir über Ihre Situation
+    text: Ein erstes einstündiges Gespräch, kostenlos, in Lausanne oder per Video.
+  cta:
+    title: Das Erstgespräch ist kostenlos.
+    text: Eine Stunde, um Ihre Situation zu verstehen und Ihnen zu sagen, was wir tun würden.
+    button: Gespräch anfragen
+it:
+  hero:
+    kicker: Fiduciaria — Losanna
+    title: Conti chiari, decisioni serene.
+    text: Contabilità, fiscalità, salari e consulenza per indipendenti e PMI della Svizzera romanda. Due soci, un team di sei, risposte entro 24 ore.
+    cta: Chiedere un colloquio
+    cta2: Le nostre prestazioni
+    cta2_href: "#services"
+  about:
+    title: Lo studio
+    text: Fondato da Sophie Morand e Thomas Keller, entrambi esperti contabili diplomati, lo studio segue un centinaio di mandati, dal ristorante di famiglia alla start-up in raccolta fondi. Non fatturiamo al minuto e rispondiamo al telefono.
+    quote: Un buon fiduciario vi chiama prima della scadenza, non dopo.
+    icon: scale
+  split:
+    - title: Un interlocutore, non uno sportello
+      text: Ogni mandato ha un responsabile dedicato che conosce il vostro dossier. Vi chiama quando qualcosa si muove — IVA, imposte, AVS — non solo quando lo sollecitate.
+      icon: users
+  services_title: Le nostre prestazioni
+  services:
+    - title: Contabilità
+      text: Tenuta, chiusura, conti annuali, IVA — sul vostro strumento o sul nostro.
+      detail: Bexio, Abacus o Banana. Chiusura consegnata entro 60 giorni dalla fine dell'esercizio, rapporto commentato in una pagina.
+      icon: chart
+      price: da CHF 290 / mese
+    - title: Fiscalità
+      text: Dichiarazioni delle persone fisiche e giuridiche, ottimizzazione legale, rappresentanza davanti all'amministrazione.
+      detail: Simulazione prima della fine dell'anno per decidere ammortamenti, salario e dividendo.
+      icon: scale
+      price: da CHF 450
+    - title: Salari
+      text: Buste paga, conteggi AVS e LPP, imposta alla fonte, certificati di salario.
+      detail: Dal primo dipendente. Gestiamo le notifiche alle casse e i controlli.
+      icon: briefcase
+      price: da CHF 18 / busta
+    - title: Consulenza
+      text: Costituzione di società, successione, budget, finanziamento bancario.
+      detail: Un colloquio di inquadramento offerto; poi a forfait, annunciato in anticipo.
+      icon: key
+      price: su preventivo
+  story:
+    kicker: Un anno con noi
+    title: Quattro appuntamenti, nessuna brutta sorpresa.
+    steps:
+      - label: Gennaio
+        title: La chiusura
+        text: I conti dell'anno precedente sono chiusi e commentati in una pagina. Sapete dove siete prima della primavera.
+        visual:
+          kind: ui
+          url: portale.morand-keller.ch
+          title: Conti annuali
+          badge: chiusi
+          items: [Bilancio e conto economico, Rapporto commentato in una pagina, Conteggio IVA del 4° trimestre]
+          bar: 100
+          bar_label: Consegnato il 28 febbraio
+      - label: Aprile
+        title: Le imposte
+        text: Dichiarazioni depositate, acconti aggiustati. Una simulazione vi dice cosa costerà il prossimo anno.
+        visual:
+          kind: chart
+          title: Carico fiscale simulato (esempio)
+          badge: kCHF
+          series: [{label: Attuale, value: 42}, {label: Opzione A, value: 36, hot: true}, {label: Opzione B, value: 39}]
+      - label: Settembre
+        title: Il punto di metà anno
+        text: Un colloquio di un'ora sulle cifre a oggi, la liquidità e le decisioni da prendere prima di dicembre.
+        visual:
+          kind: list
+          title: All'ordine del giorno
+          items: [Fatturato a oggi, Liquidità a tre mesi, Investimenti prima della chiusura]
+      - label: Dicembre
+        title: Le scelte
+        text: Salario o dividendo, ammortamenti, accantonamenti — decidiamo insieme, cifre alla mano.
+        visual:
+          kind: steps
+          title: Prima del 31 dicembre
+          done: 2
+          items: [Fissare il salario del socio, Registrare gli ammortamenti, Decidere il dividendo, Firmare i conti]
+  proof:
+    items:
+      - {value: "24 h", label: Tempo di risposta, note: Giorni lavorativi}
+      - {value: "2", label: Esperti contabili diplomati}
+      - {value: "60 g", label: Per una chiusura, note: Dopo la fine dell'esercizio}
+  pricing:
+    title: Onorari
+    text: Forfait mensili, senza fatturazione al minuto.
+    items:
+      - name: Indipendente
+        price: CHF 290
+        unit: / mese
+        text: Ditta individuale, senza dipendenti.
+        features: [Contabilità e IVA, Dichiarazione d'imposta, Un punto all'anno]
+        cta: Chiedere un colloquio
+      - name: PMI
+        price: CHF 690
+        unit: / mese
+        text: Sagl o SA fino a dieci dipendenti.
+        features: [Contabilità e chiusura, Salari compresi, Fiscalità e simulazione, Due punti all'anno]
+        featured: true
+        badge: Il più comune
+        cta: Chiedere un colloquio
+      - name: Su misura
+        price: Su preventivo
+        text: Gruppi, holding, attività internazionale.
+        features: [Consolidamento, IVA multi-paese, Responsabile dedicato]
+        cta: Parliamone
+    note: Prezzi IVA esclusa. Il primo colloquio è offerto.
+  faq:
+    title: Domande frequenti
+    items:
+      - q: Posso tenere il mio software contabile?
+        a: Sì. Lavoriamo su Bexio, Abacus e Banana; se preferite, teniamo i conti sul nostro.
+      - q: Cosa succede in caso di controllo?
+        a: Vi rappresentiamo e prepariamo il dossier. È compreso nel forfait, senza supplemento.
+      - q: Cambiare fiduciaria a metà anno è possibile?
+        a: Sì, in ogni momento. Recuperiamo i documenti presso il vostro precedente mandatario.
+  contact:
+    title: Parliamo della vostra situazione
+    text: Un primo colloquio di un'ora, offerto, a Losanna o in video.
+  cta:
+    title: Il primo colloquio è offerto.
+    text: Un'ora per capire la vostra situazione e dirvi cosa faremmo.
+    button: Chiedere un colloquio

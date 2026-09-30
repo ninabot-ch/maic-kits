@@ -1,0 +1,14 @@
+---
+// La home au défilement : composée par le moteur (src/engine/Home.astro) dans l'ordre du thème.
+import Base from '../../layouts/Base.astro';
+import Home from '../../engine/Home.astro';
+import { content, LANGS, DEFAULT } from '../../site.js';
+export function getStaticPaths() { return LANGS.map(l => ({ params: { lang: l === DEFAULT ? undefined : l }, props: { lang: l } })); }
+const { lang } = Astro.props; const C = content(lang);
+// Contrat Studio (api/studio.py `_ensure_gallery_kit` cherche « C.gallery » ICI) : la galerie de content.yaml
+// ({title, text, items:[{src, alt}]}, images sous /images/) est rendue par engine/Gallery.astro, composée dans Home.
+const hasGallery = !!(C.gallery && C.gallery.items && C.gallery.items.length);
+---
+<Base lang={lang} path="/" full description={C.hero?.text}>
+  <Home lang={lang} gallery={hasGallery} />
+</Base>

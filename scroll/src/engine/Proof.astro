@@ -1,0 +1,14 @@
+---
+// Proof — chiffres et faits FOURNIS PAR LE CLIENT (content.yaml → proof.items). Le moteur ne fabrique rien : il compte
+// (data-count) jusqu'à la valeur écrite. Variante `band` (bandeau filet) ou `cards` (cartes) selon le thème.
+const { C, theme, alt } = Astro.props;
+const P = C.proof || {}; const items = P.items || []; const variant = (theme.variants && theme.variants.proof) || 'cards';
+---
+<section id="proof" class={`proof sec${alt ? ' sec--alt' : ''}`} data-scroll="reveal" data-variant={variant} aria-labelledby={P.title ? 'proof-title' : undefined} aria-label={P.title ? undefined : 'Chiffres'}>
+  <div class="wrap">
+    {P.title ? <header class="sec__head">{P.kicker ? <p class="kicker">{P.kicker}</p> : null}<h2 id="proof-title">{P.title}</h2>{P.text ? <p>{P.text}</p> : null}</header> : null}
+    <ul class="proof__grid">
+      {items.map(it => <li class="proof__item"><b class="proof__value" data-count>{it.value}</b><span class="proof__label">{it.label}</span>{it.note ? <small class="proof__note">{it.note}</small> : null}</li>)}
+    </ul>
+  </div>
+</section>

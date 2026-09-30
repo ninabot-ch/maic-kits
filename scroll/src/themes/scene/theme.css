@@ -1,0 +1,54 @@
+/* scene — néon magenta/cyan, affiche, faisceaux */
+[data-theme="scene"] h1,[data-theme="scene"] h2,[data-theme="scene"] h3{font-weight:400;letter-spacing:.02em;text-transform:uppercase}
+[data-theme="scene"] h2{font-size:clamp(2.6rem,5.6vw,4.8rem);line-height:.95}
+[data-theme="scene"] .kicker,[data-theme="scene"] .story__label{color:#21F0C9;letter-spacing:.22em}
+[data-theme="scene"] .home .hero__art{opacity:1;background:#07060B}
+[data-theme="scene"] .home .hero__art::before,[data-theme="scene"] .home .hero__art::after{content:"";position:absolute;top:-20%;bottom:-20%;width:26vmax;filter:blur(70px);opacity:.55}
+[data-theme="scene"] .home .hero__art::before{left:-8%;background:linear-gradient(180deg,#FF2E88,transparent);transform:rotate(18deg)}
+[data-theme="scene"] .home .hero__art::after{right:-6%;background:linear-gradient(180deg,#21F0C9,transparent);transform:rotate(-16deg)}
+.has-motion[data-theme="scene"] .home .hero__art::before{animation:scene-beam 7s ease-in-out infinite alternate}
+.has-motion[data-theme="scene"] .home .hero__art::after{animation:scene-beam2 9s ease-in-out infinite alternate}
+@keyframes scene-beam{from{transform:rotate(18deg) translateX(0)}to{transform:rotate(28deg) translateX(30vmax)}}
+@keyframes scene-beam2{from{transform:rotate(-16deg) translateX(0)}to{transform:rotate(-26deg) translateX(-30vmax)}}
+[data-theme="scene"] .home .hero__initial{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.18) 1px,transparent 1px);background-size:26px 26px;font-size:0;mask-image:linear-gradient(180deg,#000,transparent 80%)}
+[data-theme="scene"] .home .hero__veil{background:linear-gradient(180deg,transparent 60%,#07060B)}
+[data-theme="scene"] .home .hero--type .hero__title{font-size:clamp(4rem,14vw,15rem);line-height:.86;letter-spacing:.01em;text-shadow:0 0 18px rgba(255,46,136,.55),0 0 60px rgba(255,46,136,.35)}
+[data-theme="scene"] .home .hero--type .hero__title .w:nth-child(even){color:#21F0C9;text-shadow:0 0 18px rgba(33,240,201,.6),0 0 60px rgba(33,240,201,.35)}
+.has-motion[data-theme="scene"] .home .hero.is-in .hero__title{animation:scene-flicker 6s linear infinite 1.4s}
+@keyframes scene-flicker{0%,92%,100%{opacity:1}93%{opacity:.75}94%{opacity:1}96%{opacity:.85}97%{opacity:1}}
+[data-theme="scene"] .home .hero__kicker{color:#21F0C9;letter-spacing:.3em}
+[data-theme="scene"] .home .hero__lead{max-width:44ch}
+[data-theme="scene"] .home .hero__more{border-color:#21F0C9;color:#21F0C9;box-shadow:0 0 18px rgba(33,240,201,.4)}
+[data-theme="scene"] .btn{background:var(--c-accent);color:#fff;box-shadow:0 0 24px rgba(255,46,136,.45);text-transform:uppercase;letter-spacing:.1em;font-family:var(--font-display);font-size:1.15rem;padding:12px 24px}
+[data-theme="scene"] .btn:hover{background:#21F0C9;color:#07060B;box-shadow:0 0 24px rgba(33,240,201,.5)}
+[data-theme="scene"] .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.3);box-shadow:none}
+[data-theme="scene"] header.top .brand{font-family:var(--font-display);font-size:1.7rem;letter-spacing:.06em}
+[data-theme="scene"] header.top .brand i{background:linear-gradient(135deg,#FF2E88,#21F0C9);border-radius:6px}
+[data-theme="scene"] .rail__card{border:1px solid var(--c-line);background:var(--c-panel);transition:border-color .3s,box-shadow .3s}
+[data-theme="scene"] .rail__card:hover{border-color:#FF2E88;box-shadow:0 0 30px rgba(255,46,136,.25)}
+[data-theme="scene"] .rail__idx{font-family:var(--font-display);font-size:2rem;color:#21F0C9;letter-spacing:.04em;line-height:1}
+[data-theme="scene"] .rail__ico{background:rgba(255,46,136,.15);color:#FF2E88;border:1px solid rgba(255,46,136,.4)}
+[data-theme="scene"] .rail__card h3{font-size:1.9rem}
+[data-theme="scene"] .rail__price{color:#21F0C9;font-family:var(--font-display);font-size:1.4rem;letter-spacing:.04em}
+[data-theme="scene"] .story__frame{background:#0F0C18;border-color:rgba(255,255,255,.12);box-shadow:0 0 0 1px rgba(255,46,136,.25),0 0 60px rgba(255,46,136,.18)}
+[data-theme="scene"] .story__frame::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(255,46,136,.25),transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(33,240,201,.2),transparent 55%);pointer-events:none}
+[data-theme="scene"] .story__rail li{background:#07060B}
+[data-theme="scene"] .story__rail li.is-active{border-color:#21F0C9;color:#21F0C9;box-shadow:0 0 14px rgba(33,240,201,.6)}
+[data-theme="scene"] .story__fill{background:linear-gradient(180deg,#FF2E88,#21F0C9)}
+[data-theme="scene"] .story__step h3{font-size:clamp(2rem,3.6vw,3rem)}
+[data-theme="scene"] .sv-ui,[data-theme="scene"] .sv-chart,[data-theme="scene"] .sv-cal,[data-theme="scene"] .sv-list li{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
+[data-theme="scene"] .sv-badge{background:#21F0C9;color:#07060B}
+[data-theme="scene"] .sv-chart__bar{fill:rgba(255,46,136,.45)}[data-theme="scene"] .sv-chart__bar.is-hot{fill:#FF2E88}
+[data-theme="scene"] .sv-cal__grid span.is-on{background:#FF2E88;box-shadow:0 0 12px rgba(255,46,136,.6)}
+[data-theme="scene"] .sv-map__land{fill:rgba(33,240,201,.08);stroke:#21F0C9}[data-theme="scene"] .sv-map__dot{fill:#FF2E88;stroke:#07060B}[data-theme="scene"] .sv-map__pulse{fill:#FF2E88}
+[data-theme="scene"] .sv-steps li.is-done .sv-steps__dot{background:#21F0C9;border-color:#21F0C9;color:#07060B}[data-theme="scene"] .sv-steps li.is-done .sv-check{color:#07060B}
+[data-theme="scene"] .split__visual{background:linear-gradient(135deg,#FF2E88,#21F0C9);color:#07060B}
+[data-theme="scene"] .proof__item{background:var(--c-panel);border-color:var(--c-line);text-align:center}
+[data-theme="scene"] .proof__value{color:#21F0C9;text-shadow:0 0 20px rgba(33,240,201,.5);font-size:clamp(3rem,6vw,5.5rem)}
+[data-theme="scene"] .pricing__card--featured{border-color:#FF2E88;box-shadow:0 0 40px rgba(255,46,136,.25)}
+[data-theme="scene"] .pricing__price{font-size:clamp(2.6rem,4vw,3.6rem);letter-spacing:.02em}
+[data-theme="scene"] .faq__plus{border-color:#21F0C9;color:#21F0C9}
+[data-theme="scene"] .cta__box{background:linear-gradient(120deg,#FF2E88,#7C3AED 55%,#21F0C9);color:#fff}
+[data-theme="scene"] .cta__box h2{font-size:clamp(3rem,7vw,6rem);text-shadow:0 2px 20px rgba(0,0,0,.35)}
+[data-theme="scene"] .cta__box .btn{background:#07060B;color:#fff;box-shadow:none}
+[data-theme="scene"] input,[data-theme="scene"] textarea,[data-theme="scene"] select{background:rgba(255,255,255,.04)}

@@ -1,0 +1,15 @@
+---
+import { words } from '../site.js';
+const { C, prefix } = Astro.props;
+const K = C.cta || {};
+const h = K.href || '/contact/'; const href = h.startsWith('#') || h.startsWith('http') ? h : prefix + h;
+---
+<section id="cta" class="cta" data-scroll="reveal" aria-labelledby="cta-title">
+  <div class="wrap">
+    <div class="cta__box">
+      <h2 id="cta-title" class="reveal-title">{words(K.title || '').map((w, i) => <><span class="w" style={`--i:${i}`}>{w}</span>{' '}</>)}</h2>
+      {K.text ? <p>{K.text}</p> : null}
+      {K.button ? <a class="btn" href={href}>{K.button}</a> : null}
+    </div>
+  </div>
+</section>

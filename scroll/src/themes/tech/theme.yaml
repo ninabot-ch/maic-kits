@@ -1,0 +1,25 @@
+# Thème « tech » — SaaS, dev, produit : sombre, dégradé violet/cyan, cartes en verre, cadre d'appareil dans la scène.
+label: {fr: Tech, en: Tech, de: Tech, it: Tech}
+mood: dark
+fonts:
+  display: {family: Sora, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: sora-700.woff2, weight: 700}]}
+  text: {family: Inter, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: inter-400.woff2, weight: 400}, {file: inter-500.woff2, weight: 500}]}
+colors:
+  bg: "#0A0A0F"
+  bg-2: "#0F0F17"
+  ink: "#F3F1FF"
+  muted: "#A3A1B8"
+  line: "rgba(255,255,255,.1)"
+  panel: "rgba(255,255,255,.04)"
+  accent: "#8B5CF6"
+  accent-ink: "#FFFFFF"
+  hero-a: "#4C1D95"
+  hero-b: "#0E7490"
+  hero-ink: "#FFFFFF"
+radius: {card: 20px, btn: 14px}
+shadow: "0 30px 80px -30px rgba(0,0,0,.8)"
+hero: full               # plein écran : vidéo/poster du client, sinon nébuleuse animée
+motion: rise
+sections: [hero, proof, story, rail, split, pricing, reviews, faq, contact, cta]
+alt: [pricing]
+variants: {rail: pinned, proof: band}

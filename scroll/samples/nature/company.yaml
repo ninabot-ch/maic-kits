@@ -1,0 +1,16 @@
+# ÉCHANTILLON du thème « nature » — compagnie FICTIVE (Domaine des Crêts n'existe pas), pour la démo et les captures.
+name: Domaine des Crêts
+slug: domaine-des-crets
+theme: nature
+tagline:
+  fr: Ferme bio, paniers de saison et gîte, au-dessus de Bulle.
+  en: Organic farm, seasonal baskets and guesthouse, above Bulle.
+  de: Biohof, Saisonkörbe und Ferienwohnung, oberhalb von Bulle.
+  it: Fattoria bio, ceste di stagione e alloggio, sopra Bulle.
+lang: fr
+langs: [fr, en, de, it]
+accent: "#4E8A3E"
+contact: {email: ferme@domaine-des-crets.myaicompany.io, phone: "", city: Bulle}
+legal: {responsible: Famille Pasquier, address: "Bulle, Suisse", registered: false, ide: ""}
+social: {}
+shop: {currency: CHF, vat_registered: false, pickup: true, pickup_note: {fr: "Retrait à la ferme, le samedi matin.", en: "Pickup at the farm, Saturday morning.", de: "Abholung auf dem Hof, Samstagvormittag.", it: "Ritiro in fattoria, il sabato mattina."}, shipping_cents: 0, free_shipping_from_cents: 0, delivery_days: 2, return_days: 0}

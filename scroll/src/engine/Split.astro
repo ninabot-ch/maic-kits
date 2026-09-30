@@ -1,0 +1,25 @@
+---
+// Split — texte + visuel alternés. `about` (clé du kit vitrine) est le premier bloc ; `split[]` suit. Visuel : image, sinon
+// pictogramme sur la matière du thème. Chaque bloc a sa propre progression (data-scroll="reveal").
+import { icon } from './icons.js';
+const { C, alt, prefix } = Astro.props;
+const A = C.about || {};
+const items = [...(A.title ? [{ id: 'about', title: A.title, text: A.text, image: A.image, alt: A.alt, icon: A.icon, quote: A.quote, cta: A.cta, href: A.href }] : []), ...(C.split || [])];
+const href = h => (h || '/contact/').startsWith('#') || (h || '').startsWith('http') ? h : prefix + (h || '/contact/');
+---
+<div id="about" class={`split sec${alt ? ' sec--alt' : ''}`} aria-labelledby={items.length ? 'split-0' : undefined} role="region">
+  <div class="wrap">
+    {items.map((it, i) => (
+      <section class="split__item" data-scroll="reveal" aria-labelledby={`split-${i}`}>
+        <div class="split__text">
+          <h2 id={`split-${i}`}>{it.title}</h2>
+          {it.text ? <p>{it.text}</p> : null}
+          {it.quote ? <blockquote>{it.quote}</blockquote> : null}
+          {it.cta ? <a class="btn ghost" href={href(it.href)}>{it.cta}</a> : null}
+        </div>
+        <div class="split__visual" aria-hidden={it.image && it.alt ? undefined : 'true'}>
+          {it.image ? <img src={it.image} alt={it.alt || ''} loading="lazy" decoding="async" /> : <Fragment set:html={icon(it.icon || 'sparkles')} />}
+        </div>
+      </section>))}
+  </div>
+</div>

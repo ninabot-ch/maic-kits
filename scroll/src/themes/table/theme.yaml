@@ -1,0 +1,14 @@
+# Thème « table » — restaurant, café, traiteur : plein cadre, ocre, serif chaleureuse, zoom lent.
+label: {fr: Table, en: Table, de: Tisch, it: Tavola}
+mood: light
+fonts:
+  display: {family: "DM Serif Display", fallback: "Georgia, 'Times New Roman', serif", files: [{file: dmserifdisplay-400.woff2, weight: 400}]}
+  text: {family: "Work Sans", fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: worksans-400.woff2, weight: 400}, {file: worksans-600.woff2, weight: 600}]}
+colors: {bg: "#FBF5EC", bg-2: "#F3E8D6", ink: "#2B1F14", muted: "#6B5A48", line: "#E6D6BF", panel: "#FFFCF7", accent: "#C7791E", accent-ink: "#FFFFFF", hero-a: "#2A1A10", hero-b: "#8A5322", hero-ink: "#FFF6E8"}
+radius: {card: 12px, btn: 999px}
+shadow: "0 24px 50px -30px rgba(43,31,20,.45)"
+hero: full
+motion: zoom
+sections: [hero, split, rail, story, gallery, proof, pricing, reviews, faq, contact, cta]
+alt: [proof]
+variants: {rail: pinned, proof: band}

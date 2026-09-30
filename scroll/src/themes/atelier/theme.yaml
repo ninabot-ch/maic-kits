@@ -1,0 +1,25 @@
+# Thème « atelier » — artisanat, métiers d'art : papier chaud, serif à empattements, cartes posées comme des feuilles.
+label: {fr: Atelier, en: Workshop, de: Werkstatt, it: Bottega}
+mood: light
+fonts:
+  display: {family: Fraunces, fallback: "Georgia, 'Iowan Old Style', serif", files: [{file: fraunces-600.woff2, weight: 600}]}
+  text: {family: Manrope, fallback: "system-ui, -apple-system, 'Segoe UI', sans-serif", files: [{file: manrope-400.woff2, weight: 400}, {file: manrope-700.woff2, weight: 700}]}
+colors:
+  bg: "#F6F1E8"
+  bg-2: "#EFE7D9"
+  ink: "#2A2420"
+  muted: "#6F655B"
+  line: "#E1D6C6"
+  panel: "#FFFDF9"
+  accent: "#B5562F"
+  accent-ink: "#FFFFFF"
+  hero-a: "#3B2E26"
+  hero-b: "#B5562F"
+  hero-ink: "#FFF8EE"
+radius: {card: 18px, btn: 999px}
+shadow: "0 24px 48px -28px rgba(58,40,24,.35)"
+hero: editorial          # deux colonnes : le texte, puis la matière (feuilles superposées) ou la photo/vidéo du client
+motion: rise             # papier posé : monte et se redresse
+sections: [hero, story, rail, split, proof, gallery, pricing, reviews, faq, contact, cta]
+alt: [proof, faq]
+variants: {rail: pinned, proof: band}
