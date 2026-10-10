@@ -9,6 +9,6 @@ radius: {card: 6px, btn: 6px}
 shadow: "0 30px 60px -40px rgba(0,0,0,.8)"
 hero: editorial
 motion: slide
-sections: [hero, split, rail, story, proof, pricing, faq, contact, cta]
+sections: [hero, split, rail, story, proof, pricing, shop, faq, contact, cta]
 alt: [proof]
 variants: {rail: pinned, proof: band}

@@ -8,6 +8,14 @@ export const site = `https://${company.slug}.myaicompany.io`;
 let cat = { products: [], company: {} };
 try { cat = JSON.parse(fs.readFileSync(path.join(root, 'catalog.json'), 'utf8')); } catch (e) {}
 export const products = (cat.products || []).filter(p => p && p.name);
+// « Fait avec MyAiCompany » (features v2 n° 6) : le lien porte le parrainage de la compagnie (?ref=<slug>). Visible par défaut,
+// même sans catalog.json ; retiré seulement si l'API dit `on: false` (capacité Marque blanche).
+const BADGE_LABEL = { fr: 'Fait avec MyAiCompany', en: 'Made with MyAiCompany', de: 'Erstellt mit MyAiCompany', it: 'Creato con MyAiCompany' };
+const badgeCat = cat.badge || {};
+export const badge = (lang) => (badgeCat.on === false ? null : {
+  label: (badgeCat.label || {})[lang] || BADGE_LABEL[lang] || BADGE_LABEL.en,
+  url: (badgeCat.urls || {})[lang] || `https://myaicompany.io/?ref=${encodeURIComponent(company.slug || '')}`,
+});
 // Fiche produit dans la langue de la page : la traduction si elle existe, l'original sinon (Traducteur).
 export const prodText = (p, lang) => {
   const t = (p && p.i18n && p.i18n[lang]) || null;

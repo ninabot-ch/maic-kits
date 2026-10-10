@@ -9,6 +9,6 @@ radius: {card: 2px, btn: 2px}
 shadow: "none"
 hero: type
 motion: curtain
-sections: [hero, rail, proof, story, split, pricing, faq, contact, cta]
+sections: [hero, rail, proof, story, split, pricing, shop, faq, contact, cta]
 alt: [proof]
 variants: {rail: pinned, proof: band}

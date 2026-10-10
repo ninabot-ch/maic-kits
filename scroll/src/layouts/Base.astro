@@ -2,7 +2,7 @@
 // Gabarit commun à toutes les pages : <head> (canonical, hreflang, Open Graph, JSON-LD LocalBusiness), polices et tokens du
 // thème (src/themes/), CSS du moteur (inline, dans cet ordre : polices → tokens → base → engine → motion → thème), en-tête,
 // pied de page, compteur du panier, chatbot d'accueil. Aucune ressource distante.
-import { company, site, LANGS, DEFAULT, UI, prefix, tagline, shopEnabled, content, agenda, theme } from '../site.js';
+import { company, site, LANGS, DEFAULT, UI, prefix, tagline, shopEnabled, content, agenda, theme, badge } from '../site.js';
 import { fontCss, tokenCss } from '../themes/index.js';
 import engineCss from '../engine/engine.css?inline';
 import motionCss from '../engine/motion.css?inline';
@@ -89,7 +89,7 @@ footer.foot a{color:var(--c-muted);text-decoration:none}footer.foot a:hover{colo
   <header class="top"><a class="brand" href={p + '/'}><i>{company.name.trim().slice(0, 1)}</i>{company.name}</a><nav aria-label="Navigation">{shopEnabled ? <a href={p + '/shop/'}>{T.nav_shop}</a> : null}<a href={p + '/#services'}>{T.nav_services}</a><a href={p + '/#about'}>{T.nav_about}</a>{PAGES.map(([s, pg]) => <a href={p + '/p/' + s + '/'}>{pg.nav || pg.title}</a>)}{agenda.on ? <a href={p + '/reserver/'}>{T.nav_book}</a> : null}<a href={p + '/contact/'}>{T.nav_contact}</a>{shopEnabled ? <a class="basket" href={p + '/shop/panier/'} id="basket-link">{T.basket}<b id="basket-count">0</b></a> : null}{LANGS.filter(l => l !== lang).map(l => <a class="lang" href={prefix(l) + path} hreflang={l} lang={l}>{(UI[l] || {}).lang_name || l.toUpperCase()}</a>)}</nav></header>
   <main class={full ? '' : 'wrap page'}><slot /></main>
   <footer class="foot">
-    <span>© {new Date().getFullYear()} {company.name} · {company.contact?.city} <span class="made">· <a href="https://myaicompany.io">MyAiCompany</a></span></span>
+    <span>© {new Date().getFullYear()} {company.name} · {company.contact?.city} {badge(lang) ? <span class="made">· <a href={badge(lang).url} rel="noopener">{badge(lang).label}</a></span> : null}</span>
     <span>{shopEnabled ? <><a href={p + '/cgv/'}>{T.legal_cgv}</a> · </> : null}<a href={p + '/mentions-legales/'}>{T.legal}</a> · <a href={p + '/confidentialite/'}>{T.privacy}</a> · <a href={p + '/contact/'}>{T.contact}</a></span>
   </footer>
   {shopEnabled ? <script is:inline>try{const c=JSON.parse(localStorage.getItem('maic-basket')||'[]');const n=c.reduce((a,i)=>a+i.qty,0);const e=document.getElementById('basket-count');if(e)e.textContent=n;}catch(e){}</script> : null}

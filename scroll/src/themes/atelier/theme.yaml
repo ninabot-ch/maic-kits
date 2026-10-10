@@ -20,6 +20,6 @@ radius: {card: 18px, btn: 999px}
 shadow: "0 24px 48px -28px rgba(58,40,24,.35)"
 hero: editorial          # deux colonnes : le texte, puis la matière (feuilles superposées) ou la photo/vidéo du client
 motion: rise             # papier posé : monte et se redresse
-sections: [hero, story, rail, split, proof, gallery, pricing, reviews, faq, contact, cta]
+sections: [hero, story, shop, rail, split, proof, gallery, pricing, reviews, faq, contact, cta]
 alt: [proof, faq]
 variants: {rail: pinned, proof: band}

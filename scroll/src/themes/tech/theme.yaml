@@ -20,6 +20,6 @@ radius: {card: 20px, btn: 14px}
 shadow: "0 30px 80px -30px rgba(0,0,0,.8)"
 hero: full               # plein écran : vidéo/poster du client, sinon nébuleuse animée
 motion: rise
-sections: [hero, proof, story, rail, split, pricing, reviews, faq, contact, cta]
+sections: [hero, proof, story, rail, split, pricing, shop, reviews, faq, contact, cta]
 alt: [pricing]
 variants: {rail: pinned, proof: band}

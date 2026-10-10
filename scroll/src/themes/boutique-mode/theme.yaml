@@ -9,6 +9,6 @@ radius: {card: 0px, btn: 0px}
 shadow: "none"
 hero: editorial
 motion: curtain
-sections: [hero, split, story, gallery, rail, proof, pricing, reviews, faq, contact, cta]
+sections: [hero, shop, split, story, gallery, rail, proof, pricing, reviews, faq, contact, cta]
 alt: [story]
 variants: {rail: grid, proof: band}

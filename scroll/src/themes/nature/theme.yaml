@@ -9,6 +9,6 @@ radius: {card: 28px, btn: 999px}
 shadow: "0 24px 50px -32px rgba(34,48,31,.35)"
 hero: full
 motion: float
-sections: [hero, split, rail, story, proof, pricing, gallery, reviews, faq, contact, cta]
+sections: [hero, split, rail, story, proof, shop, pricing, gallery, reviews, faq, contact, cta]
 alt: [proof]
 variants: {rail: pinned, proof: cards}

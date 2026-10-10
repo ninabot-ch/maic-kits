@@ -17,8 +17,9 @@ const href = h => (h || '/contact/').startsWith('#') || (h || '').startsWith('ht
           {it.quote ? <blockquote>{it.quote}</blockquote> : null}
           {it.cta ? <a class="btn ghost" href={href(it.href)}>{it.cta}</a> : null}
         </div>
-        <div class="split__visual" aria-hidden={it.image && it.alt ? undefined : 'true'}>
-          {it.image ? <img src={it.image} alt={it.alt || ''} loading="lazy" decoding="async" /> : <Fragment set:html={icon(it.icon || 'sparkles')} />}
+        <div class={`split__visual${it.image ? ' has-img' : ''}`} aria-hidden={it.image && it.alt ? undefined : 'true'}>
+          <Fragment set:html={icon(it.icon || 'sparkles')} />
+          {it.image ? <img src={it.image} alt={it.alt || ''} loading="lazy" decoding="async" onerror="this.parentNode.classList.remove('has-img');this.remove()" /> : null}
         </div>
       </section>))}
   </div>

@@ -65,7 +65,8 @@ function iconV(V, step) { return `<div class="sv sv-icon"><span class="sv-icon__
 export function visual(V, step, ctx, i) {
   V = V || {};
   const kind = V.kind || (V.image ? 'image' : (V.number != null || V.value != null) ? 'stat' : V.icon ? 'icon' : 'ui');
-  if (kind === 'image') return `<img src="${esc(V.image)}" alt="${esc(V.alt || '')}" loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">`;
+  // image absente (média pas encore livré) : la figure retombe sur la matière du thème et son numéro, pas d'icône cassée
+  if (kind === 'image') return `<img src="${esc(V.image)}" alt="${esc(V.alt || '')}" loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async" onerror="this.parentNode.classList.remove('has-img');this.remove()">`;
   const f = { ui, list: listV, chart, steps, quote, map, calendar, stat, icon: iconV }[kind] || ui;
   return f(V, step || {}, ctx || { company: {} });
 }

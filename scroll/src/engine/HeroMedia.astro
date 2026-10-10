@@ -13,7 +13,7 @@ const still = H.image || M.poster || null;
 <section id="top" class={`hero hero--${v}`} data-scroll="hero" aria-labelledby="hero-title">
   <div class="hero__media" aria-hidden="true" {...media}>
     <div class="hero__art"><span class="hero__initial">{(company.name || '').trim().slice(0, 1)}</span></div>
-    {still ? <img class="hero__img" src={still} alt="" decoding="async" fetchpriority="high" /> : null}
+    {still ? <img class="hero__img" src={still} alt="" decoding="async" fetchpriority="high" onerror="this.remove()" /> : null}
     <div class="hero__veil"></div>
   </div>
   <div class="hero__inner wrap">

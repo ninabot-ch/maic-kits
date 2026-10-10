@@ -8,6 +8,7 @@ import Proof from './Proof.astro';
 import Reviews from './Reviews.astro';
 import Pricing from './Pricing.astro';
 import Gallery from './Gallery.astro';
+import ShopTeaser from './ShopTeaser.astro';
 import FAQ from './FAQ.astro';
 import CTA from './CTA.astro';
 import ContactForm from '../components/ContactForm.astro';
@@ -28,8 +29,8 @@ const has = {
   contact: !!(C.contact && C.contact.title),
   cta: !!(C.cta && C.cta.title),
 };
-const CMP = { hero: HeroMedia, story: Story, rail: Rail, split: Split, proof: Proof, reviews: Reviews, pricing: Pricing, gallery: Gallery, faq: FAQ, cta: CTA };
-const order = (theme.sections || ['hero', 'story', 'rail', 'split', 'proof', 'gallery', 'pricing', 'reviews', 'faq', 'contact', 'cta']).filter(k => has[k]);
+const CMP = { hero: HeroMedia, story: Story, rail: Rail, split: Split, proof: Proof, reviews: Reviews, pricing: Pricing, gallery: Gallery, shop: ShopTeaser, faq: FAQ, cta: CTA };
+const order = (theme.sections || ['hero', 'story', 'shop', 'rail', 'split', 'proof', 'gallery', 'pricing', 'reviews', 'faq', 'contact', 'cta']).filter(k => has[k]);
 const ALT = new Set(theme.alt || []);
 const props = { C, T, lang, theme, prefix, tagline: tagline(lang), company, reviews, reviewsAvg };
 ---
@@ -39,7 +40,6 @@ const props = { C, T, lang, theme, prefix, tagline: tagline(lang), company, revi
     return (<>
       {i === 1 ? <span id="next" aria-hidden="true"></span> : null}
       {k === 'contact' ? <ContactForm lang={lang} title={C.contact.title} text={C.contact.text} />
-        : k === 'shop' ? <section id="shop" class={`shop-teaser sec${ALT.has(k) ? ' sec--alt' : ''}`} data-scroll="reveal" aria-labelledby="shop-title"><div class="wrap"><header class="sec__head"><h2 id="shop-title">{C.shop.title}</h2>{C.shop.text ? <p>{C.shop.text}</p> : null}</header><a class="btn" href={prefix + '/shop/'}>{C.shop.cta || T.nav_shop}</a></div></section>
         : <Cmp {...props} alt={ALT.has(k)} />}
     </>);
   })}

@@ -23,8 +23,8 @@ const pad = i => String(i + 1).padStart(2, '0');
       </ol>
       <div class="story__frame">
         {steps.map((s, i) => { const V = s.visual || {}; return (
-          <figure class={`story__visual${i === 0 ? ' is-active' : ''}`} data-i={i} aria-hidden={i !== 0}>
-            {!V.image ? <span class="story__bg" aria-hidden="true">{pad(i)}</span> : null}
+          <figure class={`story__visual${i === 0 ? ' is-active' : ''}${V.image ? ' has-img' : ''}`} data-i={i} aria-hidden={i !== 0}>
+            <span class="story__bg" aria-hidden="true">{pad(i)}</span>
             <Fragment set:html={visual(V, s, { company }, i)} />
             {V.caption ? <figcaption>{V.caption}</figcaption> : null}
           </figure>); })}

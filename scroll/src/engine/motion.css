@@ -59,3 +59,8 @@
 .has-motion .hero .hero__media>*{transition:opacity 1.2s ease,transform 1.4s cubic-bezier(.2,.7,.2,1)}
 .has-motion .hero:not(.is-in) .hero__media>.hero__art,.has-motion .hero:not(.is-in) .hero__media>.hero__img{opacity:0;transform:scale(1.06)}
 .has-motion .hero--editorial:not(.is-in) .hero__media>*{transform:translate3d(48px,0,0) scale(1.02)}
+
+/* shop teaser : les cartes produit entrent l'une après l'autre (décalage par --i), quelle que soit la signature du thème */
+.has-motion .shopt__card{opacity:calc(.05 + var(--p,1) * .95);transform:translate3d(0,calc((1 - var(--p,1)) * (36px + var(--i,0) * 26px)),0)}
+.has-motion .shopt__card:hover{transform:translate3d(0,calc((1 - var(--p,1)) * (36px + var(--i,0) * 26px) - 4px),0)}
+@media (max-width:820px){.has-motion .shopt__card{transform:translate3d(calc((1 - var(--p,1)) * (24px + var(--i,0) * 18px)),0,0)}}

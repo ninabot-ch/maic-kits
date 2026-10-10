@@ -9,6 +9,6 @@ radius: {card: 12px, btn: 999px}
 shadow: "0 0 0 1px rgba(255,255,255,.04)"
 hero: type
 motion: letters
-sections: [hero, rail, story, proof, split, pricing, faq, contact, cta]
+sections: [hero, rail, story, proof, split, shop, pricing, faq, contact, cta]
 alt: [proof]
 variants: {rail: pinned, proof: cards}
